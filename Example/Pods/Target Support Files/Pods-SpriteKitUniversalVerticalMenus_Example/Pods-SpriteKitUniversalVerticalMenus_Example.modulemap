@@ -1,0 +1,6 @@
+framework module Pods_SpriteKitUniversalVerticalMenus_Example {
+  umbrella header "Pods-SpriteKitUniversalVerticalMenus_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
