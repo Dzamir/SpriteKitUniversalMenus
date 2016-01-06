@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3D00C5B296D8AD5749DA76A2'
+               BlueprintIdentifier = 'DCCD322AA672C6394D97EB38'
                BlueprintName = 'SpriteKitUniversalVerticalMenus'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SpriteKitUniversalVerticalMenus.framework'>
