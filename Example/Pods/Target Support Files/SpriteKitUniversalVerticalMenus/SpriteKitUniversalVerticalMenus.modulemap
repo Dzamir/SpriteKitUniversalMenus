@@ -1,6 +1,0 @@
-framework module SpriteKitUniversalVerticalMenus {
-  umbrella header "SpriteKitUniversalVerticalMenus-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,12 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'SpriteKitUniversalVerticalMenus_Example' do
-  pod "SpriteKitUniversalVerticalMenus", :path => "../"
+target 'SpriteKitUniversalMenus_Example' do
+  pod "SpriteKitUniversalMenus", :path => "../"
 end
 
-target 'SpriteKitUniversalVerticalMenus_Tests' do
-  pod "SpriteKitUniversalVerticalMenus", :path => "../"
+target 'SpriteKitUniversalMenus_Tests' do
+  pod "SpriteKitUniversalMenus", :path => "../"
 
   pod 'FBSnapshotTestCase'
 end

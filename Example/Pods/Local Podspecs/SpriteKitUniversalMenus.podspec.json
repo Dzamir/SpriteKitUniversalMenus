@@ -1,0 +1,25 @@
+{
+  "name": "SpriteKitUniversalMenus",
+  "version": "0.1.0",
+  "summary": "SpriteKit menus that works on iOS, tvOS and MacOS",
+  "description": "SpriteKit menus that works on iOS (tap and gamecontrollers), tvOS (focus engine and gamecontrollers) and MacOS (click, keyboard and gamecontrollers)",
+  "homepage": "https://github.com/Dzamir/SpriteKitUniversal\bMenus",
+  "license": "Apache License",
+  "authors": {
+    "Davide Di Stefano": "dzamirro@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Dzamir/SpriteKitUniversalMenus.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SpriteKitUniversalMenus": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

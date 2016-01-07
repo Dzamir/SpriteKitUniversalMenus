@@ -4,18 +4,20 @@ PODS:
   - FBSnapshotTestCase/Core (2.0.7)
   - FBSnapshotTestCase/SwiftSupport (2.0.7):
     - FBSnapshotTestCase/Core
-  - SpriteKitUniversalVerticalMenus (0.1.0)
+  - SpriteKitUniversalMenus (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
-  - SpriteKitUniversalVerticalMenus (from `../`)
+  - SpriteKitUniversalMenus (from `../`)
 
 EXTERNAL SOURCES:
-  SpriteKitUniversalVerticalMenus:
+  SpriteKitUniversalMenus:
     :path: ../
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  SpriteKitUniversalVerticalMenus: c18d983ee50a354c04ac4184b369c074d2a1c709
+  SpriteKitUniversalMenus: e2ee78a1e2c843814a4ad9cbf4f8f4dd4c29e986
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 31327b0a07b87d5071e7138110a943fa245f0a25
+
+COCOAPODS: 1.0.0.beta.1
