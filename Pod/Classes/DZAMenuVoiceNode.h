@@ -6,8 +6,10 @@
 //
 //
 
-#import <SpriteKitUniversalVerticalMenus/SpriteKitUniversalVerticalMenus.h>
+#import "AGSpriteButton.h"
 
 @interface DZAMenuVoiceNode : AGSpriteButton
+
+@property (readwrite, nonatomic) int tag;
 
 @end
