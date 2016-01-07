@@ -10,4 +10,13 @@
 
 @implementation DZAMenuVoiceNode
 
+-(instancetype)initWithColor:(SKColor *)color size:(CGSize)size;
+{
+    if (self = [super initWithColor:color size:size])
+    {
+        
+    }
+    return self;
+}
+
 @end

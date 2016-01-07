@@ -27,14 +27,20 @@ typedef NS_OPTIONS(NSInteger, AGButtonControlEvent)
 
 //CLASS METHODS FOR CREATING BUTTON
 
-+(AGSpriteButton*)buttonWithImageNamed:(NSString*)image;
++(instancetype)buttonWithImageNamed:(NSString*)image;
 
-+(AGSpriteButton*)buttonWithColor:(SKColor*)color andSize:(CGSize)size;
++(instancetype)buttonWithColor:(SKColor*)color andSize:(CGSize)size;
 
-+(AGSpriteButton*)buttonWithTexture:(SKTexture*)texture andSize:(CGSize)size;
++(instancetype)buttonWithTexture:(SKTexture*)texture andSize:(CGSize)size;
 
-+(AGSpriteButton *)buttonWithTexture:(SKTexture *)texture;
++(instancetype)buttonWithTexture:(SKTexture *)texture;
 
+
+-(instancetype)initWithImageNamed:(NSString *)name;
+-(instancetype)initWithColor:(SKColor *)color size:(CGSize)size;
+-(instancetype)initWithTexture:(SKTexture *)texture color:(SKColor *)color size:(CGSize)size;
+-(instancetype)initWithTexture:(SKTexture *)texture;
+-(id)init;
 
 //LABEL METHOD
 

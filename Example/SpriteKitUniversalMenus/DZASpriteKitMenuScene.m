@@ -9,14 +9,31 @@
 #import "DZASpriteKitMenuScene.h"
 @import SpriteKitUniversalVerticalMenus;
 
+@interface DZASpriteKitMenuScene()
+
+@property (strong, nonatomic) DZAMenuNode * menuNode;
+
+@end
+
 @implementation DZASpriteKitMenuScene
+
+-(void) addMenuVoiceWithText:(NSString *) text y:(CGFloat) y
+{
+    DZAMenuVoiceNode * menuVoice = [[DZAMenuVoiceNode alloc] initWithColor:[UIColor redColor] size:CGSizeMake(200, 44)];
+    menuVoice.position = CGPointMake(0, y);
+    [menuVoice setLabelWithText:text andFont:[UIFont systemFontOfSize:15] withColor:[UIColor whiteColor]];
+    [_menuNode addChild:menuVoice];
+}
 
 -(void)didMoveToView:(SKView *)view
 {
-    AGSpriteButton * spriteButton = [AGSpriteButton buttonWithColor:[UIColor redColor] andSize:CGSizeMake(200, 44)];
-    spriteButton.position = CGPointMake(self.size.width / 2, self.size.height / 2);
-    [spriteButton setLabelWithText:@"test" andFont:[UIFont systemFontOfSize:15] withColor:[UIColor whiteColor]];
-    [self addChild:spriteButton];
+    _menuNode = [[DZAMenuNode alloc] init];
+    _menuNode.position = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
+    [self addChild:_menuNode];
+    
+    [self addMenuVoiceWithText:@"Play" y:55];
+    [self addMenuVoiceWithText:@"Options" y:0];
+    [self addMenuVoiceWithText:@"Exit" y:-55];
 }
 
 @end

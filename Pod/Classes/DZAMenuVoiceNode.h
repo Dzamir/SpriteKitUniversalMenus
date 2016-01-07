@@ -12,4 +12,6 @@
 
 @property (readwrite, nonatomic) int tag;
 
+-(instancetype)initWithColor:(SKColor *)color size:(CGSize)size;
+
 @end
