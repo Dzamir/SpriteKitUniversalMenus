@@ -7,7 +7,7 @@
 //
 
 #import "DZASpriteKitMenuScene.h"
-@import SpriteKitUniversalVerticalMenus;
+@import SpriteKitUniversalMenus;
 
 @interface DZASpriteKitMenuScene()
 
