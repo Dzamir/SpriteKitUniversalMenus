@@ -10,7 +10,7 @@
 
 @implementation AGSpriteButton
 {
-    UITouch *currentTouch;
+    DZATouch *currentTouch;
     NSMutableArray *marrSelectors;
     NSMutableArray *marrBlocks;
     NSMutableArray *marrActions;
@@ -114,7 +114,7 @@
 #pragma mark - LABEL FOR BUTTON
 
 
--(void)setLabelWithText:(NSString *)text andFont:(UIFont *)font withColor:(SKColor*)fontColor
+-(void)setLabelWithText:(NSString *)text andFont:(DZAFont *)font withColor:(SKColor*)fontColor
 {
     if (self.label == nil)
     {
@@ -159,6 +159,8 @@
 }
 
 #pragma mark - TOUCH DELEGATES
+
+#ifndef TARGET_OS_IPHONE
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -230,6 +232,8 @@
         }
     }
 }
+
+#endif
 
 #pragma mark - BUTTON TRANSFORM ON SELECTION
 

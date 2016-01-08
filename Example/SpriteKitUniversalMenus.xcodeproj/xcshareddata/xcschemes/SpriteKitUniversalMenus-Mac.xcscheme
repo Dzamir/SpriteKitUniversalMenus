@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "SpriteKitUniversalMenus_Example.app"
-               BlueprintName = "SpriteKitUniversalMenus-iOS"
+               BlueprintIdentifier = "8D3442B91C405B8700EA28BF"
+               BuildableName = "SpriteKitUniversalMenus-Mac.app"
+               BlueprintName = "SpriteKitUniversalMenus-Mac"
                ReferencedContainer = "container:SpriteKitUniversalMenus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "SpriteKitUniversalMenus_Example.xctest"
-               BlueprintName = "SpriteKitUniversalMenus_Tests-iOS"
+               BlueprintIdentifier = "8D3442CE1C405B8700EA28BF"
+               BuildableName = "SpriteKiUniversalMenus-MacUITests.xctest"
+               BlueprintName = "SpriteKiUniversalMenus-MacUITests"
                ReferencedContainer = "container:SpriteKitUniversalMenus.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "SpriteKitUniversalMenus_Example.app"
-            BlueprintName = "SpriteKitUniversalMenus-iOS"
+            BlueprintIdentifier = "8D3442B91C405B8700EA28BF"
+            BuildableName = "SpriteKitUniversalMenus-Mac.app"
+            BlueprintName = "SpriteKitUniversalMenus-Mac"
             ReferencedContainer = "container:SpriteKitUniversalMenus.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +65,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "SpriteKitUniversalMenus_Example.app"
-            BlueprintName = "SpriteKitUniversalMenus-iOS"
+            BlueprintIdentifier = "8D3442B91C405B8700EA28BF"
+            BuildableName = "SpriteKitUniversalMenus-Mac.app"
+            BlueprintName = "SpriteKitUniversalMenus-Mac"
             ReferencedContainer = "container:SpriteKitUniversalMenus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -84,9 +84,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "SpriteKitUniversalMenus_Example.app"
-            BlueprintName = "SpriteKitUniversalMenus-iOS"
+            BlueprintIdentifier = "8D3442B91C405B8700EA28BF"
+            BuildableName = "SpriteKitUniversalMenus-Mac.app"
+            BlueprintName = "SpriteKitUniversalMenus-Mac"
             ReferencedContainer = "container:SpriteKitUniversalMenus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

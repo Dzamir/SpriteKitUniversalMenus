@@ -1,6 +1,0 @@
-framework module Pods_SpriteKitUniversalMenus_Example {
-  umbrella header "Pods-SpriteKitUniversalMenus_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

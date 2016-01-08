@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		249D5ECD46781C603C6D46B9 /* Pods_SpriteKitUniversalMenus_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B526B693BD1F5D0CC7428796 /* Pods_SpriteKitUniversalMenus_Mac.framework */; };
+		32C3E30DBAD06E87B7921B62 /* Pods_SpriteKitUniversalMenus_Tests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1355F32BDAF911D78586F6 /* Pods_SpriteKitUniversalMenus_Tests_iOS.framework */; };
+		3D1E713546E69FDB483B1230 /* Pods_SpriteKiUniversalMenus_MacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82E9FD8BA97B4DC838579F5 /* Pods_SpriteKiUniversalMenus_MacUITests.framework */; };
 		55401BA3A46FD811CB28A7BE /* Pods_SpriteKitUniversalMenus_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4FCF444E2072CDD4057099 /* Pods_SpriteKitUniversalMenus_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -22,7 +25,15 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8D57EBD21C3B346000FCA23D /* DZASpriteKitMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D57EBD11C3B346000FCA23D /* DZASpriteKitMenuScene.m */; };
+		8D3442BE1C405B8700EA28BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442BD1C405B8700EA28BF /* AppDelegate.m */; };
+		8D3442C11C405B8700EA28BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442C01C405B8700EA28BF /* main.m */; };
+		8D3442C41C405B8700EA28BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442C31C405B8700EA28BF /* ViewController.m */; };
+		8D3442C61C405B8700EA28BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3442C51C405B8700EA28BF /* Assets.xcassets */; };
+		8D3442C91C405B8700EA28BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3442C71C405B8700EA28BF /* Main.storyboard */; };
+		8D3442D41C405B8700EA28BF /* SpriteKiUniversalMenus_MacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442D31C405B8700EA28BF /* SpriteKiUniversalMenus_MacUITests.m */; };
+		8D3442DF1C40616D00EA28BF /* DZASpriteKitMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */; };
+		8D3442E01C40616D00EA28BF /* DZASpriteKitMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */; };
+		94819CC6357BECDDDB711032 /* Pods_SpriteKitUniversalMenus_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56404387098420D819668F02 /* Pods_SpriteKitUniversalMenus_iOS.framework */; };
 		DB069EF72381CC33F459C95F /* Pods_SpriteKitUniversalMenus_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BD61A987814F466383A593 /* Pods_SpriteKitUniversalMenus_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,10 +45,18 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = SpriteKitUniversalVerticalMenus;
 		};
+		8D3442D01C405B8700EA28BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D3442B91C405B8700EA28BF;
+			remoteInfo = "SpriteKiUniversalMenus-Mac";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18842F1567DEDC73A391B970 /* Pods-SpriteKitUniversalMenus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Example/Pods-SpriteKitUniversalMenus_Example.release.xcconfig"; sourceTree = "<group>"; };
+		56404387098420D819668F02 /* Pods_SpriteKitUniversalMenus_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* SpriteKitUniversalMenus_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitUniversalMenus_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,17 +76,40 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		648843280917521ADF88A02E /* Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-Mac/Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		68D33C1E64AB79C4DFA5AF2C /* Pods-SpriteKitUniversalMenus_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests/Pods-SpriteKitUniversalMenus_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4993B4CF6239CF21BE54E3 /* Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests-iOS/Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8D57EBD01C3B346000FCA23D /* DZASpriteKitMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZASpriteKitMenuScene.h; sourceTree = "<group>"; };
-		8D57EBD11C3B346000FCA23D /* DZASpriteKitMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZASpriteKitMenuScene.m; sourceTree = "<group>"; };
+		8D3442BA1C405B8700EA28BF /* SpriteKitUniversalMenus-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteKitUniversalMenus-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3442BC1C405B8700EA28BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8D3442BD1C405B8700EA28BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8D3442C01C405B8700EA28BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D3442C21C405B8700EA28BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8D3442C31C405B8700EA28BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8D3442C51C405B8700EA28BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D3442C81C405B8700EA28BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D3442CA1C405B8700EA28BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3442CF1C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpriteKiUniversalMenus-MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3442D31C405B8700EA28BF /* SpriteKiUniversalMenus_MacUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKiUniversalMenus_MacUITests.m; sourceTree = "<group>"; };
+		8D3442D51C405B8700EA28BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3442DD1C40616D00EA28BF /* DZASpriteKitMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZASpriteKitMenuScene.h; sourceTree = "<group>"; };
+		8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZASpriteKitMenuScene.m; sourceTree = "<group>"; };
 		9225FA3DF4AA269B700B3BBF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		931659F72BDEE07B1746B60A /* Pods-SpriteKitUniversalMenus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Example/Pods-SpriteKitUniversalMenus_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A82E9FD8BA97B4DC838579F5 /* Pods_SpriteKiUniversalMenus_MacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKiUniversalMenus_MacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0622BC72433D81042E418C /* Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKiUniversalMenus-MacUITests/Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AEE630D6B9E4E3263ADEA281 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B442BBCE5C213B50F05CFEB9 /* Pods-SpriteKitUniversalMenus-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-Mac/Pods-SpriteKitUniversalMenus-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		B526B693BD1F5D0CC7428796 /* Pods_SpriteKitUniversalMenus_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A42F1FD6587BBCB600042D /* Pods-SpriteKitUniversalMenus-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-iOS/Pods-SpriteKitUniversalMenus-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		D46ED9A9D7A2538F8B7A24CC /* Pods-SpriteKitUniversalMenus-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-iOS/Pods-SpriteKitUniversalMenus-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D9C42124DD63F145D0C5CEA6 /* SpriteKitUniversalMenus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpriteKitUniversalMenus.podspec; path = ../SpriteKitUniversalMenus.podspec; sourceTree = "<group>"; };
 		DA4FCF444E2072CDD4057099 /* Pods_SpriteKitUniversalMenus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BD61A987814F466383A593 /* Pods_SpriteKitUniversalMenus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1355F32BDAF911D78586F6 /* Pods_SpriteKitUniversalMenus_Tests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_Tests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA793FCB466C80B8475C6CD /* Pods-SpriteKitUniversalMenus_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests/Pods-SpriteKitUniversalMenus_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F22C18BD94B25AE911B4D102 /* Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests-iOS/Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		FA129F10A4F5B433901F815C /* Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKiUniversalMenus-MacUITests/Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +121,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				55401BA3A46FD811CB28A7BE /* Pods_SpriteKitUniversalMenus_Example.framework in Frameworks */,
+				94819CC6357BECDDDB711032 /* Pods_SpriteKitUniversalMenus_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +133,23 @@
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
 				DB069EF72381CC33F459C95F /* Pods_SpriteKitUniversalMenus_Tests.framework in Frameworks */,
+				32C3E30DBAD06E87B7921B62 /* Pods_SpriteKitUniversalMenus_Tests_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3442B71C405B8700EA28BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249D5ECD46781C603C6D46B9 /* Pods_SpriteKitUniversalMenus_Mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3442CC1C405B8700EA28BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1E713546E69FDB483B1230 /* Pods_SpriteKiUniversalMenus_MacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +160,11 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				8D3442DC1C40615800EA28BF /* SpriteKitUniversalMenus-Shared */,
 				6003F593195388D20070C39A /* Example for SpriteKitUniversalMenus-iOS */,
 				6003F5B5195388D20070C39A /* Tests */,
+				8D3442BB1C405B8700EA28BF /* SpriteKiUniversalMenus-Mac */,
+				8D3442D21C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				88F59E098649FA033E812BF0 /* Pods */,
@@ -113,6 +176,8 @@
 			children = (
 				6003F58A195388D20070C39A /* SpriteKitUniversalMenus_Example.app */,
 				6003F5AE195388D20070C39A /* SpriteKitUniversalMenus_Example.xctest */,
+				8D3442BA1C405B8700EA28BF /* SpriteKitUniversalMenus-Mac.app */,
+				8D3442CF1C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +191,10 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				DA4FCF444E2072CDD4057099 /* Pods_SpriteKitUniversalMenus_Example.framework */,
 				E8BD61A987814F466383A593 /* Pods_SpriteKitUniversalMenus_Tests.framework */,
+				A82E9FD8BA97B4DC838579F5 /* Pods_SpriteKiUniversalMenus_MacUITests.framework */,
+				B526B693BD1F5D0CC7428796 /* Pods_SpriteKitUniversalMenus_Mac.framework */,
+				56404387098420D819668F02 /* Pods_SpriteKitUniversalMenus_iOS.framework */,
+				ED1355F32BDAF911D78586F6 /* Pods_SpriteKitUniversalMenus_Tests_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,8 +207,6 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DZAViewController.h */,
 				6003F5A6195388D20070C39A /* DZAViewController.m */,
-				8D57EBD01C3B346000FCA23D /* DZASpriteKitMenuScene.h */,
-				8D57EBD11C3B346000FCA23D /* DZASpriteKitMenuScene.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -194,16 +261,65 @@
 				18842F1567DEDC73A391B970 /* Pods-SpriteKitUniversalMenus_Example.release.xcconfig */,
 				68D33C1E64AB79C4DFA5AF2C /* Pods-SpriteKitUniversalMenus_Tests.debug.xcconfig */,
 				EFA793FCB466C80B8475C6CD /* Pods-SpriteKitUniversalMenus_Tests.release.xcconfig */,
+				FA129F10A4F5B433901F815C /* Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig */,
+				AC0622BC72433D81042E418C /* Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig */,
+				648843280917521ADF88A02E /* Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig */,
+				B442BBCE5C213B50F05CFEB9 /* Pods-SpriteKitUniversalMenus-Mac.release.xcconfig */,
+				D46ED9A9D7A2538F8B7A24CC /* Pods-SpriteKitUniversalMenus-iOS.debug.xcconfig */,
+				D0A42F1FD6587BBCB600042D /* Pods-SpriteKitUniversalMenus-iOS.release.xcconfig */,
+				7A4993B4CF6239CF21BE54E3 /* Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig */,
+				F22C18BD94B25AE911B4D102 /* Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D3442BB1C405B8700EA28BF /* SpriteKiUniversalMenus-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				8D3442BC1C405B8700EA28BF /* AppDelegate.h */,
+				8D3442BD1C405B8700EA28BF /* AppDelegate.m */,
+				8D3442C21C405B8700EA28BF /* ViewController.h */,
+				8D3442C31C405B8700EA28BF /* ViewController.m */,
+				8D3442C51C405B8700EA28BF /* Assets.xcassets */,
+				8D3442C71C405B8700EA28BF /* Main.storyboard */,
+				8D3442CA1C405B8700EA28BF /* Info.plist */,
+				8D3442BF1C405B8700EA28BF /* Supporting Files */,
+			);
+			path = "SpriteKiUniversalMenus-Mac";
+			sourceTree = "<group>";
+		};
+		8D3442BF1C405B8700EA28BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D3442C01C405B8700EA28BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D3442D21C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D3442D31C405B8700EA28BF /* SpriteKiUniversalMenus_MacUITests.m */,
+				8D3442D51C405B8700EA28BF /* Info.plist */,
+			);
+			path = "SpriteKiUniversalMenus-MacUITests";
+			sourceTree = "<group>";
+		};
+		8D3442DC1C40615800EA28BF /* SpriteKitUniversalMenus-Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8D3442DD1C40616D00EA28BF /* DZASpriteKitMenuScene.h */,
+				8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */,
+			);
+			path = "SpriteKitUniversalMenus-Shared";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* SpriteKitUniversalMenus_Example */ = {
+		6003F589195388D20070C39A /* SpriteKitUniversalMenus-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus_Example" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-iOS" */;
 			buildPhases = (
 				45D42CAC8E08D04A0D052F80 /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
@@ -216,14 +332,14 @@
 			);
 			dependencies = (
 			);
-			name = SpriteKitUniversalMenus_Example;
+			name = "SpriteKitUniversalMenus-iOS";
 			productName = SpriteKitUniversalVerticalMenus;
 			productReference = 6003F58A195388D20070C39A /* SpriteKitUniversalMenus_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* SpriteKitUniversalMenus_Tests */ = {
+		6003F5AD195388D20070C39A /* SpriteKitUniversalMenus_Tests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus_Tests" */;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus_Tests-iOS" */;
 			buildPhases = (
 				D3072583F51D9BB514922384 /* Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
@@ -237,10 +353,50 @@
 			dependencies = (
 				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
-			name = SpriteKitUniversalMenus_Tests;
+			name = "SpriteKitUniversalMenus_Tests-iOS";
 			productName = SpriteKitUniversalVerticalMenusTests;
 			productReference = 6003F5AE195388D20070C39A /* SpriteKitUniversalMenus_Example.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D3442B91C405B8700EA28BF /* SpriteKitUniversalMenus-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D3442D61C405B8700EA28BF /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-Mac" */;
+			buildPhases = (
+				BDBB5682013C756AC60BB707 /* Check Pods Manifest.lock */,
+				8D3442B61C405B8700EA28BF /* Sources */,
+				8D3442B71C405B8700EA28BF /* Frameworks */,
+				8D3442B81C405B8700EA28BF /* Resources */,
+				8E5F3B2EB72A0667B0B94236 /* Embed Pods Frameworks */,
+				C35BC55404884A4FCD021FA6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpriteKitUniversalMenus-Mac";
+			productName = "SpriteKiUniversalMenus-Mac";
+			productReference = 8D3442BA1C405B8700EA28BF /* SpriteKitUniversalMenus-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D3442CE1C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D3442D91C405B8700EA28BF /* Build configuration list for PBXNativeTarget "SpriteKiUniversalMenus-MacUITests" */;
+			buildPhases = (
+				DC4E8B1870E29DFEDBF9B48C /* Check Pods Manifest.lock */,
+				8D3442CB1C405B8700EA28BF /* Sources */,
+				8D3442CC1C405B8700EA28BF /* Frameworks */,
+				8D3442CD1C405B8700EA28BF /* Resources */,
+				030C78D91F1F18F8EBE033DC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D3442D11C405B8700EA28BF /* PBXTargetDependency */,
+			);
+			name = "SpriteKiUniversalMenus-MacUITests";
+			productName = "SpriteKiUniversalMenus-MacUITests";
+			productReference = 8D3442CF1C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -258,6 +414,13 @@
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
+					8D3442B91C405B8700EA28BF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8D3442CE1C405B8700EA28BF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8D3442B91C405B8700EA28BF;
+					};
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "SpriteKitUniversalMenus" */;
@@ -273,8 +436,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* SpriteKitUniversalMenus_Example */,
-				6003F5AD195388D20070C39A /* SpriteKitUniversalMenus_Tests */,
+				6003F589195388D20070C39A /* SpriteKitUniversalMenus-iOS */,
+				6003F5AD195388D20070C39A /* SpriteKitUniversalMenus_Tests-iOS */,
+				8D3442B91C405B8700EA28BF /* SpriteKitUniversalMenus-Mac */,
+				8D3442CE1C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,9 +463,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D3442B81C405B8700EA28BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3442C61C405B8700EA28BF /* Assets.xcassets in Resources */,
+				8D3442C91C405B8700EA28BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3442CD1C405B8700EA28BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		030C78D91F1F18F8EBE033DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKiUniversalMenus-MacUITests/Pods-SpriteKiUniversalMenus-MacUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1F6AAEC172AE394A748E19A2 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,7 +509,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Example/Pods-SpriteKitUniversalMenus_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-iOS/Pods-SpriteKitUniversalMenus-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		41AA5AFD3E1CD77A058D9512 /* Embed Pods Frameworks */ = {
@@ -328,7 +524,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests/Pods-SpriteKitUniversalMenus_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests-iOS/Pods-SpriteKitUniversalMenus_Tests-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		45D42CAC8E08D04A0D052F80 /* Check Pods Manifest.lock */ = {
@@ -358,7 +554,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Example/Pods-SpriteKitUniversalMenus_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-iOS/Pods-SpriteKitUniversalMenus-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8A384E3F7059DB2AAB5A4925 /* Copy Pods Resources */ = {
@@ -373,10 +569,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests/Pods-SpriteKitUniversalMenus_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests-iOS/Pods-SpriteKitUniversalMenus_Tests-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E5F3B2EB72A0667B0B94236 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-Mac/Pods-SpriteKitUniversalMenus-Mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDBB5682013C756AC60BB707 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C35BC55404884A4FCD021FA6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-Mac/Pods-SpriteKitUniversalMenus-Mac-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D3072583F51D9BB514922384 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC4E8B1870E29DFEDBF9B48C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,7 +657,7 @@
 				6003F59E195388D20070C39A /* DZAAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DZAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				8D57EBD21C3B346000FCA23D /* DZASpriteKitMenuScene.m in Sources */,
+				8D3442DF1C40616D00EA28BF /* DZASpriteKitMenuScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,13 +669,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D3442B61C405B8700EA28BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3442C41C405B8700EA28BF /* ViewController.m in Sources */,
+				8D3442C11C405B8700EA28BF /* main.m in Sources */,
+				8D3442BE1C405B8700EA28BF /* AppDelegate.m in Sources */,
+				8D3442E01C40616D00EA28BF /* DZASpriteKitMenuScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3442CB1C405B8700EA28BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3442D41C405B8700EA28BF /* SpriteKiUniversalMenus_MacUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* SpriteKitUniversalMenus_Example */;
+			target = 6003F589195388D20070C39A /* SpriteKitUniversalMenus-iOS */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		8D3442D11C405B8700EA28BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D3442B91C405B8700EA28BF /* SpriteKitUniversalMenus-Mac */;
+			targetProxy = 8D3442D01C405B8700EA28BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -438,6 +718,14 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8D3442C71C405B8700EA28BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D3442C81C405B8700EA28BF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -518,7 +806,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 931659F72BDEE07B1746B60A /* Pods-SpriteKitUniversalMenus_Example.debug.xcconfig */;
+			baseConfigurationReference = D46ED9A9D7A2538F8B7A24CC /* Pods-SpriteKitUniversalMenus-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -546,7 +834,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18842F1567DEDC73A391B970 /* Pods-SpriteKitUniversalMenus_Example.release.xcconfig */;
+			baseConfigurationReference = D0A42F1FD6587BBCB600042D /* Pods-SpriteKitUniversalMenus-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -574,7 +862,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68D33C1E64AB79C4DFA5AF2C /* Pods-SpriteKitUniversalMenus_Tests.debug.xcconfig */;
+			baseConfigurationReference = 7A4993B4CF6239CF21BE54E3 /* Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -598,7 +886,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFA793FCB466C80B8475C6CD /* Pods-SpriteKitUniversalMenus_Tests.release.xcconfig */;
+			baseConfigurationReference = F22C18BD94B25AE911B4D102 /* Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -616,6 +904,94 @@
 			};
 			name = Release;
 		};
+		8D3442D71C405B8700EA28BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648843280917521ADF88A02E /* Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SpriteKiUniversalMenus-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.dzamir.SpriteKiUniversalMenus-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8D3442D81C405B8700EA28BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B442BBCE5C213B50F05CFEB9 /* Pods-SpriteKitUniversalMenus-Mac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SpriteKiUniversalMenus-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.dzamir.SpriteKiUniversalMenus-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8D3442DA1C405B8700EA28BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA129F10A4F5B433901F815C /* Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SpriteKiUniversalMenus-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.dzamir.SpriteKiUniversalMenus-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = "SpriteKiUniversalMenus-Mac";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8D3442DB1C405B8700EA28BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0622BC72433D81042E418C /* Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SpriteKiUniversalMenus-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.dzamir.SpriteKiUniversalMenus-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = "SpriteKiUniversalMenus-Mac";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,7 +1004,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus_Example" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
@@ -637,11 +1013,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus_Tests" */ = {
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus_Tests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D3442D61C405B8700EA28BF /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3442D71C405B8700EA28BF /* Debug */,
+				8D3442D81C405B8700EA28BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D3442D91C405B8700EA28BF /* Build configuration list for PBXNativeTarget "SpriteKiUniversalMenus-MacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3442DA1C405B8700EA28BF /* Debug */,
+				8D3442DB1C405B8700EA28BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

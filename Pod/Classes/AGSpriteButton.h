@@ -8,6 +8,16 @@
 
 #import <SpriteKit/SpriteKit.h>
 
+#if TARGET_OS_IPHONE
+    #define DZAFont UIFont
+    #define DZATouch UITouch
+    #define DZAColor UIColor
+#else
+    #define DZAFont NSFont
+    #define DZATouch NSTouch
+    #define DZAColor NSColor
+#endif
+
 typedef NS_OPTIONS(NSInteger, AGButtonControlEvent)
 {
     AGButtonControlEventTouchDown = 1,  //When button is held down.
@@ -44,7 +54,7 @@ typedef NS_OPTIONS(NSInteger, AGButtonControlEvent)
 
 //LABEL METHOD
 
--(void)setLabelWithText:(NSString*)text andFont:(UIFont*)font withColor:(SKColor*)fontColor;
+-(void)setLabelWithText:(NSString*)text andFont:(DZAFont*)font withColor:(SKColor*)fontColor;
 
 
 //TARGET HANDLER METHODS (Similar to UIButton)
