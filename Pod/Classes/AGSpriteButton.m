@@ -160,7 +160,7 @@
 
 #pragma mark - TOUCH DELEGATES
 
-#ifndef TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -230,6 +230,53 @@
             [self transformForTouchUp];
             
         }
+    }
+}
+
+#else
+
+-(void)mouseDown:(NSEvent *) event
+{
+    if (self.exclusiveTouch)
+    {
+        [self controlEventOccured:AGButtonControlEventTouchDown];
+        [self transformForTouchDown];
+    }
+}
+
+-(void) mouseDragged:(NSEvent *)event
+{
+    if (self.exclusiveTouch)
+    {
+        CGPoint touchPoint = [event locationInNode:self];
+        float lenX = self.size.width / 2;
+        float lenY = self.size.height / 2;
+        
+        if ((touchPoint.x > lenX + 10)|| (touchPoint.x < (-lenX - 10)) || (touchPoint.y > lenY + 10) || (touchPoint.y < (-lenY - 10)))
+        {
+            [self mouseExited:event];
+        }
+    }
+}
+
+-(void) mouseUp:(NSEvent *)event
+{
+    if (self.exclusiveTouch)
+    {
+        //touchupinside
+        [self controlEventOccured:AGButtonControlEventTouchUp];
+        [self controlEventOccured:AGButtonControlEventTouchUpInside];
+        
+        [self transformForTouchUp];
+    }
+
+}
+
+-(void) mouseExited:(NSEvent *) event
+{
+    if (self.exclusiveTouch)
+    {
+        [self transformForTouchUp];
     }
 }
 
