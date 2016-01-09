@@ -7,16 +7,7 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-
-#if TARGET_OS_IPHONE
-    #define DZAFont UIFont
-    #define DZATouch UITouch
-    #define DZAColor UIColor
-#else
-    #define DZAFont NSFont
-    #define DZATouch NSTouch
-    #define DZAColor NSColor
-#endif
+#import "Bridges.h"
 
 typedef NS_OPTIONS(NSInteger, AGButtonControlEvent)
 {

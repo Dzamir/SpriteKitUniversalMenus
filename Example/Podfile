@@ -9,6 +9,10 @@ target 'SpriteKitUniversalMenus-Mac' do
     pod "SpriteKitUniversalMenus", :path => "../"
 end
 
+target 'SpriteKitUniversalMenus-tvOS' do
+    pod "SpriteKitUniversalMenus", :path => "../"
+end
+
 target 'SpriteKitUniversalMenus_Tests-iOS' do
   pod "SpriteKitUniversalMenus", :path => "../"
 
@@ -16,5 +20,9 @@ target 'SpriteKitUniversalMenus_Tests-iOS' do
 end
 
 target 'SpriteKiUniversalMenus-MacUITests' do
+    pod "SpriteKitUniversalMenus", :path => "../"
+end
+
+target 'SpriteKitUniversalMenus-tvOSUITests' do
     pod "SpriteKitUniversalMenus", :path => "../"
 end

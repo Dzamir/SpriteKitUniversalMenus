@@ -1,0 +1,6 @@
+framework module SpriteKitUniversalMenus {
+  umbrella header "Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-umbrella.h"
+
+  export *
+  module * { export * }
+}

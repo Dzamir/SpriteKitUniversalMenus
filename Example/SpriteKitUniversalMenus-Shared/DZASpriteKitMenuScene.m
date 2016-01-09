@@ -15,6 +15,17 @@
 
 @end
 
+#if TARGET_OS_IPHONE
+#define DZAFont UIFont
+#define DZATouch UITouch
+#define DZAColor UIColor
+#else
+#define DZAFont NSFont
+#define DZATouch NSTouch
+#define DZAColor NSColor
+#endif
+
+
 @implementation DZASpriteKitMenuScene
 
 -(void) addMenuVoiceWithText:(NSString *) text y:(CGFloat) y

@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		249D5ECD46781C603C6D46B9 /* Pods_SpriteKitUniversalMenus_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B526B693BD1F5D0CC7428796 /* Pods_SpriteKitUniversalMenus_Mac.framework */; };
 		32C3E30DBAD06E87B7921B62 /* Pods_SpriteKitUniversalMenus_Tests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1355F32BDAF911D78586F6 /* Pods_SpriteKitUniversalMenus_Tests_iOS.framework */; };
+		3B6A530B15B01E3E8E6851F9 /* Pods_SpriteKitUniversalMenus_tvOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300857CB099AC7F889A33FC0 /* Pods_SpriteKitUniversalMenus_tvOSUITests.framework */; };
 		3D1E713546E69FDB483B1230 /* Pods_SpriteKiUniversalMenus_MacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82E9FD8BA97B4DC838579F5 /* Pods_SpriteKiUniversalMenus_MacUITests.framework */; };
+		40827AA1F511F5F6724CA5B0 /* Pods_SpriteKitUniversalMenus_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46EA3C25C514550AA8383A3 /* Pods_SpriteKitUniversalMenus_tvOS.framework */; };
 		55401BA3A46FD811CB28A7BE /* Pods_SpriteKitUniversalMenus_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4FCF444E2072CDD4057099 /* Pods_SpriteKitUniversalMenus_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -33,6 +35,16 @@
 		8D3442D41C405B8700EA28BF /* SpriteKiUniversalMenus_MacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442D31C405B8700EA28BF /* SpriteKiUniversalMenus_MacUITests.m */; };
 		8D3442DF1C40616D00EA28BF /* DZASpriteKitMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */; };
 		8D3442E01C40616D00EA28BF /* DZASpriteKitMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */; };
+		8D3442E91C40EC8300EA28BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442E81C40EC8300EA28BF /* main.m */; };
+		8D3442EC1C40EC8300EA28BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442EB1C40EC8300EA28BF /* AppDelegate.m */; };
+		8D3442EF1C40EC8300EA28BF /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442EE1C40EC8300EA28BF /* GameScene.m */; };
+		8D3442F11C40EC8300EA28BF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8D3442F01C40EC8300EA28BF /* GameScene.sks */; };
+		8D3442F41C40EC8300EA28BF /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442F31C40EC8300EA28BF /* GameViewController.m */; };
+		8D3442F61C40EC8300EA28BF /* Game.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3442F51C40EC8300EA28BF /* Game.xcassets */; };
+		8D3442F91C40EC8300EA28BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3442F71C40EC8300EA28BF /* Main.storyboard */; };
+		8D3442FB1C40EC8300EA28BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3442FA1C40EC8300EA28BF /* Assets.xcassets */; };
+		8D3443061C40EC8300EA28BF /* SpriteKitUniversalMenus_tvOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3443051C40EC8300EA28BF /* SpriteKitUniversalMenus_tvOSUITests.m */; };
+		8D34430E1C40ECA400EA28BF /* DZASpriteKitMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */; };
 		94819CC6357BECDDDB711032 /* Pods_SpriteKitUniversalMenus_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56404387098420D819668F02 /* Pods_SpriteKitUniversalMenus_iOS.framework */; };
 		DB069EF72381CC33F459C95F /* Pods_SpriteKitUniversalMenus_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BD61A987814F466383A593 /* Pods_SpriteKitUniversalMenus_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -52,10 +64,18 @@
 			remoteGlobalIDString = 8D3442B91C405B8700EA28BF;
 			remoteInfo = "SpriteKiUniversalMenus-Mac";
 		};
+		8D3443021C40EC8300EA28BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D3442E41C40EC8300EA28BF;
+			remoteInfo = "SpriteKitUniversalMenus-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18842F1567DEDC73A391B970 /* Pods-SpriteKitUniversalMenus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Example/Pods-SpriteKitUniversalMenus_Example.release.xcconfig"; sourceTree = "<group>"; };
+		300857CB099AC7F889A33FC0 /* Pods_SpriteKitUniversalMenus_tvOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_tvOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56404387098420D819668F02 /* Pods_SpriteKitUniversalMenus_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* SpriteKitUniversalMenus_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitUniversalMenus_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +96,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		60719D6653963630BBC7A6DE /* Pods-SpriteKitUniversalMenus-tvOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-tvOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOSUITests/Pods-SpriteKitUniversalMenus-tvOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		648843280917521ADF88A02E /* Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-Mac/Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		68D33C1E64AB79C4DFA5AF2C /* Pods-SpriteKitUniversalMenus_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests/Pods-SpriteKitUniversalMenus_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4993B4CF6239CF21BE54E3 /* Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests-iOS/Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,13 +115,32 @@
 		8D3442D51C405B8700EA28BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D3442DD1C40616D00EA28BF /* DZASpriteKitMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZASpriteKitMenuScene.h; sourceTree = "<group>"; };
 		8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZASpriteKitMenuScene.m; sourceTree = "<group>"; };
+		8D3442E51C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteKitUniversalMenus-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3442E81C40EC8300EA28BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D3442EA1C40EC8300EA28BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8D3442EB1C40EC8300EA28BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8D3442ED1C40EC8300EA28BF /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		8D3442EE1C40EC8300EA28BF /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		8D3442F01C40EC8300EA28BF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		8D3442F21C40EC8300EA28BF /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		8D3442F31C40EC8300EA28BF /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		8D3442F51C40EC8300EA28BF /* Game.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Game.xcassets; sourceTree = "<group>"; };
+		8D3442F81C40EC8300EA28BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D3442FA1C40EC8300EA28BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D3442FC1C40EC8300EA28BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3443011C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpriteKitUniversalMenus-tvOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3443051C40EC8300EA28BF /* SpriteKitUniversalMenus_tvOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitUniversalMenus_tvOSUITests.m; sourceTree = "<group>"; };
+		8D3443071C40EC8300EA28BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA2AC55C65C6BB08BFFC5A6 /* Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOS/Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9225FA3DF4AA269B700B3BBF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		931659F72BDEE07B1746B60A /* Pods-SpriteKitUniversalMenus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Example/Pods-SpriteKitUniversalMenus_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A82E9FD8BA97B4DC838579F5 /* Pods_SpriteKiUniversalMenus_MacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKiUniversalMenus_MacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0622BC72433D81042E418C /* Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKiUniversalMenus-MacUITests/Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AEE630D6B9E4E3263ADEA281 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B442BBCE5C213B50F05CFEB9 /* Pods-SpriteKitUniversalMenus-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-Mac/Pods-SpriteKitUniversalMenus-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		B46EA3C25C514550AA8383A3 /* Pods_SpriteKitUniversalMenus_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B526B693BD1F5D0CC7428796 /* Pods_SpriteKitUniversalMenus_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC216E9ED79336CC265AF3F /* Pods-SpriteKitUniversalMenus-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOS/Pods-SpriteKitUniversalMenus-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		D0A42F1FD6587BBCB600042D /* Pods-SpriteKitUniversalMenus-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-iOS/Pods-SpriteKitUniversalMenus-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D46ED9A9D7A2538F8B7A24CC /* Pods-SpriteKitUniversalMenus-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-iOS/Pods-SpriteKitUniversalMenus-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D9C42124DD63F145D0C5CEA6 /* SpriteKitUniversalMenus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpriteKitUniversalMenus.podspec; path = ../SpriteKitUniversalMenus.podspec; sourceTree = "<group>"; };
@@ -109,6 +149,7 @@
 		ED1355F32BDAF911D78586F6 /* Pods_SpriteKitUniversalMenus_Tests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_Tests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA793FCB466C80B8475C6CD /* Pods-SpriteKitUniversalMenus_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests/Pods-SpriteKitUniversalMenus_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F22C18BD94B25AE911B4D102 /* Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests-iOS/Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F32AEDBAEF185C241DEFB9FC /* Pods-SpriteKitUniversalMenus-tvOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-tvOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOSUITests/Pods-SpriteKitUniversalMenus-tvOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA129F10A4F5B433901F815C /* Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKiUniversalMenus-MacUITests/Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +194,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D3442E21C40EC8300EA28BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40827AA1F511F5F6724CA5B0 /* Pods_SpriteKitUniversalMenus_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3442FE1C40EC8300EA28BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6A530B15B01E3E8E6851F9 /* Pods_SpriteKitUniversalMenus_tvOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -165,6 +222,8 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				8D3442BB1C405B8700EA28BF /* SpriteKiUniversalMenus-Mac */,
 				8D3442D21C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests */,
+				8D3442E61C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOS */,
+				8D3443041C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOSUITests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				88F59E098649FA033E812BF0 /* Pods */,
@@ -178,6 +237,8 @@
 				6003F5AE195388D20070C39A /* SpriteKitUniversalMenus_Example.xctest */,
 				8D3442BA1C405B8700EA28BF /* SpriteKitUniversalMenus-Mac.app */,
 				8D3442CF1C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests.xctest */,
+				8D3442E51C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOS.app */,
+				8D3443011C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +256,8 @@
 				B526B693BD1F5D0CC7428796 /* Pods_SpriteKitUniversalMenus_Mac.framework */,
 				56404387098420D819668F02 /* Pods_SpriteKitUniversalMenus_iOS.framework */,
 				ED1355F32BDAF911D78586F6 /* Pods_SpriteKitUniversalMenus_Tests_iOS.framework */,
+				B46EA3C25C514550AA8383A3 /* Pods_SpriteKitUniversalMenus_tvOS.framework */,
+				300857CB099AC7F889A33FC0 /* Pods_SpriteKitUniversalMenus_tvOSUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -269,6 +332,10 @@
 				D0A42F1FD6587BBCB600042D /* Pods-SpriteKitUniversalMenus-iOS.release.xcconfig */,
 				7A4993B4CF6239CF21BE54E3 /* Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig */,
 				F22C18BD94B25AE911B4D102 /* Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig */,
+				8DA2AC55C65C6BB08BFFC5A6 /* Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig */,
+				BBC216E9ED79336CC265AF3F /* Pods-SpriteKitUniversalMenus-tvOS.release.xcconfig */,
+				60719D6653963630BBC7A6DE /* Pods-SpriteKitUniversalMenus-tvOSUITests.debug.xcconfig */,
+				F32AEDBAEF185C241DEFB9FC /* Pods-SpriteKitUniversalMenus-tvOSUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -312,6 +379,42 @@
 				8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */,
 			);
 			path = "SpriteKitUniversalMenus-Shared";
+			sourceTree = "<group>";
+		};
+		8D3442E61C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				8D3442EA1C40EC8300EA28BF /* AppDelegate.h */,
+				8D3442EB1C40EC8300EA28BF /* AppDelegate.m */,
+				8D3442ED1C40EC8300EA28BF /* GameScene.h */,
+				8D3442EE1C40EC8300EA28BF /* GameScene.m */,
+				8D3442F01C40EC8300EA28BF /* GameScene.sks */,
+				8D3442F21C40EC8300EA28BF /* GameViewController.h */,
+				8D3442F31C40EC8300EA28BF /* GameViewController.m */,
+				8D3442F51C40EC8300EA28BF /* Game.xcassets */,
+				8D3442F71C40EC8300EA28BF /* Main.storyboard */,
+				8D3442FA1C40EC8300EA28BF /* Assets.xcassets */,
+				8D3442FC1C40EC8300EA28BF /* Info.plist */,
+				8D3442E71C40EC8300EA28BF /* Supporting Files */,
+			);
+			path = "SpriteKitUniversalMenus-tvOS";
+			sourceTree = "<group>";
+		};
+		8D3442E71C40EC8300EA28BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D3442E81C40EC8300EA28BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D3443041C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D3443051C40EC8300EA28BF /* SpriteKitUniversalMenus_tvOSUITests.m */,
+				8D3443071C40EC8300EA28BF /* Info.plist */,
+			);
+			path = "SpriteKitUniversalMenus-tvOSUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +501,46 @@
 			productReference = 8D3442CF1C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8D3442E41C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D34430C1C40EC8400EA28BF /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-tvOS" */;
+			buildPhases = (
+				5EA69C04A7D2F55935156DD7 /* Check Pods Manifest.lock */,
+				8D3442E11C40EC8300EA28BF /* Sources */,
+				8D3442E21C40EC8300EA28BF /* Frameworks */,
+				8D3442E31C40EC8300EA28BF /* Resources */,
+				4EC9F4CF495C635F2CCF5171 /* Embed Pods Frameworks */,
+				62EA6262BAD4E26EE01E2F9A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpriteKitUniversalMenus-tvOS";
+			productName = "SpriteKitUniversalMenus-tvOS";
+			productReference = 8D3442E51C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D3443001C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D34430D1C40EC8400EA28BF /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-tvOSUITests" */;
+			buildPhases = (
+				1AB661E2E98BC2A822C604BE /* Check Pods Manifest.lock */,
+				8D3442FD1C40EC8300EA28BF /* Sources */,
+				8D3442FE1C40EC8300EA28BF /* Frameworks */,
+				8D3442FF1C40EC8300EA28BF /* Resources */,
+				3BB3FCF18BE33AE347D480FD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D3443031C40EC8300EA28BF /* PBXTargetDependency */,
+			);
+			name = "SpriteKitUniversalMenus-tvOSUITests";
+			productName = "SpriteKitUniversalMenus-tvOSUITests";
+			productReference = 8D3443011C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -421,6 +564,13 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 8D3442B91C405B8700EA28BF;
 					};
+					8D3442E41C40EC8300EA28BF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8D3443001C40EC8300EA28BF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8D3442E41C40EC8300EA28BF;
+					};
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "SpriteKitUniversalMenus" */;
@@ -440,6 +590,8 @@
 				6003F5AD195388D20070C39A /* SpriteKitUniversalMenus_Tests-iOS */,
 				8D3442B91C405B8700EA28BF /* SpriteKitUniversalMenus-Mac */,
 				8D3442CE1C405B8700EA28BF /* SpriteKiUniversalMenus-MacUITests */,
+				8D3442E41C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOS */,
+				8D3443001C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -479,6 +631,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D3442E31C40EC8300EA28BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3442F91C40EC8300EA28BF /* Main.storyboard in Resources */,
+				8D3442F11C40EC8300EA28BF /* GameScene.sks in Resources */,
+				8D3442FB1C40EC8300EA28BF /* Assets.xcassets in Resources */,
+				8D3442F61C40EC8300EA28BF /* Game.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3442FF1C40EC8300EA28BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -497,6 +667,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKiUniversalMenus-MacUITests/Pods-SpriteKiUniversalMenus-MacUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1AB661E2E98BC2A822C604BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		1F6AAEC172AE394A748E19A2 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,6 +695,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-iOS/Pods-SpriteKitUniversalMenus-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BB3FCF18BE33AE347D480FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOSUITests/Pods-SpriteKitUniversalMenus-tvOSUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		41AA5AFD3E1CD77A058D9512 /* Embed Pods Frameworks */ = {
@@ -540,6 +740,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4EC9F4CF495C635F2CCF5171 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOS/Pods-SpriteKitUniversalMenus-tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EA69C04A7D2F55935156DD7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62EA6262BAD4E26EE01E2F9A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOS/Pods-SpriteKitUniversalMenus-tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		693E2CE5E9D47E3F921370F3 /* Copy Pods Resources */ = {
@@ -688,6 +933,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D3442E11C40EC8300EA28BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3442F41C40EC8300EA28BF /* GameViewController.m in Sources */,
+				8D3442EC1C40EC8300EA28BF /* AppDelegate.m in Sources */,
+				8D34430E1C40ECA400EA28BF /* DZASpriteKitMenuScene.m in Sources */,
+				8D3442EF1C40EC8300EA28BF /* GameScene.m in Sources */,
+				8D3442E91C40EC8300EA28BF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3442FD1C40EC8300EA28BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3443061C40EC8300EA28BF /* SpriteKitUniversalMenus_tvOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -700,6 +965,11 @@
 			isa = PBXTargetDependency;
 			target = 8D3442B91C405B8700EA28BF /* SpriteKitUniversalMenus-Mac */;
 			targetProxy = 8D3442D01C405B8700EA28BF /* PBXContainerItemProxy */;
+		};
+		8D3443031C40EC8300EA28BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D3442E41C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOS */;
+			targetProxy = 8D3443021C40EC8300EA28BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -724,6 +994,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				8D3442C81C405B8700EA28BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D3442F71C40EC8300EA28BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D3442F81C40EC8300EA28BF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -812,7 +1090,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpriteKitUniversalMenus/SpriteKitUniversalMenus-Prefix.pch";
+				GCC_PREFIX_HEADER = "SpriteKitUniversalMenus-iOS/SpriteKitUniversalMenus-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SpriteKitUniversalMenus-iOS/SpriteKitUniversalMenus-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MODULE_NAME = ExampleApp;
@@ -840,7 +1118,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpriteKitUniversalMenus/SpriteKitUniversalMenus-Prefix.pch";
+				GCC_PREFIX_HEADER = "SpriteKitUniversalMenus-iOS/SpriteKitUniversalMenus-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SpriteKitUniversalMenus-iOS/SpriteKitUniversalMenus-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MODULE_NAME = ExampleApp;
@@ -992,6 +1270,90 @@
 			};
 			name = Release;
 		};
+		8D3443081C40EC8400EA28BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA2AC55C65C6BB08BFFC5A6 /* Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SpriteKitUniversalMenus-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.dzamir.SpriteKitUniversalMenus-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		8D3443091C40EC8400EA28BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC216E9ED79336CC265AF3F /* Pods-SpriteKitUniversalMenus-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SpriteKitUniversalMenus-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.dzamir.SpriteKitUniversalMenus-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		8D34430A1C40EC8400EA28BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60719D6653963630BBC7A6DE /* Pods-SpriteKitUniversalMenus-tvOSUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SpriteKitUniversalMenus-tvOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.dzamir.SpriteKitUniversalMenus-tvOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = "SpriteKitUniversalMenus-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8D34430B1C40EC8400EA28BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F32AEDBAEF185C241DEFB9FC /* Pods-SpriteKitUniversalMenus-tvOSUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SpriteKitUniversalMenus-tvOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.dzamir.SpriteKitUniversalMenus-tvOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = "SpriteKitUniversalMenus-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1036,6 +1398,24 @@
 			buildConfigurations = (
 				8D3442DA1C405B8700EA28BF /* Debug */,
 				8D3442DB1C405B8700EA28BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D34430C1C40EC8400EA28BF /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3443081C40EC8400EA28BF /* Debug */,
+				8D3443091C40EC8400EA28BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D34430D1C40EC8400EA28BF /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-tvOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D34430A1C40EC8400EA28BF /* Debug */,
+				8D34430B1C40EC8400EA28BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

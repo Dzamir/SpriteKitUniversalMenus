@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SpriteKitUniversalMenus_tvOSUITests_SpriteKitUniversalMenus : NSObject
+@end
+@implementation PodsDummy_Pods_SpriteKitUniversalMenus_tvOSUITests_SpriteKitUniversalMenus
+@end
