@@ -9,13 +9,6 @@
 #import <SpriteKit/SpriteKit.h>
 #import "DZAMenuVoiceNode.h"
 
-typedef enum : NSUInteger {
-    DZAMenuDirectionUp,
-    DZAMenuDirectionRight,
-    DZAMenuDirectionDown,
-    DZAMenuDirectionLeft
-} DZAMenuDirection;
-
 @interface DZAMenuNode : SKNode
 
 @property (readwrite, nonatomic, getter=isHorizontalMenu) BOOL horizontalMenu;

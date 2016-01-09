@@ -233,7 +233,43 @@
     }
 }
 
-#else
+#elif TARGET_OS_TV
+
+- (void)pressesBegan:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+{
+    if (self.exclusiveTouch)
+    {
+        [self controlEventOccured:AGButtonControlEventTouchDown];
+        [self transformForTouchDown];
+    }
+}
+
+- (void)pressesChanged:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+{
+    if (self.exclusiveTouch)
+    {
+        CGPoint touchPoint = [event locationInNode:self];
+        float lenX = self.size.width / 2;
+        float lenY = self.size.height / 2;
+        
+        if ((touchPoint.x > lenX + 10)|| (touchPoint.x < (-lenX - 10)) || (touchPoint.y > lenY + 10) || (touchPoint.y < (-lenY - 10)))
+        {
+            [self mouseExited:event];
+        }
+    }
+}
+
+- (void)pressesEnded:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+{
+    
+}
+
+- (void)pressesCancelled:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+{
+    
+}
+
+#else 
 
 -(void)mouseDown:(NSEvent *) event
 {

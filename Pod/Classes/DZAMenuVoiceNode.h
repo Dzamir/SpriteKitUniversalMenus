@@ -7,6 +7,15 @@
 //
 
 #import "AGSpriteButton.h"
+#import "Directions.h"
+
+@class DZAMenuVoiceNode;
+
+@protocol DZAMenuVoiceNodeDelegate <NSObject>
+
+-(void) menuVoiceNode:(DZAMenuVoiceNode *) menuVoiceNode didSelectDirection:(DZAMenuDirection) direction;
+
+@end
 
 @interface DZAMenuVoiceNode : AGSpriteButton
 

@@ -15,6 +15,7 @@
     _currentMenuVoice = nil;
     // take the first node as current
     _currentMenuVoice = [self nextMenuVoice];
+    [_currentMenuVoice becomeFirstResponder];
 }
 
 -(NSArray *) menuVoices
