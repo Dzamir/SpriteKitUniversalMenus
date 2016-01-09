@@ -280,6 +280,16 @@
     }
 }
 
+- (void)keyDown:(NSEvent *)theEvent;
+{
+    
+}
+
+- (void)keyUp:(NSEvent *)theEvent;
+{
+    
+}
+
 #endif
 
 #pragma mark - BUTTON TRANSFORM ON SELECTION
