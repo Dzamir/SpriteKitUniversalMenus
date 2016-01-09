@@ -16,4 +16,9 @@ typedef enum : NSUInteger {
     DZAMenuDirectionLeft
 } DZAMenuDirection;
 
+typedef enum : NSUInteger {
+    DZAMenuAxisVertical,
+    DZAMenuAxisHorizontal
+} DZAMenuAxis;
+
 #endif /* Directions_h */

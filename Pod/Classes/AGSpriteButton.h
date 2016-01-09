@@ -8,23 +8,35 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "Bridges.h"
+#import "Directions.h"
 
 typedef NS_OPTIONS(NSInteger, AGButtonControlEvent)
 {
     AGButtonControlEventTouchDown = 1,  //When button is held down.
     AGButtonControlEventTouchUp,        //When button is released.
     AGButtonControlEventTouchUpInside,  //When button is tapped.
-    AGButtonControlEventAllEvents       //Convenience event for deletion of selector, block or action.
+    AGButtonControlEventAllEvents,       //Convenience event for deletion of selector, block or actio
 };
+
+@class AGSpriteButton;
+
+@protocol AGSpriteButtonDelegate <NSObject>
+
+-(void) spriteButton:(AGSpriteButton *) spriteButton didMoveToDirection:(DZAMenuDirection) direction;
+
+@end
+
+#define THREESHOLD 10.0f
 
 
 @interface AGSpriteButton : SKSpriteNode
 
+@property (weak, nonatomic) id<AGSpriteButtonDelegate> delegate;
+@property (readwrite, nonatomic) DZAMenuAxis allowedAxis;
 
 @property (setter = setExclusiveTouch:, getter = isExclusiveTouch) BOOL exclusiveTouch;
 
 @property (strong, nonatomic) SKLabelNode *label;
-
 
 //CLASS METHODS FOR CREATING BUTTON
 

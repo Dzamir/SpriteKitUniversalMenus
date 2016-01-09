@@ -13,9 +13,24 @@
 -(void) reloadMenu;
 {
     _currentMenuVoice = nil;
+    for (SKNode * node in self.children)
+    {
+        if ([node isKindOfClass:[DZAMenuVoiceNode class]])
+        {
+            DZAMenuVoiceNode * menuVoiceNode = (DZAMenuVoiceNode *) node;
+            menuVoiceNode.allowedAxis = _allowedAxis;
+            menuVoiceNode.delegate = self;
+        }
+    }
     // take the first node as current
     _currentMenuVoice = [self nextMenuVoice];
     [_currentMenuVoice becomeFirstResponder];
+}
+
+-(void) setAllowedAxis:(DZAMenuAxis)allowedAxis
+{
+    _allowedAxis = allowedAxis;
+    [self reloadMenu];
 }
 
 -(NSArray *) menuVoices
@@ -74,7 +89,7 @@
 
 -(DZAMenuVoiceNode *) moveSelection:(DZAMenuDirection) direction;
 {
-    if (_horizontalMenu)
+    if (_allowedAxis == DZAMenuAxisHorizontal)
     {
         if (direction == DZAMenuDirectionLeft)
         {
@@ -94,6 +109,13 @@
         }
     }
     return _currentMenuVoice;
+}
+
+#pragma mark AGSpriteButtonDelegate
+
+-(void) spriteButton:(AGSpriteButton *) spriteButton didMoveToDirection:(DZAMenuDirection) direction;
+{
+    [self moveSelection:direction];
 }
 
 @end

@@ -9,9 +9,9 @@
 #import <SpriteKit/SpriteKit.h>
 #import "DZAMenuVoiceNode.h"
 
-@interface DZAMenuNode : SKNode
+@interface DZAMenuNode : SKNode <AGSpriteButtonDelegate>
 
-@property (readwrite, nonatomic, getter=isHorizontalMenu) BOOL horizontalMenu;
+@property (readwrite, nonatomic) DZAMenuAxis allowedAxis;
 
 //@property (strong, nonatomic) NSMutableArray * menuVoices;
 @property (strong, nonatomic) DZAMenuVoiceNode * currentMenuVoice;

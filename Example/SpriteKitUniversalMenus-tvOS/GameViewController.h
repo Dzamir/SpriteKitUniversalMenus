@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SpriteKit/SpriteKit.h>
+@import SpriteKit;
+@import GameController;
 
-@interface GameViewController : UIViewController
+@interface GameViewController : GCEventViewController
 
 @end

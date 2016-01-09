@@ -164,6 +164,14 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+#if TARGET_OS_TV
+    if (currentTouch == nil)
+    {
+        currentTouch = [touches anyObject];
+        CGPoint point = [currentTouch locationInNode:self];
+        NSLog(@"position %@", NSStringFromCGPoint(point));
+    }
+#else
     if (self.exclusiveTouch)
     {
         if (currentTouch == nil)
@@ -173,17 +181,79 @@
             [self controlEventOccured:AGButtonControlEventTouchDown];
             
             [self transformForTouchDown];
-            
         }
         else
         {
             //current touch occupied
         }
     }
+#endif
+}
+
+-(CGFloat) horizontalThreeshold
+{
+    if (_allowedAxis == DZAMenuAxisHorizontal)
+    {
+        return THREESHOLD;
+    } else
+    {
+        return THREESHOLD / 4;
+    }
+}
+
+-(CGFloat) verticalThreeshold
+{
+    if (_allowedAxis == DZAMenuAxisVertical)
+    {
+        return THREESHOLD;
+    } else
+    {
+        return THREESHOLD / 4;
+    }
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
+#if TARGET_OS_TV
+    currentTouch = [touches anyObject];
+    CGPoint point = [currentTouch locationInNode:self];
+    point = CGPointMake(point.x / 30.0f, point.y / 30.0f);
+    CGFloat horizontalThreeshold = [self horizontalThreeshold];
+    CGFloat verticalThreeshold = [self verticalThreeshold];
+    if (point.x > horizontalThreeshold)
+    {
+        point.x = horizontalThreeshold;
+        if (_allowedAxis == DZAMenuAxisHorizontal)
+        {
+            [self.delegate spriteButton:self didMoveToDirection:DZAMenuDirectionRight];
+        }
+    } else if (point.x < -horizontalThreeshold)
+    {
+        point.x = -horizontalThreeshold;
+        if (_allowedAxis == DZAMenuAxisHorizontal)
+        {
+            [self.delegate spriteButton:self didMoveToDirection:DZAMenuDirectionLeft];
+        }
+    }
+    if (point.y > verticalThreeshold)
+    {
+        point.y = verticalThreeshold;
+        if (_allowedAxis == DZAMenuAxisVertical)
+        {
+            [self.delegate spriteButton:self didMoveToDirection:DZAMenuDirectionDown];
+        }
+    } else if (point.y < -verticalThreeshold)
+    {
+        point.y = -verticalThreeshold;
+        if (_allowedAxis == DZAMenuAxisVertical)
+        {
+            [self.delegate spriteButton:self didMoveToDirection:DZAMenuDirectionUp];
+        }
+    }
+    NSLog(@"position %@", NSStringFromCGPoint(point));
+    SKAction * moveAction = [SKAction moveTo:point duration:0.1];
+    [self runAction:moveAction];
+#else
     if (self.exclusiveTouch)
     {
         if ([touches containsObject:currentTouch])
@@ -198,10 +268,15 @@
             }
         }
     }
+#endif
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+#if TARGET_OS_TV
+    SKAction * moveAction = [SKAction moveTo:CGPointMake(0, 0) duration:0.1];
+    [self runAction:moveAction];
+#else
     if (self.exclusiveTouch)
     {
         if ([touches containsObject:currentTouch])
@@ -217,10 +292,16 @@
             
         }
     }
+#endif
 }
 
 -(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
+#if TARGET_OS_TV
+        SKAction * moveAction = [SKAction moveTo:CGPointMake(0, 0) duration:0.1];
+        [self runAction:moveAction];
+#else
+    
     if (self.exclusiveTouch)
     {
         if ([touches containsObject:currentTouch])
@@ -231,45 +312,10 @@
             
         }
     }
+#endif
 }
 
-#elif TARGET_OS_TV
-
-- (void)pressesBegan:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    if (self.exclusiveTouch)
-    {
-        [self controlEventOccured:AGButtonControlEventTouchDown];
-        [self transformForTouchDown];
-    }
-}
-
-- (void)pressesChanged:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    if (self.exclusiveTouch)
-    {
-        CGPoint touchPoint = [event locationInNode:self];
-        float lenX = self.size.width / 2;
-        float lenY = self.size.height / 2;
-        
-        if ((touchPoint.x > lenX + 10)|| (touchPoint.x < (-lenX - 10)) || (touchPoint.y > lenY + 10) || (touchPoint.y < (-lenY - 10)))
-        {
-            [self mouseExited:event];
-        }
-    }
-}
-
-- (void)pressesEnded:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    
-}
-
-- (void)pressesCancelled:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    
-}
-
-#else 
+#else
 
 -(void)mouseDown:(NSEvent *) event
 {
@@ -305,7 +351,7 @@
         
         [self transformForTouchUp];
     }
-
+    
 }
 
 -(void) mouseExited:(NSEvent *) event
@@ -327,6 +373,56 @@
 }
 
 #endif
+
+/*
+#if TARGET_OS_TV
+
+- (void)pressesBegan:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+{
+    NSLog(@"BUTTON intercepted Remote Click");
+    if (self.exclusiveTouch)
+    {
+        [self controlEventOccured:AGButtonControlEventTouchDown];
+        [self transformForTouchDown];
+    }
+}
+
+- (void)pressesChanged:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+{
+//    if (self.exclusiveTouch)
+//    {
+//        CGPoint touchPoint = [event locationInNode:self];
+//        float lenX = self.size.width / 2;
+//        float lenY = self.size.height / 2;
+//        
+//        if ((touchPoint.x > lenX + 10)|| (touchPoint.x < (-lenX - 10)) || (touchPoint.y > lenY + 10) || (touchPoint.y < (-lenY - 10)))
+//        {
+//            [self pressesEnded:presses withEvent:event];
+//        }
+//    }
+}
+
+- (void)pressesEnded:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+{
+    if (self.exclusiveTouch)
+    {
+        //touchupinside
+        [self controlEventOccured:AGButtonControlEventTouchUp];
+        [self controlEventOccured:AGButtonControlEventTouchUpInside];
+        
+        [self transformForTouchUp];
+    }
+}
+
+- (void)pressesCancelled:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+{
+    if (self.exclusiveTouch)
+    {
+        [self transformForTouchUp];
+    }
+}
+
+#endif*/
 
 #pragma mark - BUTTON TRANSFORM ON SELECTION
 
