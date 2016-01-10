@@ -3,11 +3,13 @@
 #import "AGSpriteButton.h"
 #import "Bridges.h"
 #import "Directions.h"
+#import "DZAControlInputDirection.h"
 #import "DZAMenuNode.h"
 #import "DZAMenuVoiceNode.h"
 #import "AGSpriteButton.h"
 #import "Bridges.h"
 #import "Directions.h"
+#import "DZAControlInputDirection.h"
 #import "DZAMenuNode.h"
 #import "DZAMenuVoiceNode.h"
 

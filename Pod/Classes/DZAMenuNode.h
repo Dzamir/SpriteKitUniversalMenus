@@ -6,7 +6,8 @@
 //
 //
 
-#import <SpriteKit/SpriteKit.h>
+@import SpriteKit;
+@import GameController;
 #import "DZAMenuVoiceNode.h"
 
 #define THREESHOLD 10.0f
@@ -28,5 +29,7 @@
 -(DZAMenuVoiceNode *) moveSelection:(DZAMenuDirection) direction;
 
 -(void) pressSelection;
+
+-(void) setupGameController:(GCController *) controller;
 
 @end

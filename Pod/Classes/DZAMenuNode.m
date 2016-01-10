@@ -11,7 +11,6 @@
 @interface DZAMenuNode()
 {
 #if TARGET_OS_TV
-    UITouch * currentTouch;
     CGPoint initialTranslation;
 #endif
     UITapGestureRecognizer * tapGestureRecognizer;
@@ -34,15 +33,6 @@
 {
     [self pressSelection];
 }
-
--(void) panGestureRecognized:(UIPanGestureRecognizer *) panGestureRecognizer
-{
-    if (panGestureRecognizer.state == UIGestureRecognizerStateBegan)
-    {
-        [self ]
-    }
-}
-
 
 -(void) reloadMenu;
 {
@@ -146,7 +136,7 @@
     NSArray * menuVoices = [self menuVoices];
     for (DZAMenuVoiceNode * menuNode in menuVoices)
     {
-        if (menuNode.tag < _currentMenuVoice.tag)
+        if ( (menuNode.tag < _currentMenuVoice.tag) && (menuNode.tag > previousMenuVoice.tag) )
         {
             if (previousMenuVoice == nil)
             {
@@ -238,6 +228,68 @@
     }
 }
 
+-(void) panGestureRecognized:(UIPanGestureRecognizer *) _panGestureRecognizer
+{
+    if (_panGestureRecognizer.state == UIGestureRecognizerStateBegan)
+    {
+        initialTranslation = CGPointMake(0, 0);
+        CGPoint point = [_panGestureRecognizer locationInView:self.scene.view];
+        NSLog(@"position %@", NSStringFromCGPoint(point));
+        [self focusMenuVoice:_currentMenuVoice];
+    } else if (_panGestureRecognizer.state == UIGestureRecognizerStateChanged)
+    {
+        CGPoint point = [_panGestureRecognizer locationInView:self.scene.view];
+        CGPoint translationPoint = CGPointMake( (point.x - initialTranslation.x) / 30.0f, (point.y - initialTranslation.y) / 30.0f);
+        CGFloat horizontalThreeshold = [self horizontalThreeshold];
+        CGFloat verticalThreeshold = [self verticalThreeshold];
+        if (translationPoint.x > horizontalThreeshold)
+        {
+            translationPoint.x = horizontalThreeshold;
+            if (_allowedAxis == DZAMenuAxisHorizontal)
+            {
+                initialTranslation = point;
+                [self cancelTouch];
+                [self moveSelection:DZAMenuDirectionRight];
+            }
+        } else if (translationPoint.x < -horizontalThreeshold)
+        {
+            translationPoint.x = -horizontalThreeshold;
+            if (_allowedAxis == DZAMenuAxisHorizontal)
+            {
+                initialTranslation = point;
+                [self cancelTouch];
+                [self moveSelection:DZAMenuDirectionLeft];
+            }
+        }
+        if (translationPoint.y > verticalThreeshold)
+        {
+            translationPoint.y = verticalThreeshold;
+            if (_allowedAxis == DZAMenuAxisVertical)
+            {
+                initialTranslation = point;
+                [self cancelTouch];
+                [self moveSelection:DZAMenuDirectionDown];
+            }
+        } else if (translationPoint.y < -verticalThreeshold)
+        {
+            translationPoint.y = -verticalThreeshold;
+            if (_allowedAxis == DZAMenuAxisVertical)
+            {
+                initialTranslation = point;
+                [self cancelTouch];
+                [self moveSelection:DZAMenuDirectionUp];
+            }
+        }
+        NSLog(@"position %@", NSStringFromCGPoint(point));
+        SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + translationPoint.x, _currentMenuVoice.originalPosition.y - translationPoint.y) duration:0.1];
+        [_currentMenuVoice runAction:moveAction];
+    } else
+    {
+        initialTranslation = CGPointMake(0, 0);
+        [self cancelTouch];
+    }
+}
+/*
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if (currentTouch == nil)
@@ -311,12 +363,12 @@
     initialTranslation = CGPointMake(0, 0);
     [self cancelTouch];
 }
-
+*/
 -(void) cancelTouch
 {
     SKAction * moveAction = [SKAction moveTo:_currentMenuVoice.originalPosition duration:0.5];
     [_currentMenuVoice runAction:moveAction];
-    currentTouch = nil;
+//    currentTouch = nil;
 }
 
 #endif
@@ -337,6 +389,46 @@
         [self runAction:[SKAction playSoundFileNamed:_openSoundName waitForCompletion:NO]];
     }
 #endif
+}
+
+-(void) setupGameController:(GCController *) controller;
+{
+    __weak DZAMenuNode * weakSelf = self;
+    GCControllerButtonValueChangedHandler buttonHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
+    {
+        NSLog(@"BOTTONE");
+    };
+    GCControllerButtonValueChangedHandler leftHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
+    {
+        [self moveSelection:DZAMenuDirectionLeft];
+    };
+    GCControllerButtonValueChangedHandler rightHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
+    {
+        [self moveSelection:DZAMenuDirectionRight];
+    };
+    GCControllerDirectionPadValueChangedHandler handler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
+    {
+        
+    };
+#if TARGET_OS_TV
+    if (controller.microGamepad)
+    {
+        controller.microGamepad.buttonA.pressedChangedHandler = buttonHandler;
+        controller.microGamepad.buttonX.pressedChangedHandler = buttonHandler;
+    }
+#endif
+    if (controller.gamepad)
+    {
+        controller.gamepad.buttonA.pressedChangedHandler = buttonHandler;
+        controller.gamepad.leftShoulder.pressedChangedHandler = leftHandler;
+        controller.gamepad.rightShoulder.pressedChangedHandler = rightHandler;
+    }
+    if (controller.extendedGamepad)
+    {
+        controller.extendedGamepad.buttonA.pressedChangedHandler = buttonHandler;
+        controller.extendedGamepad.leftTrigger.pressedChangedHandler = leftHandler;
+        controller.extendedGamepad.rightTrigger.pressedChangedHandler = rightHandler;
+    }
 }
 
 @end

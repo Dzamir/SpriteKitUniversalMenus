@@ -7,114 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00FF11903255282FB1394441ED3685E4 /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CB827E77B734982B296512CF817BC8 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		031196983D97D25377AEE988FD21B53A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2194269A257C371AFAC6F5F07B87C2 /* Foundation.framework */; };
-		04D1DE17F4507F6E1E1CBC82FDDD1137 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7515FE46D85CCD8199AF92BABDA08F /* DZAMenuVoiceNode.m */; };
-		04F0885DA20B6B7AD9F10B71F1C49272 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E0D795F76AB4ECCCC73963C58253D4 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-dummy.m */; };
-		07F17E49002A97AE9C64F95C6D5FEF2D /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DB89743ECEE175FBAF04842C3F213A /* AGSpriteButton.m */; };
-		0894FF487132D6AC3B31F0D6C63AA0A6 /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D3290995BF2D4D1087B7D649DB05EEDB /* DZAMenuNode.m */; };
-		08C657803E7637270B5E29FAE9CB52AF /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D3290995BF2D4D1087B7D649DB05EEDB /* DZAMenuNode.m */; };
+		04A86CB3CC25EDD39EF68376F6716C81 /* DZAControlInputDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = C612F4C1BBACD726C46C1FE5A04004F8 /* DZAControlInputDirection.m */; };
+		0602E47FC4D8B51529B418F830B7A329 /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5B64FAB69E1B35AC452D95707FDA7 /* DZAMenuNode.m */; };
+		0A201B77AC891F55F71C5D48C78E5A70 /* DZAControlInputDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6658290B1CD79A2CC868B5B5AF6ABEDC /* DZAControlInputDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B727BF7C89A45B584AD501203120401 /* Pods-SpriteKitUniversalMenus_Tests-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E69EE49C838B36BC93D0A6A718F4AAD /* Pods-SpriteKitUniversalMenus_Tests-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C6BE4B2D9FF456B36A50C87B1F38A00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2194269A257C371AFAC6F5F07B87C2 /* Foundation.framework */; };
 		0C8F7D1378A3F93279D824B7D69ADF50 /* Pods-SpriteKitUniversalMenus-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 018A670D9A8357741D864752039F6B72 /* Pods-SpriteKitUniversalMenus-tvOS-dummy.m */; };
+		0F6B1D8FCF0FCFBD53BF41188691B1F1 /* DZAControlInputDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6658290B1CD79A2CC868B5B5AF6ABEDC /* DZAControlInputDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1006A46CF43C739D7AD0B587DBE81FEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F59D7FA85A73CB6D7271B453CFD0884 /* Cocoa.framework */; };
-		103A425E4F614892ACFB17D72BAE7DCF /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = E4628B6D7EFCDE193D0524E464770F61 /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11DA2E02D10CBA0B435F4E016020DCE6 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7515FE46D85CCD8199AF92BABDA08F /* DZAMenuVoiceNode.m */; };
-		122A520A11B501CABE2392872F18D71C /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7515FE46D85CCD8199AF92BABDA08F /* DZAMenuVoiceNode.m */; };
+		12CE92C87C1DF82CB64B58A248E94BD1 /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DE8E6A357178C7570F60A2F7FD11B /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-dummy.m */; };
 		140C4354947C5A89ABF0141620CEE525 /* Pods-SpriteKiUniversalMenus-MacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF856F75DBD358230A282C1DA4EF58 /* Pods-SpriteKiUniversalMenus-MacUITests-dummy.m */; };
-		154B1BA4C81A22BFD52AEF9801F5C7A0 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6A8A6F6851CF3350E887AFAB70DF38A /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15A9F4377CA1BA3621F836067BD33584 /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00DB686CD4D5B8DA7F122E1055791B9C /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14A9B8CE4ADE976E12C7DFCDC816FEAF /* DZAControlInputDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = C612F4C1BBACD726C46C1FE5A04004F8 /* DZAControlInputDirection.m */; };
+		151E7A1A10046FDA2B16C15C860323EA /* DZAControlInputDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6658290B1CD79A2CC868B5B5AF6ABEDC /* DZAControlInputDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15D8877B43D07D822141D849FB4A5B13 /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00DB686CD4D5B8DA7F122E1055791B9C /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F0E69AF55B2F5FFBEFFD4783D65CDF /* DZAControlInputDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6658290B1CD79A2CC868B5B5AF6ABEDC /* DZAControlInputDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		163C6E8E5E7CEE1E0BEEB9CA0939DA3A /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 73003A0752F3CABAA497D1FD1F5E4E44 /* UIImage+Diff.m */; };
-		1AA30179C035234BF1DCD27A6C6FCD4C /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7763DE5C15540C732730144B5BD54069 /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CCD6BBFDD2FD239E211AF7BAAF8B78F /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4786FE1FFDA722F86688CCB478B63C4 /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-dummy.m */; };
+		1D6AF2253EDE4F5AC2936864D594D989 /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CB827E77B734982B296512CF817BC8 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E1EB9EEDD3CDE9B174AA0851793A4EA /* Pods-SpriteKitUniversalMenus-Mac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5E0E445179CF38934B6CE752A10527 /* Pods-SpriteKitUniversalMenus-Mac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E77A05BFF4D98C9CACCE7BC1C4CB686 /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F68D8F4610B8E06FBD4A3C3515723A03 /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E47C05526EFEAE3FF5C378BF9081702 /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB0D3058AEFE9921FA0BCE1D37833F /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-dummy.m */; };
 		1F118728B3D74089480152A6B660EA9A /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = A729E2AD854B4CEB4EF52289C017EB3B /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1F222B7A404F5B9349C64DF6EA513F14 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B465863898393F57F4A080A89E9A61C1 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21E4C74565CC1B3621959D2A6F36E497 /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7763DE5C15540C732730144B5BD54069 /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24D5D171F9ED7906EE0700EBE136A162 /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B89E81FA8D2CCAC4FCE6BE3CAEC5C16 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BFD1280E515F524BC5B9661EEAFA0F2 /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A33F904403A4CA3AC96BA96618FEC71 /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		324DF397E28BD05478AB0509D8109927 /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D3290995BF2D4D1087B7D649DB05EEDB /* DZAMenuNode.m */; };
+		1FFDB1D968888EB206FA42244475CEEF /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CB827E77B734982B296512CF817BC8 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21759BCDE68DD12FFACC32C455693D9A /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2362D48A2FC3371FDDED9103F8951A1C /* AGSpriteButton.m */; };
+		2DA47135DE9200587E82242B0090CA3F /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2362D48A2FC3371FDDED9103F8951A1C /* AGSpriteButton.m */; };
 		331BBC774F0360C17607FE3855882EE7 /* SpriteKitUniversalMenus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9FDD66F4FEAB4749FBBCA9267368E /* SpriteKitUniversalMenus.bundle */; };
 		357AF6826A7C1E50C27D41E6033D3D2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB90DFA40A97082241F74579EABFFF7A /* Foundation.framework */; };
 		35848D70EAC9237246BDF63457729694 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2523693A8A7BA4278BFC866F16021FFF /* FBSnapshotTestCase.m */; };
+		36033F94C639211B39679D6C2E4B7422 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF670B72D5B50C80AD19F0F275CE230 /* DZAMenuVoiceNode.m */; };
+		36918AE825376981EFC81ABF6F100785 /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = C0170AE4E48BA8BB49942285F4FF240B /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36E65544264F937F86CD6F624DDA5DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2194269A257C371AFAC6F5F07B87C2 /* Foundation.framework */; };
 		38E9013B1B397AD829153D91033B3C77 /* Pods-SpriteKiUniversalMenus-MacUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4F56BDEC7FFCAE35588652FB2F40CD /* Pods-SpriteKiUniversalMenus-MacUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39BE4FFD672E2A406480392F41E1D632 /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1FD4435EF0503641F5EEF62998267C /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A3A6F442E539277EFC05EEB7802931D /* Pods-SpriteKitUniversalMenus_Tests-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CA068A74E2A4D133F497276039AD2C /* Pods-SpriteKitUniversalMenus_Tests-iOS-dummy.m */; };
+		3AC96F83715773AC7E926E1A00049639 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B465863898393F57F4A080A89E9A61C1 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F39D7C9F9EE313C3C5D0D493FECC3D1 /* Pods-SpriteKitUniversalMenus-tvOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1921538AC33216B4447148B80B9E5F57 /* Pods-SpriteKitUniversalMenus-tvOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F78FC95B713D02A6713FCF2DE0FF89E /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 33BD43187C897801B76A0A81F4E4C2CD /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41D8739E2720D3535592391C25507158 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 12CC4BD9C5F6D514C917D7942DF2D2F4 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47AD049FA240103D85270F437E9CBC99 /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B89E81FA8D2CCAC4FCE6BE3CAEC5C16 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4ADBF1249DDFC6DAACCEC59EE577806D /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D3290995BF2D4D1087B7D649DB05EEDB /* DZAMenuNode.m */; };
+		4210A996CAD142FA6EE76ED57AA1181F /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = C0170AE4E48BA8BB49942285F4FF240B /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4242CC08AE7B36CCA127E87476F7A124 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF670B72D5B50C80AD19F0F275CE230 /* DZAMenuVoiceNode.m */; };
+		44C064AC765D9B37D8F1329C8E72878F /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 552A260679B75346FBA1D12B47ABAECC /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AF5466446DC269D5EEFB5DAE6E0715E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88516A813BA72DD3A67332F53BC0F5F /* UIKit.framework */; };
-		4B7371BBAC0BDFD995F0FF527CE83C96 /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7763DE5C15540C732730144B5BD54069 /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DEEFE164AEF8A633FD222C89C210506 /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 552A260679B75346FBA1D12B47ABAECC /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F8B414DD920B94C7017417068088F4F /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5B64FAB69E1B35AC452D95707FDA7 /* DZAMenuNode.m */; };
 		4F9FBF6E8DC1E8040FEA9DCB30E2B656 /* Pods-SpriteKitUniversalMenus-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2335559CBB4D361924EDFB7D7759A6FB /* Pods-SpriteKitUniversalMenus-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		505EA9418C3DF06008B3DE0200C024EF /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 552A260679B75346FBA1D12B47ABAECC /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52B0263F90696E7FD87CB146D5C5E2C1 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CAAAB29C54DB2D5220028C4110E45E6 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		52F7A46AB0053D8BB1D793B917D37BB2 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5208FE4A05C9114818BC72105E5F7 /* SwiftSupport.swift */; };
-		58506675D37BC830091AF4673906F9A9 /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = E4628B6D7EFCDE193D0524E464770F61 /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		535DED1066859EB05CE2DED8C3C25BEF /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF670B72D5B50C80AD19F0F275CE230 /* DZAMenuVoiceNode.m */; };
+		54A638508E80A743D63377AEF464FECB /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2362D48A2FC3371FDDED9103F8951A1C /* AGSpriteButton.m */; };
+		5666AAD57FDC16395AF08300586C9790 /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 33BD43187C897801B76A0A81F4E4C2CD /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		576C61B9CE9FC61BCA7CCFBF894E43FD /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CB827E77B734982B296512CF817BC8 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57D80D4665812E8937B89D873BBCAD56 /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = C0170AE4E48BA8BB49942285F4FF240B /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58133B1F6EC73DFB251EA97C379EDCF9 /* DZAControlInputDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = C612F4C1BBACD726C46C1FE5A04004F8 /* DZAControlInputDirection.m */; };
 		5889F885B56C93BD93FC3CC4E46DA272 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F59D7FA85A73CB6D7271B453CFD0884 /* Cocoa.framework */; };
-		5A03C3D563D733FC5E2D55E8F0E917EC /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C998AEF9552606EB915A51FE606A3274 /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B59D793FCC0EFD5546D8A51881576F7 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF670B72D5B50C80AD19F0F275CE230 /* DZAMenuVoiceNode.m */; };
 		5D14695A69EC4A8DF7488D0FC59C105C /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = E38041D93EDE9398D62F150F8F25DE47 /* FBSnapshotTestCasePlatform.m */; };
-		5DED7E5B11F5C483D1491755D9B73E2E /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = E4628B6D7EFCDE193D0524E464770F61 /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71AC13F45A9DFFC6F2850DBDEA2CDEC7 /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = E4628B6D7EFCDE193D0524E464770F61 /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F1DD3C786DCA7B2E7E5EEB030160C40 /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2362D48A2FC3371FDDED9103F8951A1C /* AGSpriteButton.m */; };
+		6B199DC748A0156CFB69508552A0D37D /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2362D48A2FC3371FDDED9103F8951A1C /* AGSpriteButton.m */; };
+		7161567F78222301FCD9517104748902 /* DZAControlInputDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = C612F4C1BBACD726C46C1FE5A04004F8 /* DZAControlInputDirection.m */; };
+		71BBEDFD646C7AF8AFE4D8BBC353DE10 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF670B72D5B50C80AD19F0F275CE230 /* DZAMenuVoiceNode.m */; };
 		71CAFDD1829BBD1A192537626C24984E /* SpriteKitUniversalMenus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9FDD66F4FEAB4749FBBCA9267368E /* SpriteKitUniversalMenus.bundle */; };
 		723FDDFD804188090511DEFA8309A06B /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0345D737618C6A063BD152389ACCBF87 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7477C6AE40A558C113EF0D861781CF47 /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A33F904403A4CA3AC96BA96618FEC71 /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74FC4CFD368929F41482F50366CD0476 /* Pods-SpriteKitUniversalMenus-Mac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4322AA89C32B5A4C7902C45EF7A70F /* Pods-SpriteKitUniversalMenus-Mac-dummy.m */; };
-		75A77FD8F067D85ACCE91B1029D12B22 /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1FD4435EF0503641F5EEF62998267C /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7733743F527D63C0B6DF3A14F801DB36 /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DB89743ECEE175FBAF04842C3F213A /* AGSpriteButton.m */; };
-		77D7DE7D9052A5CF8B40A15DEEE45A86 /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B89E81FA8D2CCAC4FCE6BE3CAEC5C16 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		788E3D9458FE9540469981BE9A0B227C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 5999002674B86E70DC7970CEA62F278E /* UIImage+Compare.m */; };
 		79E150221199BBC6CB6A3A0692CE5895 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB90DFA40A97082241F74579EABFFF7A /* Foundation.framework */; };
-		7B00D4DD4D6707EC0D52E2FC8932D04B /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1FD4435EF0503641F5EEF62998267C /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A75A5248BBED9CA1C590A42C11DF0CF /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CB827E77B734982B296512CF817BC8 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BEF20E09F0E864478905311672F91AB /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC2C5814DCFC7590AC8C46AAB7FCEEF /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C82623E0828C0963EC32E226560C372 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7515FE46D85CCD8199AF92BABDA08F /* DZAMenuVoiceNode.m */; };
-		8140A8A7213F2B6395D844F3E47421CD /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB0D3058AEFE9921FA0BCE1D37833F /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-dummy.m */; };
+		7C7DFCA6CC8B082FFFC3E8959FF821AC /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 552A260679B75346FBA1D12B47ABAECC /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		821A26883ED14BDCD7EBADD37D671D17 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE4692BF9A76DAAA67A8FF4DABD27E8 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82AE7C7FCCD834F706A5F8ED01C28CA1 /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 33BD43187C897801B76A0A81F4E4C2CD /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		838D3BE2A44F895D9E664A4F47EE160E /* Pods-SpriteKitUniversalMenus-tvOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DA20A6C220AEC5BAFDB712407D2A5 /* Pods-SpriteKitUniversalMenus-tvOSUITests-dummy.m */; };
+		845E1CEB05A35CF3DA1BA4C7945EF719 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C499B4C408593DA5D4848F72489928 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-dummy.m */; };
+		87A3AD8AC34F5668528E579ED65BF872 /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 008CF1356D7D02ED52AEDE1CFDBD1FEF /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88614F86B91D63E0FC33E170D2B03B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB90DFA40A97082241F74579EABFFF7A /* Foundation.framework */; };
+		8C0CBEB8CA49E1346B2206CB9D47AD10 /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 008CF1356D7D02ED52AEDE1CFDBD1FEF /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CACC81BC11E2FA3E53C104CD12126DB /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C998AEF9552606EB915A51FE606A3274 /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E41F5A32C6594EAB3E16C25D2B32054 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB90DFA40A97082241F74579EABFFF7A /* Foundation.framework */; };
 		9149AD06DA8D81CB964A3CDC43B2A485 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22703B8995391F58DC98CB80E980A244 /* QuartzCore.framework */; };
-		94A94A6F3956FE52299E42F0ED94BAFD /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DB89743ECEE175FBAF04842C3F213A /* AGSpriteButton.m */; };
+		94D13C17B120C2D96A5DE2CA4C14F49C /* DZAControlInputDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6658290B1CD79A2CC868B5B5AF6ABEDC /* DZAControlInputDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		959016311A63F0E6E14849128843D671 /* SpriteKitUniversalMenus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9FDD66F4FEAB4749FBBCA9267368E /* SpriteKitUniversalMenus.bundle */; };
-		979696D45BB3F8E9342D11A2F084ED0E /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C499B4C408593DA5D4848F72489928 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-dummy.m */; };
+		962E257E35D95350AA6EF6BBBC75370A /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 008CF1356D7D02ED52AEDE1CFDBD1FEF /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97CCF508D747C4D801AAFE5C7276DDE0 /* SpriteKitUniversalMenus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9FDD66F4FEAB4749FBBCA9267368E /* SpriteKitUniversalMenus.bundle */; };
+		97D5E963FA22578031492B7CE07CBBEF /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 33BD43187C897801B76A0A81F4E4C2CD /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99EE7C6C1688D0DCCE4457BE4C7DB582 /* Pods-SpriteKitUniversalMenus-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D316A2B70747A1EF233F49FA74719D52 /* Pods-SpriteKitUniversalMenus-iOS-dummy.m */; };
-		9CA818D4C9388D4AF4B7EA62B4587A76 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7515FE46D85CCD8199AF92BABDA08F /* DZAMenuVoiceNode.m */; };
-		9CC3E717750A48431AE8F5F84A3851FA /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1FD4435EF0503641F5EEF62998267C /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D60F5B8BB12F4265FB4692745D2DF7E /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F68D8F4610B8E06FBD4A3C3515723A03 /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A64383C8193580B83E79DEC1D1D951E4 /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = E4628B6D7EFCDE193D0524E464770F61 /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A32B6F25AF9D6744683ACA916DD593A1 /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 33BD43187C897801B76A0A81F4E4C2CD /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A68101FFF311FE30E6B084AFDEEA829B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2194269A257C371AFAC6F5F07B87C2 /* Foundation.framework */; };
+		A83457C875983F71EF0F95D28A2FFDF6 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FAB3B5D73E14CA6CDF38704B6B7771 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-dummy.m */; };
+		A9744E48ECCB1AFAEF62FF99D603F460 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 305F901240A2D5088811B8F976D076FD /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA8501741ABB8D75C6C47DE086BACD37 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD97972C24EE7435D0E04686569BBE /* FBSnapshotTestController.m */; };
+		AAC25FC22C973ACB3963C4FC2F15F708 /* DZAControlInputDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = C612F4C1BBACD726C46C1FE5A04004F8 /* DZAControlInputDirection.m */; };
+		AC461B64165EE5392B0A4C651ABB403D /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CB827E77B734982B296512CF817BC8 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACE8E9FE73757C1999ECF4E8A0E4D244 /* SpriteKitUniversalMenus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9FDD66F4FEAB4749FBBCA9267368E /* SpriteKitUniversalMenus.bundle */; };
-		AD4572DB5D8582D58BD7BC0EB53F8AF5 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FAB3B5D73E14CA6CDF38704B6B7771 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-dummy.m */; };
-		AFBA15FA7FEBC9059C243BCECAECA921 /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B89E81FA8D2CCAC4FCE6BE3CAEC5C16 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3893E06800080690CBADE6873B2F517 /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1FD4435EF0503641F5EEF62998267C /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5CAD921ADA2D979C71CF7AC69362DA3 /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D3290995BF2D4D1087B7D649DB05EEDB /* DZAMenuNode.m */; };
-		BABF8920EF08210868BC18C2B242323E /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F68D8F4610B8E06FBD4A3C3515723A03 /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCBBD5394084591DF32136D75DBD4A34 /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7763DE5C15540C732730144B5BD54069 /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1310C84D126AAE51187ECBAA0228472 /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F68D8F4610B8E06FBD4A3C3515723A03 /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C44914FC666C509706A6D9439ADCE9AE /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F68D8F4610B8E06FBD4A3C3515723A03 /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CACF2BA84B2E9705A4016A973DDD333A /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DE8E6A357178C7570F60A2F7FD11B /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-dummy.m */; };
+		AD61EAA2F16C52E52B4D030A18510B62 /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 33BD43187C897801B76A0A81F4E4C2CD /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B322B6FF323B18C34DB29CAB0622BB23 /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 552A260679B75346FBA1D12B47ABAECC /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B351869A36699EB029AEF9E5354839AA /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5B64FAB69E1B35AC452D95707FDA7 /* DZAMenuNode.m */; };
+		B35FD9F1B21753D370FE122743000C39 /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 552A260679B75346FBA1D12B47ABAECC /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B82F27656AE7806106803718C25F7F92 /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = C0170AE4E48BA8BB49942285F4FF240B /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA051D3284A0343542A9420BFB2043C8 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E0D795F76AB4ECCCC73963C58253D4 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-dummy.m */; };
+		BC991F9BB8D97F00A8CA47D12DD83592 /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = C0170AE4E48BA8BB49942285F4FF240B /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2D316182D471BA47C8533896D712ED5 /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 008CF1356D7D02ED52AEDE1CFDBD1FEF /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8DBC23756FCE85B7B57B62EDCCD8396 /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5B64FAB69E1B35AC452D95707FDA7 /* DZAMenuNode.m */; };
 		CC2BD0A04199B280AD93F459968CAFC2 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF90F95FC2B36AB64D2FB3AF22E996D2 /* FBSnapshotTestCase-dummy.m */; };
-		CDB1DC8B45931ECB18BF4BE9EA569FAF /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DB89743ECEE175FBAF04842C3F213A /* AGSpriteButton.m */; };
+		CC2C634442A19253CE9178C6CE898C31 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF670B72D5B50C80AD19F0F275CE230 /* DZAMenuVoiceNode.m */; };
 		CEFAF7AFDCC1A9969704332E8D5E1EEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2194269A257C371AFAC6F5F07B87C2 /* Foundation.framework */; };
+		D014D602CAB8D8E466140D5D34EAFEC0 /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 008CF1356D7D02ED52AEDE1CFDBD1FEF /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3563A3D1A482B28DBA6DD4322E585DB /* DZAControlInputDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6658290B1CD79A2CC868B5B5AF6ABEDC /* DZAControlInputDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3A1DBA18792D4F710043DBC4EBC630F /* SpriteKitUniversalMenus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9FDD66F4FEAB4749FBBCA9267368E /* SpriteKitUniversalMenus.bundle */; };
 		D9958E464930BD385D62804385783942 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F59D7FA85A73CB6D7271B453CFD0884 /* Cocoa.framework */; };
 		D9A0132B9E59C45CBD9BEBE529632439 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA8B16CFDC32BE6460C9B4D8D363427 /* XCTest.framework */; };
-		DC58DD60FC0A040DB07EED1F5763E199 /* DZAMenuVoiceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7515FE46D85CCD8199AF92BABDA08F /* DZAMenuVoiceNode.m */; };
-		DDDE492DD0A620F32632DF75CDCF71BF /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = E4628B6D7EFCDE193D0524E464770F61 /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF035C96A6CC74905BF579562B477E08 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6A8A6F6851CF3350E887AFAB70DF38A /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0B3D7015F3CA0244E1C77708765CDC9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F59D7FA85A73CB6D7271B453CFD0884 /* Cocoa.framework */; };
-		E26A46A3AA775A3BC4DD49C3107277DE /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DB89743ECEE175FBAF04842C3F213A /* AGSpriteButton.m */; };
+		E0FB6F91400CD9740FF4C9761459345B /* Directions.h in Headers */ = {isa = PBXBuildFile; fileRef = C0170AE4E48BA8BB49942285F4FF240B /* Directions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3F2327A8433D5B7E6AC0F7D3495D30A /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5B64FAB69E1B35AC452D95707FDA7 /* DZAMenuNode.m */; };
+		E52BE47D5A559EC2BE45DE982B383DC2 /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 008CF1356D7D02ED52AEDE1CFDBD1FEF /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDD91D0CC316AC322E1607D3749F1C0A /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5121BCE99CCFB208275F3437CCF6EBB6 /* UIImage+Snapshot.m */; };
-		EED6EA31B64C96151A215FB573DB2951 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 305F901240A2D5088811B8F976D076FD /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EED829A126C5F5E251DC50031121F796 /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7763DE5C15540C732730144B5BD54069 /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFC6EE5E5103A73AF121C5B036553739 /* DZAMenuVoiceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1FD4435EF0503641F5EEF62998267C /* DZAMenuVoiceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1B8B3276A315213FCB4E84586AD3131 /* Pods-SpriteKitUniversalMenus-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A15F6CD55C9C55D5410D855EA1022EF /* Pods-SpriteKitUniversalMenus-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2C007E9655076700EE7A5FCAE523D59 /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B89E81FA8D2CCAC4FCE6BE3CAEC5C16 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2C38FEFC94B55E695C24839B5C6293B /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DB89743ECEE175FBAF04842C3F213A /* AGSpriteButton.m */; };
-		FB10A8D7CAB366F0A1BC9CFE5BCE307F /* DZAMenuNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F68D8F4610B8E06FBD4A3C3515723A03 /* DZAMenuNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCA36D4B077F6202939B84D72862FBFE /* Bridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B89E81FA8D2CCAC4FCE6BE3CAEC5C16 /* Bridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDA7D364BEE3F91D02396DA382CA9509 /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D3290995BF2D4D1087B7D649DB05EEDB /* DZAMenuNode.m */; };
-		FFF11F122D35209A6CD641F79CF97DF2 /* AGSpriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7763DE5C15540C732730144B5BD54069 /* AGSpriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9B018F1242ED6EBC85FA9EA63E946EE /* DZAMenuNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5B64FAB69E1B35AC452D95707FDA7 /* DZAMenuNode.m */; };
+		FCEFF36A23DF293F30317D5D46A9F3F3 /* DZAControlInputDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = C612F4C1BBACD726C46C1FE5A04004F8 /* DZAControlInputDirection.m */; };
+		FD4F24D3E202EE462B44AA84305E1399 /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4786FE1FFDA722F86688CCB478B63C4 /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-dummy.m */; };
+		FF949ACA213FBC5FDF6ACFB7BBA525FD /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2362D48A2FC3371FDDED9103F8951A1C /* AGSpriteButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,10 +225,12 @@
 
 /* Begin PBXFileReference section */
 		0001CBFBF9813E795526371B433A5D42 /* Pods-SpriteKitUniversalMenus-Mac-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpriteKitUniversalMenus-Mac-resources.sh"; sourceTree = "<group>"; };
+		008CF1356D7D02ED52AEDE1CFDBD1FEF /* DZAMenuNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZAMenuNode.h; sourceTree = "<group>"; };
 		00DB686CD4D5B8DA7F122E1055791B9C /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-umbrella.h"; path = "../Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-umbrella.h"; sourceTree = "<group>"; };
 		018A670D9A8357741D864752039F6B72 /* Pods-SpriteKitUniversalMenus-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpriteKitUniversalMenus-tvOS-dummy.m"; sourceTree = "<group>"; };
 		0345D737618C6A063BD152389ACCBF87 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		04789007C964028D213F787F92A72951 /* Pods-SpriteKitUniversalMenus-tvOSUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpriteKitUniversalMenus-tvOSUITests-resources.sh"; sourceTree = "<group>"; };
+		04CB827E77B734982B296512CF817BC8 /* Bridges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bridges.h; sourceTree = "<group>"; };
 		05CF21DF4F89877ED25F0BF88A05A021 /* ResourceBundle-SpriteKitUniversalMenus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ResourceBundle-SpriteKitUniversalMenus-Info.plist"; path = "../Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus/ResourceBundle-SpriteKitUniversalMenus-Info.plist"; sourceTree = "<group>"; };
 		07CA068A74E2A4D133F497276039AD2C /* Pods-SpriteKitUniversalMenus_Tests-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpriteKitUniversalMenus_Tests-iOS-dummy.m"; sourceTree = "<group>"; };
 		0EE4692BF9A76DAAA67A8FF4DABD27E8 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
@@ -232,23 +246,23 @@
 		21F12D472C378F291843AA10BAF688FD /* Pods_SpriteKitUniversalMenus_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22703B8995391F58DC98CB80E980A244 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		2335559CBB4D361924EDFB7D7759A6FB /* Pods-SpriteKitUniversalMenus-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpriteKitUniversalMenus-iOS-umbrella.h"; sourceTree = "<group>"; };
+		2362D48A2FC3371FDDED9103F8951A1C /* AGSpriteButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AGSpriteButton.m; sourceTree = "<group>"; };
 		24BFFDAD2E5EACC04EB1FCB480B301E9 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-prefix.pch"; path = "../Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-prefix.pch"; sourceTree = "<group>"; };
 		2523693A8A7BA4278BFC866F16021FFF /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		27C2027C5141CA04801AC522920EA316 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus.xcconfig"; path = "../Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus.xcconfig"; sourceTree = "<group>"; };
 		27E0D795F76AB4ECCCC73963C58253D4 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-dummy.m"; path = "../Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-dummy.m"; sourceTree = "<group>"; };
 		2B6E027277CD566B29D895E207F4F56E /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus.modulemap"; path = "../Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus.modulemap"; sourceTree = "<group>"; };
-		2B89E81FA8D2CCAC4FCE6BE3CAEC5C16 /* Bridges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bridges.h; sourceTree = "<group>"; };
 		2C1B44F3B6ED907516DF031BD21FA74E /* ResourceBundle-SpriteKitUniversalMenus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ResourceBundle-SpriteKitUniversalMenus-Info.plist"; path = "../Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus/ResourceBundle-SpriteKitUniversalMenus-Info.plist"; sourceTree = "<group>"; };
 		2CE79564F1DD17B21F434843102A7828 /* Pods-SpriteKitUniversalMenus-Mac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpriteKitUniversalMenus-Mac-frameworks.sh"; sourceTree = "<group>"; };
 		305F901240A2D5088811B8F976D076FD /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-umbrella.h"; sourceTree = "<group>"; };
 		31B3676A0D85D58D378AB0D686F0DAB1 /* Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteKiUniversalMenus-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		31F5915946E658F7D7E89B0EEDAE7200 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32C499B4C408593DA5D4848F72489928 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-dummy.m"; sourceTree = "<group>"; };
+		33BD43187C897801B76A0A81F4E4C2CD /* DZAMenuVoiceNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZAMenuVoiceNode.h; sourceTree = "<group>"; };
 		3480B3309C15BFF32E85ACCDFEF9960F /* Pods-SpriteKitUniversalMenus-Mac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpriteKitUniversalMenus-Mac-acknowledgements.plist"; sourceTree = "<group>"; };
 		381E6EB94B3B32FE30C13C173F845F04 /* Pods-SpriteKitUniversalMenus-tvOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteKitUniversalMenus-tvOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		388B745684EF713763B9177581C6852E /* Pods-SpriteKitUniversalMenus-tvOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpriteKitUniversalMenus-tvOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3A33F904403A4CA3AC96BA96618FEC71 /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-umbrella.h"; path = "../Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-umbrella.h"; sourceTree = "<group>"; };
-		3C7515FE46D85CCD8199AF92BABDA08F /* DZAMenuVoiceNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZAMenuVoiceNode.m; sourceTree = "<group>"; };
 		3CDD9962E7C6687DEEC40FC2F5F6DC17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EBFBC3673A076246241C8E66765B55D /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus.modulemap"; sourceTree = "<group>"; };
 		4044E11F7C1570521FC7520548480DFD /* Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteKitUniversalMenus_Tests-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -263,10 +277,12 @@
 		5121BCE99CCFB208275F3437CCF6EBB6 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		5486FA7A60FA9A2152E9AD9F1789A4F3 /* SpriteKitUniversalMenus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitUniversalMenus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C7C21117CA60FAAD7CDF05C5D2A0AE /* Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteKiUniversalMenus-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		552A260679B75346FBA1D12B47ABAECC /* AGSpriteButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AGSpriteButton.h; sourceTree = "<group>"; };
 		584C038328CD7D29CCA2317EEA074199 /* ResourceBundle-SpriteKitUniversalMenus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ResourceBundle-SpriteKitUniversalMenus-Info.plist"; path = "../Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus/ResourceBundle-SpriteKitUniversalMenus-Info.plist"; sourceTree = "<group>"; };
 		58A987BB0E2889044E2632EA6A9AF971 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus/Info.plist"; sourceTree = "<group>"; };
 		5999002674B86E70DC7970CEA62F278E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		5FD9FDD66F4FEAB4749FBBCA9267368E /* SpriteKitUniversalMenus.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitUniversalMenus.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6658290B1CD79A2CC868B5B5AF6ABEDC /* DZAControlInputDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZAControlInputDirection.h; sourceTree = "<group>"; };
 		6833E920FFD49480831CEC226B8380A6 /* SpriteKitUniversalMenus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitUniversalMenus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C78FA356E98DA905A4A391993FBEA63 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-prefix.pch"; path = "../Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-prefix.pch"; sourceTree = "<group>"; };
 		6D9DE8E6A357178C7570F60A2F7FD11B /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-dummy.m"; path = "../Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-dummy.m"; sourceTree = "<group>"; };
@@ -274,7 +290,6 @@
 		713CAC56B2718031228E0C4E0D88D5D8 /* Pods-SpriteKitUniversalMenus-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpriteKitUniversalMenus-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		72C76B79020157FB007905042C396102 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73003A0752F3CABAA497D1FD1F5E4E44 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		7763DE5C15540C732730144B5BD54069 /* AGSpriteButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AGSpriteButton.h; sourceTree = "<group>"; };
 		7A2194269A257C371AFAC6F5F07B87C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7C44FE15FA0B91A8E5C5E6A8301333E0 /* Pods-SpriteKitUniversalMenus-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpriteKitUniversalMenus-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7CAAAB29C54DB2D5220028C4110E45E6 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
@@ -300,7 +315,6 @@
 		9A707194C81CF80596E4F145A9FC54B0 /* Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteKitUniversalMenus-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		9AF909BAFD4261CE2984571F3EF05A7C /* Pods-SpriteKitUniversalMenus_Tests-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpriteKitUniversalMenus_Tests-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9DEEB6CB6FFC293E66B277F64CCE74AC /* Pods-SpriteKitUniversalMenus-Mac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SpriteKitUniversalMenus-Mac.modulemap"; sourceTree = "<group>"; };
-		9E1FD4435EF0503641F5EEF62998267C /* DZAMenuVoiceNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZAMenuVoiceNode.h; sourceTree = "<group>"; };
 		9F80F6E1E2BD6F459C4448486791A0BF /* Pods-SpriteKiUniversalMenus-MacUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SpriteKiUniversalMenus-MacUITests.modulemap"; sourceTree = "<group>"; };
 		A0EF6381359EE2E7EC342D7783288B12 /* Pods-SpriteKitUniversalMenus-tvOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SpriteKitUniversalMenus-tvOSUITests.modulemap"; sourceTree = "<group>"; };
 		A4786FE1FFDA722F86688CCB478B63C4 /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-dummy.m"; path = "../Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-dummy.m"; sourceTree = "<group>"; };
@@ -323,15 +337,16 @@
 		BDA981CAF789EBE4835B87D82F3C93C1 /* Pods-SpriteKitUniversalMenus_Tests-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpriteKitUniversalMenus_Tests-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		BF3FC148003C91514DFCFD9765A8A3C8 /* Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteKitUniversalMenus_Tests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BFFD97972C24EE7435D0E04686569BBE /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		C0170AE4E48BA8BB49942285F4FF240B /* Directions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Directions.h; sourceTree = "<group>"; };
 		C2AD5D556A973AFBA35CFD61A4CA01D8 /* Pods-SpriteKiUniversalMenus-MacUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpriteKiUniversalMenus-MacUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C305646D3ADAB5B71AE00E749ACDD767 /* Pods-SpriteKitUniversalMenus_Tests-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpriteKitUniversalMenus_Tests-iOS-frameworks.sh"; sourceTree = "<group>"; };
 		C33166E09CB76BE4485CBAF05E2F0A0F /* Pods-SpriteKitUniversalMenus-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SpriteKitUniversalMenus-iOS.modulemap"; sourceTree = "<group>"; };
+		C612F4C1BBACD726C46C1FE5A04004F8 /* DZAControlInputDirection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZAControlInputDirection.m; sourceTree = "<group>"; };
 		C615F963E9C5CDFA3A05EAD38ACD1A7C /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus.xcconfig"; path = "../Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus.xcconfig"; sourceTree = "<group>"; };
 		C998AEF9552606EB915A51FE606A3274 /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-umbrella.h"; path = "../Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-umbrella.h"; sourceTree = "<group>"; };
 		C9C3C16FB1A541A1526650D2D36EFCBD /* Pods-SpriteKitUniversalMenus-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpriteKitUniversalMenus-tvOS-frameworks.sh"; sourceTree = "<group>"; };
 		D0338865569D23B9653A5533F12548A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D316A2B70747A1EF233F49FA74719D52 /* Pods-SpriteKitUniversalMenus-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpriteKitUniversalMenus-iOS-dummy.m"; sourceTree = "<group>"; };
-		D3290995BF2D4D1087B7D649DB05EEDB /* DZAMenuNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZAMenuNode.m; sourceTree = "<group>"; };
 		D88516A813BA72DD3A67332F53BC0F5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D9BF856F75DBD358230A282C1DA4EF58 /* Pods-SpriteKiUniversalMenus-MacUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpriteKiUniversalMenus-MacUITests-dummy.m"; sourceTree = "<group>"; };
 		DA8A68B10D863A885A0485F5963CDE81 /* SpriteKitUniversalMenus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitUniversalMenus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,22 +357,21 @@
 		E19247EBC6B73E2C168F91DAB467C825 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus/Info.plist"; sourceTree = "<group>"; };
 		E2E9D883AF6F2079D90ED24CBE865642 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E38041D93EDE9398D62F150F8F25DE47 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		E3DB89743ECEE175FBAF04842C3F213A /* AGSpriteButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AGSpriteButton.m; sourceTree = "<group>"; };
-		E4628B6D7EFCDE193D0524E464770F61 /* Directions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Directions.h; sourceTree = "<group>"; };
 		E5439E1A5E3D0F4284D722517CE9122A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus/Info.plist"; sourceTree = "<group>"; };
 		E6A8A6F6851CF3350E887AFAB70DF38A /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-umbrella.h"; path = "../Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-umbrella.h"; sourceTree = "<group>"; };
 		E8CFF03520441DBF12121B57156845E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA5B64FAB69E1B35AC452D95707FDA7 /* DZAMenuNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZAMenuNode.m; sourceTree = "<group>"; };
 		EB90DFA40A97082241F74579EABFFF7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		ED4322AA89C32B5A4C7902C45EF7A70F /* Pods-SpriteKitUniversalMenus-Mac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpriteKitUniversalMenus-Mac-dummy.m"; sourceTree = "<group>"; };
 		EDD792A092A9287B3AB9DC51B468E21D /* Pods_SpriteKiUniversalMenus_MacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKiUniversalMenus_MacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BD92736926E69319208376ED3367A5 /* Pods-SpriteKitUniversalMenus-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpriteKitUniversalMenus-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		F4BE19FC8B09A1166F98C15E9EC665B5 /* SpriteKitUniversalMenus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitUniversalMenus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F68D8F4610B8E06FBD4A3C3515723A03 /* DZAMenuNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZAMenuNode.h; sourceTree = "<group>"; };
 		F8B979CEC0A0F71909AF4D9C09FC42BA /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus.xcconfig"; path = "../Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus.xcconfig"; sourceTree = "<group>"; };
 		F93E802F37D7F07AE6B09E7B9F33C3D8 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus.xcconfig"; sourceTree = "<group>"; };
 		F9D9741DF1267E3A54E0FB6F83D5E666 /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-prefix.pch"; path = "../Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-prefix.pch"; sourceTree = "<group>"; };
 		FA27B7CE764901AC2BD81EA4F3E5E36D /* Pods-SpriteKitUniversalMenus-Mac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpriteKitUniversalMenus-Mac-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FA54BE0890E778178E54E39B6B630B98 /* Pods_SpriteKitUniversalMenus_tvOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitUniversalMenus_tvOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF670B72D5B50C80AD19F0F275CE230 /* DZAMenuVoiceNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZAMenuVoiceNode.m; sourceTree = "<group>"; };
 		FD7C106DF792A0860EFF05C98F92FB5D /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-prefix.pch"; path = "../Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus/Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-prefix.pch"; sourceTree = "<group>"; };
 		FDE5208FE4A05C9114818BC72105E5F7 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		FFB2954B786EBB19A57E69F4A43AF918 /* Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -598,7 +612,7 @@
 		4A7B551FC960F4EB06F85F7310F27590 /* SpriteKitUniversalMenus */ = {
 			isa = PBXGroup;
 			children = (
-				B686C663AABF4CE3A458AAC6B3EDB222 /* Pod */,
+				95C7120E84A0E1F9A6ABB288E7ECC7AB /* Pod */,
 				68170C930D507D4BE5B2EFD1445970AA /* Support Files */,
 			);
 			name = SpriteKitUniversalMenus;
@@ -682,6 +696,23 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
+		7D0B033A82701BFE1DDF0458EB42237D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				552A260679B75346FBA1D12B47ABAECC /* AGSpriteButton.h */,
+				2362D48A2FC3371FDDED9103F8951A1C /* AGSpriteButton.m */,
+				04CB827E77B734982B296512CF817BC8 /* Bridges.h */,
+				C0170AE4E48BA8BB49942285F4FF240B /* Directions.h */,
+				6658290B1CD79A2CC868B5B5AF6ABEDC /* DZAControlInputDirection.h */,
+				C612F4C1BBACD726C46C1FE5A04004F8 /* DZAControlInputDirection.m */,
+				008CF1356D7D02ED52AEDE1CFDBD1FEF /* DZAMenuNode.h */,
+				EAA5B64FAB69E1B35AC452D95707FDA7 /* DZAMenuNode.m */,
+				33BD43187C897801B76A0A81F4E4C2CD /* DZAMenuVoiceNode.h */,
+				FBF670B72D5B50C80AD19F0F275CE230 /* DZAMenuVoiceNode.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -758,6 +789,14 @@
 			path = "Target Support Files/Pods-SpriteKitUniversalMenus-tvOSUITests";
 			sourceTree = "<group>";
 		};
+		95C7120E84A0E1F9A6ABB288E7ECC7AB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7D0B033A82701BFE1DDF0458EB42237D /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
 		9B254F1A71BCEBA0C9A55A705910907D /* Pods-SpriteKitUniversalMenus-tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -799,14 +838,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B686C663AABF4CE3A458AAC6B3EDB222 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F9B16AD245A960790D280836D09EB264 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		C9B83B3DE1346D7D90F19BBE62A13D83 /* Pods-SpriteKiUniversalMenus-MacUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -833,21 +864,6 @@
 			name = tvOS;
 			sourceTree = "<group>";
 		};
-		F9B16AD245A960790D280836D09EB264 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				7763DE5C15540C732730144B5BD54069 /* AGSpriteButton.h */,
-				E3DB89743ECEE175FBAF04842C3F213A /* AGSpriteButton.m */,
-				2B89E81FA8D2CCAC4FCE6BE3CAEC5C16 /* Bridges.h */,
-				E4628B6D7EFCDE193D0524E464770F61 /* Directions.h */,
-				F68D8F4610B8E06FBD4A3C3515723A03 /* DZAMenuNode.h */,
-				D3290995BF2D4D1087B7D649DB05EEDB /* DZAMenuNode.m */,
-				9E1FD4435EF0503641F5EEF62998267C /* DZAMenuVoiceNode.h */,
-				3C7515FE46D85CCD8199AF92BABDA08F /* DZAMenuVoiceNode.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		FBD2D672921284E66F309CA3462F84D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -859,6 +875,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		03DCC3D40BD9A5F2679AF35B385A5EB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7DFCA6CC8B082FFFC3E8959FF821AC /* AGSpriteButton.h in Headers */,
+				7A75A5248BBED9CA1C590A42C11DF0CF /* Bridges.h in Headers */,
+				BC991F9BB8D97F00A8CA47D12DD83592 /* Directions.h in Headers */,
+				0A201B77AC891F55F71C5D48C78E5A70 /* DZAControlInputDirection.h in Headers */,
+				D014D602CAB8D8E466140D5D34EAFEC0 /* DZAMenuNode.h in Headers */,
+				A32B6F25AF9D6744683ACA916DD593A1 /* DZAMenuVoiceNode.h in Headers */,
+				A9744E48ECCB1AFAEF62FF99D603F460 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093125E0F58172E07A1849D91A766A29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B322B6FF323B18C34DB29CAB0622BB23 /* AGSpriteButton.h in Headers */,
+				1FFDB1D968888EB206FA42244475CEEF /* Bridges.h in Headers */,
+				B82F27656AE7806106803718C25F7F92 /* Directions.h in Headers */,
+				15F0E69AF55B2F5FFBEFFD4783D65CDF /* DZAControlInputDirection.h in Headers */,
+				C2D316182D471BA47C8533896D712ED5 /* DZAMenuNode.h in Headers */,
+				3F78FC95B713D02A6713FCF2DE0FF89E /* DZAMenuVoiceNode.h in Headers */,
+				DF035C96A6CC74905BF579562B477E08 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A2CAA2DFD0D8AF9AF72CD7ED0FD90EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -867,50 +911,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C5A5E5A1C368166A1EFBF680D8E624F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEEFE164AEF8A633FD222C89C210506 /* AGSpriteButton.h in Headers */,
+				1D6AF2253EDE4F5AC2936864D594D989 /* Bridges.h in Headers */,
+				57D80D4665812E8937B89D873BBCAD56 /* Directions.h in Headers */,
+				0F6B1D8FCF0FCFBD53BF41188691B1F1 /* DZAControlInputDirection.h in Headers */,
+				87A3AD8AC34F5668528E579ED65BF872 /* DZAMenuNode.h in Headers */,
+				82AE7C7FCCD834F706A5F8ED01C28CA1 /* DZAMenuVoiceNode.h in Headers */,
+				7477C6AE40A558C113EF0D861781CF47 /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31F8FF322F6C04672AE1DD53C666FBB6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1E1EB9EEDD3CDE9B174AA0851793A4EA /* Pods-SpriteKitUniversalMenus-Mac-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33BA866C01D274384A7427FAB84D0F1D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AA30179C035234BF1DCD27A6C6FCD4C /* AGSpriteButton.h in Headers */,
-				24D5D171F9ED7906EE0700EBE136A162 /* Bridges.h in Headers */,
-				71AC13F45A9DFFC6F2850DBDEA2CDEC7 /* Directions.h in Headers */,
-				9D60F5B8BB12F4265FB4692745D2DF7E /* DZAMenuNode.h in Headers */,
-				9CC3E717750A48431AE8F5F84A3851FA /* DZAMenuVoiceNode.h in Headers */,
-				15A9F4377CA1BA3621F836067BD33584 /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		51FC6BFE2211C3996FE2DFBFCE15FF00 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21E4C74565CC1B3621959D2A6F36E497 /* AGSpriteButton.h in Headers */,
-				47AD049FA240103D85270F437E9CBC99 /* Bridges.h in Headers */,
-				A64383C8193580B83E79DEC1D1D951E4 /* Directions.h in Headers */,
-				C44914FC666C509706A6D9439ADCE9AE /* DZAMenuNode.h in Headers */,
-				39BE4FFD672E2A406480392F41E1D632 /* DZAMenuVoiceNode.h in Headers */,
-				EED6EA31B64C96151A215FB573DB2951 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6566D4DFA480D025F8FFB50BB53E37FC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFF11F122D35209A6CD641F79CF97DF2 /* AGSpriteButton.h in Headers */,
-				F2C007E9655076700EE7A5FCAE523D59 /* Bridges.h in Headers */,
-				58506675D37BC830091AF4673906F9A9 /* Directions.h in Headers */,
-				C1310C84D126AAE51187ECBAA0228472 /* DZAMenuNode.h in Headers */,
-				B3893E06800080690CBADE6873B2F517 /* DZAMenuVoiceNode.h in Headers */,
-				2BFD1280E515F524BC5B9661EEAFA0F2 /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -935,29 +954,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3151358493D99BC1A6E9B829C2DF076 /* Headers */ = {
+		8FAB10E682C91B777085F2EDFE9A4F78 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EED829A126C5F5E251DC50031121F796 /* AGSpriteButton.h in Headers */,
-				77D7DE7D9052A5CF8B40A15DEEE45A86 /* Bridges.h in Headers */,
-				103A425E4F614892ACFB17D72BAE7DCF /* Directions.h in Headers */,
-				FB10A8D7CAB366F0A1BC9CFE5BCE307F /* DZAMenuNode.h in Headers */,
-				75A77FD8F067D85ACCE91B1029D12B22 /* DZAMenuVoiceNode.h in Headers */,
-				5A03C3D563D733FC5E2D55E8F0E917EC /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-umbrella.h in Headers */,
+				44C064AC765D9B37D8F1329C8E72878F /* AGSpriteButton.h in Headers */,
+				00FF11903255282FB1394441ED3685E4 /* Bridges.h in Headers */,
+				4210A996CAD142FA6EE76ED57AA1181F /* Directions.h in Headers */,
+				151E7A1A10046FDA2B16C15C860323EA /* DZAControlInputDirection.h in Headers */,
+				E52BE47D5A559EC2BE45DE982B383DC2 /* DZAMenuNode.h in Headers */,
+				5666AAD57FDC16395AF08300586C9790 /* DZAMenuVoiceNode.h in Headers */,
+				8CACC81BC11E2FA3E53C104CD12126DB /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD1A05C80568599919671FC45997275B /* Headers */ = {
+		9E561CA6E2A58500E2EBE50A7AFAD6D0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B7371BBAC0BDFD995F0FF527CE83C96 /* AGSpriteButton.h in Headers */,
-				AFBA15FA7FEBC9059C243BCECAECA921 /* Bridges.h in Headers */,
-				5DED7E5B11F5C483D1491755D9B73E2E /* Directions.h in Headers */,
-				BABF8920EF08210868BC18C2B242323E /* DZAMenuNode.h in Headers */,
-				EFC6EE5E5103A73AF121C5B036553739 /* DZAMenuVoiceNode.h in Headers */,
-				1F222B7A404F5B9349C64DF6EA513F14 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-umbrella.h in Headers */,
+				505EA9418C3DF06008B3DE0200C024EF /* AGSpriteButton.h in Headers */,
+				576C61B9CE9FC61BCA7CCFBF894E43FD /* Bridges.h in Headers */,
+				E0FB6F91400CD9740FF4C9761459345B /* Directions.h in Headers */,
+				D3563A3D1A482B28DBA6DD4322E585DB /* DZAControlInputDirection.h in Headers */,
+				8C0CBEB8CA49E1346B2206CB9D47AD10 /* DZAMenuNode.h in Headers */,
+				97D5E963FA22578031492B7CE07CBBEF /* DZAMenuVoiceNode.h in Headers */,
+				3AC96F83715773AC7E926E1A00049639 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A491F285C50E698BBF30F2DC0C0AA82E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35FD9F1B21753D370FE122743000C39 /* AGSpriteButton.h in Headers */,
+				AC461B64165EE5392B0A4C651ABB403D /* Bridges.h in Headers */,
+				36918AE825376981EFC81ABF6F100785 /* Directions.h in Headers */,
+				94D13C17B120C2D96A5DE2CA4C14F49C /* DZAControlInputDirection.h in Headers */,
+				962E257E35D95350AA6EF6BBBC75370A /* DZAMenuNode.h in Headers */,
+				AD61EAA2F16C52E52B4D030A18510B62 /* DZAMenuVoiceNode.h in Headers */,
+				15D8877B43D07D822141D849FB4A5B13 /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -966,19 +1001,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F9FBF6E8DC1E8040FEA9DCB30E2B656 /* Pods-SpriteKitUniversalMenus-iOS-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C71DA4462EE0AAB7C3EB666B30B177FC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCBBD5394084591DF32136D75DBD4A34 /* AGSpriteButton.h in Headers */,
-				FCA36D4B077F6202939B84D72862FBFE /* Bridges.h in Headers */,
-				DDDE492DD0A620F32632DF75CDCF71BF /* Directions.h in Headers */,
-				1E77A05BFF4D98C9CACCE7BC1C4CB686 /* DZAMenuNode.h in Headers */,
-				7B00D4DD4D6707EC0D52E2FC8932D04B /* DZAMenuVoiceNode.h in Headers */,
-				154B1BA4C81A22BFD52AEF9801F5C7A0 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,10 +1027,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51A5C2010E38AF9E69EF8FCBDB9BA04D /* Build configuration list for PBXNativeTarget "Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus" */;
 			buildPhases = (
-				1113245C8D94D8D1314F2F6891D8C3B1 /* Sources */,
+				61D0C24166833B644DA1CFF83D7457D1 /* Sources */,
 				4E66B54CF8879A2457EF3FC12E65DAAB /* Frameworks */,
 				20BA3CEEBD0C90047CB9ADE0DFC8378B /* Resources */,
-				C71DA4462EE0AAB7C3EB666B30B177FC /* Headers */,
+				093125E0F58172E07A1849D91A766A29 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1042,10 +1064,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26AB9D99751CC3561B609166BFC06BB3 /* Build configuration list for PBXNativeTarget "Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus" */;
 			buildPhases = (
-				AD2FF168212C8A3E2B4B013D5CF4315E /* Sources */,
+				2048F6C80BD59C3A1973AB3B73B93EEF /* Sources */,
 				106697E3C70D945532D9BB0E6C95E9A4 /* Frameworks */,
 				D880D28F89C3CF53019634FCDEACAF43 /* Resources */,
-				B3151358493D99BC1A6E9B829C2DF076 /* Headers */,
+				8FAB10E682C91B777085F2EDFE9A4F78 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1097,10 +1119,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 424A87DCA2B28B75D7EF6EAB20AE22C2 /* Build configuration list for PBXNativeTarget "Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus" */;
 			buildPhases = (
-				F20280FE3619FFB76701CA39A8D09FA7 /* Sources */,
+				8E604AC9121F63BF6B9C9E1B2D8B68A1 /* Sources */,
 				6A0C235935DFDE2571B90EF04BE279C1 /* Frameworks */,
 				7AC62D08DB759E9209CA9035B8808B48 /* Resources */,
-				BD1A05C80568599919671FC45997275B /* Headers */,
+				9E561CA6E2A58500E2EBE50A7AFAD6D0 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1169,10 +1191,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F66FA54EF1778B82B6E9DD441CB7A855 /* Build configuration list for PBXNativeTarget "Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus" */;
 			buildPhases = (
-				E0E322556F0FEEB4B2BDE12F17944931 /* Sources */,
+				8686C68FA75B86B76DCD4CA3D679EA57 /* Sources */,
 				48D1D19DB596D35FBAA1EF3E90BB4045 /* Frameworks */,
 				F0C9B4342C9EE9D37B87427687DA4D47 /* Resources */,
-				33BA866C01D274384A7427FAB84D0F1D /* Headers */,
+				A491F285C50E698BBF30F2DC0C0AA82E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1206,10 +1228,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF224B547E8A2104E7B34E871E4FF250 /* Build configuration list for PBXNativeTarget "Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus" */;
 			buildPhases = (
-				63D18B436B96DCA9511017DAE57D697A /* Sources */,
+				AE374A76A259C371DFBCC0494C4354E3 /* Sources */,
 				CCEAC42BB282D453EC0EFAEC2BD598EE /* Frameworks */,
 				25717A9A23589FB198B20C36BD244E94 /* Resources */,
-				51FC6BFE2211C3996FE2DFBFCE15FF00 /* Headers */,
+				03DCC3D40BD9A5F2679AF35B385A5EB3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1296,10 +1318,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14DF1BD7B80B63C9B2FD1F8AB136E7E5 /* Build configuration list for PBXNativeTarget "Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus" */;
 			buildPhases = (
-				61E3BB96A86DCAA0C6AE4520EB345F22 /* Sources */,
+				2F3DBFF30E44E053FD6E503320CB2205 /* Sources */,
 				1539658CB1FF5C1CBAE36372C1CCA9B7 /* Frameworks */,
 				0FA6D145C9A2E52163251352409B5E7C /* Resources */,
-				6566D4DFA480D025F8FFB50BB53E37FC /* Headers */,
+				0C5A5E5A1C368166A1EFBF680D8E624F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1493,17 +1515,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1113245C8D94D8D1314F2F6891D8C3B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDB1DC8B45931ECB18BF4BE9EA569FAF /* AGSpriteButton.m in Sources */,
-				0894FF487132D6AC3B31F0D6C63AA0A6 /* DZAMenuNode.m in Sources */,
-				04D1DE17F4507F6E1E1CBC82FDDD1137 /* DZAMenuVoiceNode.m in Sources */,
-				04F0885DA20B6B7AD9F10B71F1C49272 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		19DA67D9715634C4479C1657E9004F6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1515,6 +1526,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2048F6C80BD59C3A1973AB3B73B93EEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A638508E80A743D63377AEF464FECB /* AGSpriteButton.m in Sources */,
+				FCEFF36A23DF293F30317D5D46A9F3F3 /* DZAControlInputDirection.m in Sources */,
+				B351869A36699EB029AEF9E5354839AA /* DZAMenuNode.m in Sources */,
+				5B59D793FCC0EFD5546D8A51881576F7 /* DZAMenuVoiceNode.m in Sources */,
+				FD4F24D3E202EE462B44AA84305E1399 /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1533,6 +1556,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F3DBFF30E44E053FD6E503320CB2205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F1DD3C786DCA7B2E7E5EEB030160C40 /* AGSpriteButton.m in Sources */,
+				04A86CB3CC25EDD39EF68376F6716C81 /* DZAControlInputDirection.m in Sources */,
+				E3F2327A8433D5B7E6AC0F7D3495D30A /* DZAMenuNode.m in Sources */,
+				535DED1066859EB05CE2DED8C3C25BEF /* DZAMenuVoiceNode.m in Sources */,
+				1E47C05526EFEAE3FF5C378BF9081702 /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		316F4941BFB1A5FE604DA6F6CEB6F8DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1547,25 +1582,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61E3BB96A86DCAA0C6AE4520EB345F22 /* Sources */ = {
+		61D0C24166833B644DA1CFF83D7457D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7733743F527D63C0B6DF3A14F801DB36 /* AGSpriteButton.m in Sources */,
-				324DF397E28BD05478AB0509D8109927 /* DZAMenuNode.m in Sources */,
-				7C82623E0828C0963EC32E226560C372 /* DZAMenuVoiceNode.m in Sources */,
-				8140A8A7213F2B6395D844F3E47421CD /* Pods-SpriteKitUniversalMenus-tvOS-SpriteKitUniversalMenus-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63D18B436B96DCA9511017DAE57D697A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E26A46A3AA775A3BC4DD49C3107277DE /* AGSpriteButton.m in Sources */,
-				08C657803E7637270B5E29FAE9CB52AF /* DZAMenuNode.m in Sources */,
-				122A520A11B501CABE2392872F18D71C /* DZAMenuVoiceNode.m in Sources */,
-				979696D45BB3F8E9342D11A2F084ED0E /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-dummy.m in Sources */,
+				6B199DC748A0156CFB69508552A0D37D /* AGSpriteButton.m in Sources */,
+				58133B1F6EC73DFB251EA97C379EDCF9 /* DZAControlInputDirection.m in Sources */,
+				F9B018F1242ED6EBC85FA9EA63E946EE /* DZAMenuNode.m in Sources */,
+				36033F94C639211B39679D6C2E4B7422 /* DZAMenuVoiceNode.m in Sources */,
+				BA051D3284A0343542A9420BFB2043C8 /* Pods-SpriteKitUniversalMenus-Mac-SpriteKitUniversalMenus-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1576,14 +1601,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD2FF168212C8A3E2B4B013D5CF4315E /* Sources */ = {
+		8686C68FA75B86B76DCD4CA3D679EA57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2C38FEFC94B55E695C24839B5C6293B /* AGSpriteButton.m in Sources */,
-				4ADBF1249DDFC6DAACCEC59EE577806D /* DZAMenuNode.m in Sources */,
-				9CA818D4C9388D4AF4B7EA62B4587A76 /* DZAMenuVoiceNode.m in Sources */,
-				1CCD6BBFDD2FD239E211AF7BAAF8B78F /* Pods-SpriteKitUniversalMenus_Tests-iOS-SpriteKitUniversalMenus-dummy.m in Sources */,
+				FF949ACA213FBC5FDF6ACFB7BBA525FD /* AGSpriteButton.m in Sources */,
+				AAC25FC22C973ACB3963C4FC2F15F708 /* DZAControlInputDirection.m in Sources */,
+				C8DBC23756FCE85B7B57B62EDCCD8396 /* DZAMenuNode.m in Sources */,
+				71BBEDFD646C7AF8AFE4D8BBC353DE10 /* DZAMenuVoiceNode.m in Sources */,
+				12CE92C87C1DF82CB64B58A248E94BD1 /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E604AC9121F63BF6B9C9E1B2D8B68A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21759BCDE68DD12FFACC32C455693D9A /* AGSpriteButton.m in Sources */,
+				7161567F78222301FCD9517104748902 /* DZAControlInputDirection.m in Sources */,
+				0602E47FC4D8B51529B418F830B7A329 /* DZAMenuNode.m in Sources */,
+				4242CC08AE7B36CCA127E87476F7A124 /* DZAMenuVoiceNode.m in Sources */,
+				A83457C875983F71EF0F95D28A2FFDF6 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE374A76A259C371DFBCC0494C4354E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA47135DE9200587E82242B0090CA3F /* AGSpriteButton.m in Sources */,
+				14A9B8CE4ADE976E12C7DFCDC816FEAF /* DZAControlInputDirection.m in Sources */,
+				4F8B414DD920B94C7017417068088F4F /* DZAMenuNode.m in Sources */,
+				CC2C634442A19253CE9178C6CE898C31 /* DZAMenuVoiceNode.m in Sources */,
+				845E1CEB05A35CF3DA1BA4C7945EF719 /* Pods-SpriteKiUniversalMenus-MacUITests-SpriteKitUniversalMenus-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1627,17 +1677,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0E322556F0FEEB4B2BDE12F17944931 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94A94A6F3956FE52299E42F0ED94BAFD /* AGSpriteButton.m in Sources */,
-				FDA7D364BEE3F91D02396DA382CA9509 /* DZAMenuNode.m in Sources */,
-				DC58DD60FC0A040DB07EED1F5763E199 /* DZAMenuVoiceNode.m in Sources */,
-				CACF2BA84B2E9705A4016A973DDD333A /* Pods-SpriteKitUniversalMenus-iOS-SpriteKitUniversalMenus-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E1A0DBA3E83896FF1B332CC995485E32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1650,17 +1689,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8F7D1378A3F93279D824B7D69ADF50 /* Pods-SpriteKitUniversalMenus-tvOS-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F20280FE3619FFB76701CA39A8D09FA7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				07F17E49002A97AE9C64F95C6D5FEF2D /* AGSpriteButton.m in Sources */,
-				B5CAD921ADA2D979C71CF7AC69362DA3 /* DZAMenuNode.m in Sources */,
-				11DA2E02D10CBA0B435F4E016020DCE6 /* DZAMenuVoiceNode.m in Sources */,
-				AD4572DB5D8582D58BD7BC0EB53F8AF5 /* Pods-SpriteKitUniversalMenus-tvOSUITests-SpriteKitUniversalMenus-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
