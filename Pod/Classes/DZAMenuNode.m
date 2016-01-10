@@ -14,13 +14,48 @@
     UITouch * currentTouch;
     CGPoint initialTranslation;
 #endif
+    UITapGestureRecognizer * tapGestureRecognizer;
+    UIPanGestureRecognizer * panGestureRecognizer;
 }
 @end
 
 @implementation DZAMenuNode
 
+-(instancetype) init
+{
+    if (self = [super init])
+    {
+
+    }
+    return self;
+}
+
+-(void) tapGestureRecognized:(UITapGestureRecognizer *) tapGestureRecognizer
+{
+    [self pressSelection];
+}
+
+-(void) panGestureRecognized:(UIPanGestureRecognizer *) panGestureRecognizer
+{
+    if (panGestureRecognizer.state == UIGestureRecognizerStateBegan)
+    {
+        [self ]
+    }
+}
+
+
 -(void) reloadMenu;
 {
+    if (!tapGestureRecognizer)
+    {
+        tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureRecognized:)];
+        [self.scene.view addGestureRecognizer:tapGestureRecognizer];
+    }
+    if (!panGestureRecognizer)
+    {
+        panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)];
+        [self.scene.view addGestureRecognizer:panGestureRecognizer];
+    }
     _currentMenuVoice = nil;
     DZAMenuVoiceNode * firstMenuVoice = nil;
     for (SKNode * node in self.children)
@@ -34,7 +69,7 @@
             {
                 menuVoiceNode.tag = menuVoiceNode.position.x;
             } else
-            {
+    	        {
                 // spriteKit scene's y starts from the bottom, we need to invert
                 menuVoiceNode.tag = -menuVoiceNode.position.y;
             }
@@ -151,7 +186,12 @@
     if (nextSelectionMenuNode != nil)
     {
         self.currentMenuVoice = nextSelectionMenuNode;
-        [self runAction:[SKAction playSoundFileNamed:@"select.wav" waitForCompletion:NO]];
+#if TARGET_OS_TV
+        if (_selectSoundName)
+        {
+            [self runAction:[SKAction playSoundFileNamed:_selectSoundName waitForCompletion:NO]];
+        }
+#endif
     }
     return self.currentMenuVoice;
 }
@@ -286,6 +326,17 @@
 -(void) spriteButton:(AGSpriteButton *) spriteButton didMoveToDirection:(DZAMenuDirection) direction;
 {
     [self moveSelection:direction];
+}
+
+-(void) pressSelection;
+{
+#if TARGET_OS_TV
+    [_currentMenuVoice forceTouchUpInside];
+    if (_selectSoundName)
+    {
+        [self runAction:[SKAction playSoundFileNamed:_openSoundName waitForCompletion:NO]];
+    }
+#endif
 }
 
 @end

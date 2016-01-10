@@ -46,17 +46,19 @@
 {
     _menuNode = [[DZAMenuNode alloc] init];
     _menuNode.allowedAxis = DZAMenuAxisVertical;
+    _menuNode.selectSoundName = @"select.wav";
+    _menuNode.openSoundName = @"open.wav";
     _menuNode.position = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
     [self addChild:_menuNode];
     
-    [self addMenuVoiceWithText:@"Play" y:120];
-    [self addMenuVoiceWithText:@"Options" y:0];
+    [self addMenuVoiceWithText:@"Play" y:240];
+    [self addMenuVoiceWithText:@"Options" y:120];
     [self addMenuVoiceWithText:@"Exit" y:-120];
     
     [_menuNode reloadMenu];
 }
 
-
+/*
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     NSLog(@"touchesBegan");
@@ -98,6 +100,6 @@
 - (void)pressesCancelled:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
 {
     
-}
+}*/
 
 @end

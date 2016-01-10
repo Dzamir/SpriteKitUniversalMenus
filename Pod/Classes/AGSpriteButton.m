@@ -529,6 +529,12 @@
     }
 }
 
+-(void) forceTouchUpInside;
+{
+    [self controlEventOccured:AGButtonControlEventTouchUpInside];
+    [self runAction:[SKAction sequence:@[actionTouchDown, actionTouchUp]]];
+}
+
 #pragma mark - Internal
 
 -(void)controlEventOccured:(AGButtonControlEvent)controlEvent
@@ -584,5 +590,6 @@
         }
     }
 }
+
 
 @end

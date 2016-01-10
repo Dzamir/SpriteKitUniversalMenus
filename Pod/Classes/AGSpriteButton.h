@@ -90,4 +90,5 @@ typedef NS_OPTIONS(NSInteger, AGButtonControlEvent)
 
 -(void)transformForTouchUp;
 
+-(void) forceTouchUpInside;
 @end
