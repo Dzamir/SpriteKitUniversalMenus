@@ -30,32 +30,26 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    int c = 0;
-    c++;
-}
-
-
-- (void)pressesBegan:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-//    [self.view pressesBegan:presses withEvent:event];
-    NSLog(@"ViewController intercepted Remote Click");
-}
-
-- (void)pressesChanged:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    
-}
-
-- (void)pressesEnded:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-
-}
-
-- (void)pressesCancelled:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-
-}
+//
+//- (void)pressesBegan:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+//{
+////    [self.view pressesBegan:presses withEvent:event];
+//    NSLog(@"ViewController intercepted Remote Click");
+//}
+//
+//- (void)pressesChanged:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+//{
+//    
+//}
+//
+//- (void)pressesEnded:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+//{
+//
+//}
+//
+//- (void)pressesCancelled:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
+//{
+//
+//}
 
 @end

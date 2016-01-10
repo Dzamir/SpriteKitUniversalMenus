@@ -32,8 +32,21 @@
         }
     }
     // take the first node as current
-    _currentMenuVoice = [self nextMenuVoice];
-    
+    self.currentMenuVoice = [self nextMenuVoice];
+}
+
+-(void) setCurrentMenuVoice:(DZAMenuVoiceNode *)currentMenuVoice
+{
+    if (currentMenuVoice != _currentMenuVoice)
+    {
+#if TARGET_OS_TV
+        [self defocusMenuVoice:_currentMenuVoice];
+#endif
+        _currentMenuVoice = currentMenuVoice;
+#if TARGET_OS_TV
+        [self focusMenuVoice:_currentMenuVoice];
+#endif
+    }
 }
 
 -(void) setAllowedAxis:(DZAMenuAxis)allowedAxis
@@ -101,27 +114,42 @@
     {
         if (direction == DZAMenuDirectionLeft)
         {
-            _currentMenuVoice = [self previousMenuVoice];
+            self.currentMenuVoice = [self previousMenuVoice];
         } else if (direction == DZAMenuDirectionRight)
         {
-            _currentMenuVoice = [self nextMenuVoice];
+            self.currentMenuVoice = [self nextMenuVoice];
         }
     } else
     {
         if (direction == DZAMenuDirectionDown)
         {
-            _currentMenuVoice = [self previousMenuVoice];
+            self.currentMenuVoice = [self previousMenuVoice];
         } else if (direction == DZAMenuDirectionUp)
         {
-            _currentMenuVoice = [self nextMenuVoice];
+            self.currentMenuVoice = [self nextMenuVoice];
         }
     }
-    return _currentMenuVoice;
+    [self focusMenuVoice:self.currentMenuVoice];
+    return self.currentMenuVoice;
 }
 
 #pragma mark tvOS touch handling
 
 #if TARGET_OS_TV
+
+-(void) focusMenuVoice:(DZAMenuVoiceNode *) menuVoiceNode
+{
+    SKAction * scaleAction = [SKAction scaleTo:1.2 duration:0.3];
+    [menuVoiceNode runAction:scaleAction];
+    NSLog(@"Focus %i", menuVoiceNode.tag);
+}
+
+-(void) defocusMenuVoice:(DZAMenuVoiceNode *) menuVoiceNode
+{
+    SKAction * scaleAction = [SKAction scaleTo:1.0 duration:0.3];
+    [menuVoiceNode runAction:scaleAction];
+    NSLog(@"Defocus %i", menuVoiceNode.tag);
+}
 
 -(CGFloat) horizontalThreeshold
 {
@@ -153,6 +181,7 @@
         currentTouch = [touches anyObject];
         CGPoint point = [currentTouch locationInNode:self];
         NSLog(@"position %@", NSStringFromCGPoint(point));
+        [self focusMenuVoice:_currentMenuVoice];
     }
 }
 
