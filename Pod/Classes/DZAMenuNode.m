@@ -22,6 +22,7 @@
 -(void) reloadMenu;
 {
     _currentMenuVoice = nil;
+    DZAMenuVoiceNode * firstMenuVoice = nil;
     for (SKNode * node in self.children)
     {
         if ([node isKindOfClass:[DZAMenuVoiceNode class]])
@@ -29,11 +30,27 @@
             DZAMenuVoiceNode * menuVoiceNode = (DZAMenuVoiceNode *) node;
             menuVoiceNode.allowedAxis = _allowedAxis;
             menuVoiceNode.delegate = self;
+            if (_allowedAxis == DZAMenuAxisHorizontal)
+            {
+                menuVoiceNode.tag = menuVoiceNode.position.x;
+            } else
+            {
+                // spriteKit scene's y starts from the bottom, we need to invert
+                menuVoiceNode.tag = -menuVoiceNode.position.y;
+            }
             menuVoiceNode.zPosition = menuVoiceNode.tag;
+            // search the menu voice with the lowest tag
+            if (firstMenuVoice == nil)
+            {
+                firstMenuVoice = menuVoiceNode;
+            } else if (menuVoiceNode.tag < firstMenuVoice.tag)
+            {
+                firstMenuVoice = menuVoiceNode;
+            }
         }
     }
     // take the first node as current
-    self.currentMenuVoice = [self nextMenuVoice];
+    self.currentMenuVoice = firstMenuVoice;
 }
 
 -(void) setCurrentMenuVoice:(DZAMenuVoiceNode *)currentMenuVoice

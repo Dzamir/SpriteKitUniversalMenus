@@ -28,7 +28,7 @@
 
 @implementation DZASpriteKitMenuScene
 
--(DZAMenuVoiceNode *) addMenuVoiceWithText:(NSString *) text y:(CGFloat) y tag:(int) tag
+-(DZAMenuVoiceNode *) addMenuVoiceWithText:(NSString *) text y:(CGFloat) y
 {
 #if TARGET_OS_TV
     DZAMenuVoiceNode * menuVoice = [[DZAMenuVoiceNode alloc] initWithImageNamed:@"button.png"];
@@ -38,7 +38,6 @@
     [menuVoice setLabelWithText:text andFont:[DZAFont boldSystemFontOfSize:15] withColor:[DZAColor whiteColor]];
 #endif
     menuVoice.position = CGPointMake(0, y);
-    menuVoice.tag = tag;
     [_menuNode addChild:menuVoice];
     return menuVoice;
 }
@@ -50,9 +49,9 @@
     _menuNode.position = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
     [self addChild:_menuNode];
     
-    [self addMenuVoiceWithText:@"Play" y:120 tag:1];
-    [self addMenuVoiceWithText:@"Options" y:0 tag:2];
-    [self addMenuVoiceWithText:@"Exit" y:-120 tag:3];
+    [self addMenuVoiceWithText:@"Play" y:120];
+    [self addMenuVoiceWithText:@"Options" y:0];
+    [self addMenuVoiceWithText:@"Exit" y:-120];
     
     [_menuNode reloadMenu];
 }
