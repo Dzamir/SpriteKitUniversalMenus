@@ -45,6 +45,18 @@
 		8D3442FB1C40EC8300EA28BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3442FA1C40EC8300EA28BF /* Assets.xcassets */; };
 		8D3443061C40EC8300EA28BF /* SpriteKitUniversalMenus_tvOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3443051C40EC8300EA28BF /* SpriteKitUniversalMenus_tvOSUITests.m */; };
 		8D34430E1C40ECA400EA28BF /* DZASpriteKitMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */; };
+		8D3443191C42A53900EA28BF /* open.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D3443171C42A53900EA28BF /* open.wav */; };
+		8D34431A1C42A53900EA28BF /* open.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D3443171C42A53900EA28BF /* open.wav */; };
+		8D34431B1C42A53900EA28BF /* open.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D3443171C42A53900EA28BF /* open.wav */; };
+		8D34431C1C42A53900EA28BF /* select.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D3443181C42A53900EA28BF /* select.wav */; };
+		8D34431D1C42A53900EA28BF /* select.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D3443181C42A53900EA28BF /* select.wav */; };
+		8D34431E1C42A53900EA28BF /* select.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D3443181C42A53900EA28BF /* select.wav */; };
+		8D3443201C42A65500EA28BF /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34431F1C42A65500EA28BF /* button@2x.png */; };
+		8D3443211C42A65500EA28BF /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34431F1C42A65500EA28BF /* button@2x.png */; };
+		8D3443221C42A65500EA28BF /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D34431F1C42A65500EA28BF /* button@2x.png */; };
+		8D3443241C42A6B300EA28BF /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3443231C42A6B300EA28BF /* button.png */; };
+		8D3443251C42A6B300EA28BF /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3443231C42A6B300EA28BF /* button.png */; };
+		8D3443261C42A6B300EA28BF /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3443231C42A6B300EA28BF /* button.png */; };
 		94819CC6357BECDDDB711032 /* Pods_SpriteKitUniversalMenus_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56404387098420D819668F02 /* Pods_SpriteKitUniversalMenus_iOS.framework */; };
 		DB069EF72381CC33F459C95F /* Pods_SpriteKitUniversalMenus_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BD61A987814F466383A593 /* Pods_SpriteKitUniversalMenus_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -131,6 +143,10 @@
 		8D3443011C40EC8300EA28BF /* SpriteKitUniversalMenus-tvOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpriteKitUniversalMenus-tvOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3443051C40EC8300EA28BF /* SpriteKitUniversalMenus_tvOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitUniversalMenus_tvOSUITests.m; sourceTree = "<group>"; };
 		8D3443071C40EC8300EA28BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3443171C42A53900EA28BF /* open.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = open.wav; sourceTree = "<group>"; };
+		8D3443181C42A53900EA28BF /* select.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = select.wav; sourceTree = "<group>"; };
+		8D34431F1C42A65500EA28BF /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
+		8D3443231C42A6B300EA28BF /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		8DA2AC55C65C6BB08BFFC5A6 /* Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOS/Pods-SpriteKitUniversalMenus-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9225FA3DF4AA269B700B3BBF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		931659F72BDEE07B1746B60A /* Pods-SpriteKitUniversalMenus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitUniversalMenus_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Example/Pods-SpriteKitUniversalMenus_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -377,6 +393,10 @@
 			children = (
 				8D3442DD1C40616D00EA28BF /* DZASpriteKitMenuScene.h */,
 				8D3442DE1C40616D00EA28BF /* DZASpriteKitMenuScene.m */,
+				8D3443231C42A6B300EA28BF /* button.png */,
+				8D34431F1C42A65500EA28BF /* button@2x.png */,
+				8D3443171C42A53900EA28BF /* open.wav */,
+				8D3443181C42A53900EA28BF /* select.wav */,
 			);
 			path = "SpriteKitUniversalMenus-Shared";
 			sourceTree = "<group>";
@@ -601,9 +621,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3443241C42A6B300EA28BF /* button.png in Resources */,
+				8D3443201C42A65500EA28BF /* button@2x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				8D3443191C42A53900EA28BF /* open.wav in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				8D34431C1C42A53900EA28BF /* select.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,7 +643,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D34431A1C42A53900EA28BF /* open.wav in Resources */,
+				8D3443251C42A6B300EA28BF /* button.png in Resources */,
+				8D3443211C42A65500EA28BF /* button@2x.png in Resources */,
 				8D3442C61C405B8700EA28BF /* Assets.xcassets in Resources */,
+				8D34431D1C42A53900EA28BF /* select.wav in Resources */,
 				8D3442C91C405B8700EA28BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,9 +663,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D34431B1C42A53900EA28BF /* open.wav in Resources */,
+				8D3443261C42A6B300EA28BF /* button.png in Resources */,
 				8D3442F91C40EC8300EA28BF /* Main.storyboard in Resources */,
 				8D3442F11C40EC8300EA28BF /* GameScene.sks in Resources */,
+				8D3443221C42A65500EA28BF /* button@2x.png in Resources */,
 				8D3442FB1C40EC8300EA28BF /* Assets.xcassets in Resources */,
+				8D34431E1C42A53900EA28BF /* select.wav in Resources */,
 				8D3442F61C40EC8300EA28BF /* Game.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

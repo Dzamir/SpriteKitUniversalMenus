@@ -134,6 +134,7 @@
     if (nextSelectionMenuNode != nil)
     {
         self.currentMenuVoice = nextSelectionMenuNode;
+        [self runAction:[SKAction playSoundFileNamed:@"select.wav" waitForCompletion:NO]];
     }
     return self.currentMenuVoice;
 }
