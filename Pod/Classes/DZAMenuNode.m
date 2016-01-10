@@ -29,6 +29,7 @@
             DZAMenuVoiceNode * menuVoiceNode = (DZAMenuVoiceNode *) node;
             menuVoiceNode.allowedAxis = _allowedAxis;
             menuVoiceNode.delegate = self;
+            menuVoiceNode.zPosition = menuVoiceNode.tag;
         }
     }
     // take the first node as current
@@ -110,26 +111,30 @@
 
 -(DZAMenuVoiceNode *) moveSelection:(DZAMenuDirection) direction;
 {
+    DZAMenuVoiceNode * nextSelectionMenuNode = nil;
     if (_allowedAxis == DZAMenuAxisHorizontal)
     {
         if (direction == DZAMenuDirectionLeft)
         {
-            self.currentMenuVoice = [self previousMenuVoice];
+            nextSelectionMenuNode = [self previousMenuVoice];
         } else if (direction == DZAMenuDirectionRight)
         {
-            self.currentMenuVoice = [self nextMenuVoice];
+            nextSelectionMenuNode = [self nextMenuVoice];
         }
     } else
     {
         if (direction == DZAMenuDirectionDown)
         {
-            self.currentMenuVoice = [self previousMenuVoice];
+            nextSelectionMenuNode = [self nextMenuVoice];
         } else if (direction == DZAMenuDirectionUp)
         {
-            self.currentMenuVoice = [self nextMenuVoice];
+            nextSelectionMenuNode = [self previousMenuVoice];
         }
     }
-    [self focusMenuVoice:self.currentMenuVoice];
+    if (nextSelectionMenuNode != nil)
+    {
+        self.currentMenuVoice = nextSelectionMenuNode;
+    }
     return self.currentMenuVoice;
 }
 
@@ -139,8 +144,9 @@
 
 -(void) focusMenuVoice:(DZAMenuVoiceNode *) menuVoiceNode
 {
-    SKAction * scaleAction = [SKAction scaleTo:1.2 duration:0.3];
+    SKAction * scaleAction = [SKAction scaleTo:1.2 duration:0.05];
     [menuVoiceNode runAction:scaleAction];
+    menuVoiceNode.zPosition = 100000;
     NSLog(@"Focus %i", menuVoiceNode.tag);
 }
 
@@ -148,6 +154,7 @@
 {
     SKAction * scaleAction = [SKAction scaleTo:1.0 duration:0.3];
     [menuVoiceNode runAction:scaleAction];
+    menuVoiceNode.zPosition = menuVoiceNode.tag;
     NSLog(@"Defocus %i", menuVoiceNode.tag);
 }
 
@@ -218,7 +225,7 @@
         {
             initialTranslation = point;
             [self cancelTouch];
-            [self moveSelection:DZAMenuDirectionDown];
+            [self moveSelection:DZAMenuDirectionUp];
         }
     } else if (translationPoint.y < -verticalThreeshold)
     {
@@ -227,7 +234,7 @@
         {
             initialTranslation = point;
             [self cancelTouch];
-            [self moveSelection:DZAMenuDirectionUp];
+            [self moveSelection:DZAMenuDirectionDown];
         }
     }
     NSLog(@"position %@", NSStringFromCGPoint(point));

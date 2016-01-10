@@ -15,7 +15,6 @@ end
 
 target 'SpriteKitUniversalMenus_Tests-iOS' do
   pod "SpriteKitUniversalMenus", :path => "../"
-
   pod 'FBSnapshotTestCase'
 end
 
