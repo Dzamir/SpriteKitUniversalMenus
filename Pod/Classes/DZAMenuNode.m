@@ -8,6 +8,15 @@
 
 #import "DZAMenuNode.h"
 
+@interface DZAMenuNode()
+{
+#if TARGET_OS_TV
+    UITouch * currentTouch;
+    CGPoint initialTranslation;
+#endif
+}
+@end
+
 @implementation DZAMenuNode
 
 -(void) reloadMenu;
@@ -24,13 +33,12 @@
     }
     // take the first node as current
     _currentMenuVoice = [self nextMenuVoice];
-    [_currentMenuVoice becomeFirstResponder];
+    
 }
 
 -(void) setAllowedAxis:(DZAMenuAxis)allowedAxis
 {
     _allowedAxis = allowedAxis;
-    [self reloadMenu];
 }
 
 -(NSArray *) menuVoices
@@ -110,6 +118,114 @@
     }
     return _currentMenuVoice;
 }
+
+#pragma mark tvOS touch handling
+
+#if TARGET_OS_TV
+
+-(CGFloat) horizontalThreeshold
+{
+    if (_allowedAxis == DZAMenuAxisHorizontal)
+    {
+        return THREESHOLD;
+    } else
+    {
+        return THREESHOLD / 4;
+    }
+}
+
+-(CGFloat) verticalThreeshold
+{
+    if (_allowedAxis == DZAMenuAxisVertical)
+    {
+        return THREESHOLD;
+    } else
+    {
+        return THREESHOLD / 4;
+    }
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if (currentTouch == nil)
+    {
+        initialTranslation = CGPointMake(0, 0);
+        currentTouch = [touches anyObject];
+        CGPoint point = [currentTouch locationInNode:self];
+        NSLog(@"position %@", NSStringFromCGPoint(point));
+    }
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    currentTouch = [touches anyObject];
+    CGPoint point = [currentTouch locationInNode:self];
+    CGPoint translationPoint = CGPointMake( (point.x - initialTranslation.x) / 30.0f, (point.y - initialTranslation.y) / 30.0f);
+    CGFloat horizontalThreeshold = [self horizontalThreeshold];
+    CGFloat verticalThreeshold = [self verticalThreeshold];
+    if (translationPoint.x > horizontalThreeshold)
+    {
+        translationPoint.x = horizontalThreeshold;
+        if (_allowedAxis == DZAMenuAxisHorizontal)
+        {
+            initialTranslation = point;
+            [self cancelTouch];
+            [self moveSelection:DZAMenuDirectionRight];
+        }
+    } else if (translationPoint.x < -horizontalThreeshold)
+    {
+        translationPoint.x = -horizontalThreeshold;
+        if (_allowedAxis == DZAMenuAxisHorizontal)
+        {
+            initialTranslation = point;
+            [self cancelTouch];
+            [self moveSelection:DZAMenuDirectionLeft];
+        }
+    }
+    if (translationPoint.y > verticalThreeshold)
+    {
+        translationPoint.y = verticalThreeshold;
+        if (_allowedAxis == DZAMenuAxisVertical)
+        {
+            initialTranslation = point;
+            [self cancelTouch];
+            [self moveSelection:DZAMenuDirectionDown];
+        }
+    } else if (translationPoint.y < -verticalThreeshold)
+    {
+        translationPoint.y = -verticalThreeshold;
+        if (_allowedAxis == DZAMenuAxisVertical)
+        {
+            initialTranslation = point;
+            [self cancelTouch];
+            [self moveSelection:DZAMenuDirectionUp];
+        }
+    }
+    NSLog(@"position %@", NSStringFromCGPoint(point));
+    SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + translationPoint.x, _currentMenuVoice.originalPosition.y + translationPoint.y) duration:0.1];
+    [_currentMenuVoice runAction:moveAction];
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    initialTranslation = CGPointMake(0, 0);
+    [self cancelTouch];
+}
+
+-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    initialTranslation = CGPointMake(0, 0);
+    [self cancelTouch];
+}
+
+-(void) cancelTouch
+{
+    SKAction * moveAction = [SKAction moveTo:_currentMenuVoice.originalPosition duration:0.5];
+    [_currentMenuVoice runAction:moveAction];
+    currentTouch = nil;
+}
+
+#endif
 
 #pragma mark AGSpriteButtonDelegate
 

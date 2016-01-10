@@ -111,6 +111,12 @@
     
 }
 
+-(void) setPosition:(CGPoint)position
+{
+    [super setPosition:position];
+    _originalPosition = self.position;
+}
+
 #pragma mark - LABEL FOR BUTTON
 
 
@@ -165,12 +171,7 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 #if TARGET_OS_TV
-    if (currentTouch == nil)
-    {
-        currentTouch = [touches anyObject];
-        CGPoint point = [currentTouch locationInNode:self];
-        NSLog(@"position %@", NSStringFromCGPoint(point));
-    }
+    [self.parent touchesBegan:touches withEvent:event];
 #else
     if (self.exclusiveTouch)
     {
@@ -190,69 +191,10 @@
 #endif
 }
 
--(CGFloat) horizontalThreeshold
-{
-    if (_allowedAxis == DZAMenuAxisHorizontal)
-    {
-        return THREESHOLD;
-    } else
-    {
-        return THREESHOLD / 4;
-    }
-}
-
--(CGFloat) verticalThreeshold
-{
-    if (_allowedAxis == DZAMenuAxisVertical)
-    {
-        return THREESHOLD;
-    } else
-    {
-        return THREESHOLD / 4;
-    }
-}
-
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
 #if TARGET_OS_TV
-    currentTouch = [touches anyObject];
-    CGPoint point = [currentTouch locationInNode:self];
-    point = CGPointMake(point.x / 30.0f, point.y / 30.0f);
-    CGFloat horizontalThreeshold = [self horizontalThreeshold];
-    CGFloat verticalThreeshold = [self verticalThreeshold];
-    if (point.x > horizontalThreeshold)
-    {
-        point.x = horizontalThreeshold;
-        if (_allowedAxis == DZAMenuAxisHorizontal)
-        {
-            [self.delegate spriteButton:self didMoveToDirection:DZAMenuDirectionRight];
-        }
-    } else if (point.x < -horizontalThreeshold)
-    {
-        point.x = -horizontalThreeshold;
-        if (_allowedAxis == DZAMenuAxisHorizontal)
-        {
-            [self.delegate spriteButton:self didMoveToDirection:DZAMenuDirectionLeft];
-        }
-    }
-    if (point.y > verticalThreeshold)
-    {
-        point.y = verticalThreeshold;
-        if (_allowedAxis == DZAMenuAxisVertical)
-        {
-            [self.delegate spriteButton:self didMoveToDirection:DZAMenuDirectionDown];
-        }
-    } else if (point.y < -verticalThreeshold)
-    {
-        point.y = -verticalThreeshold;
-        if (_allowedAxis == DZAMenuAxisVertical)
-        {
-            [self.delegate spriteButton:self didMoveToDirection:DZAMenuDirectionUp];
-        }
-    }
-    NSLog(@"position %@", NSStringFromCGPoint(point));
-    SKAction * moveAction = [SKAction moveTo:point duration:0.1];
-    [self runAction:moveAction];
+    [self.parent touchesMoved:touches withEvent:event];
 #else
     if (self.exclusiveTouch)
     {
@@ -274,8 +216,7 @@
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
 #if TARGET_OS_TV
-    SKAction * moveAction = [SKAction moveTo:CGPointMake(0, 0) duration:0.1];
-    [self runAction:moveAction];
+    [self.parent touchesEnded:touches withEvent:event];
 #else
     if (self.exclusiveTouch)
     {
@@ -298,10 +239,8 @@
 -(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
 #if TARGET_OS_TV
-        SKAction * moveAction = [SKAction moveTo:CGPointMake(0, 0) duration:0.1];
-        [self runAction:moveAction];
+    [self.parent touchesCancelled:touches withEvent:event];
 #else
-    
     if (self.exclusiveTouch)
     {
         if ([touches containsObject:currentTouch])

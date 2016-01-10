@@ -26,9 +26,6 @@ typedef NS_OPTIONS(NSInteger, AGButtonControlEvent)
 
 @end
 
-#define THREESHOLD 10.0f
-
-
 @interface AGSpriteButton : SKSpriteNode
 
 @property (weak, nonatomic) id<AGSpriteButtonDelegate> delegate;
@@ -37,6 +34,7 @@ typedef NS_OPTIONS(NSInteger, AGButtonControlEvent)
 @property (setter = setExclusiveTouch:, getter = isExclusiveTouch) BOOL exclusiveTouch;
 
 @property (strong, nonatomic) SKLabelNode *label;
+@property (readonly, nonatomic) CGPoint originalPosition;
 
 //CLASS METHODS FOR CREATING BUTTON
 

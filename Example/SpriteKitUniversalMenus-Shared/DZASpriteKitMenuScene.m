@@ -28,10 +28,11 @@
 
 @implementation DZASpriteKitMenuScene
 
--(DZAMenuVoiceNode *) addMenuVoiceWithText:(NSString *) text y:(CGFloat) y
+-(DZAMenuVoiceNode *) addMenuVoiceWithText:(NSString *) text y:(CGFloat) y tag:(int) tag
 {
     DZAMenuVoiceNode * menuVoice = [[DZAMenuVoiceNode alloc] initWithColor:[DZAColor redColor] size:CGSizeMake(200, 44)];
     menuVoice.position = CGPointMake(0, y);
+    menuVoice.tag = tag;
     [menuVoice setLabelWithText:text andFont:[DZAFont systemFontOfSize:15] withColor:[DZAColor whiteColor]];
     [_menuNode addChild:menuVoice];
     return menuVoice;
@@ -44,16 +45,32 @@
     _menuNode.position = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
     [self addChild:_menuNode];
     
-    [self addMenuVoiceWithText:@"Play" y:55];
-    [self addMenuVoiceWithText:@"Options" y:0];
-    [self addMenuVoiceWithText:@"Exit" y:-55];
+    [self addMenuVoiceWithText:@"Play" y:255 tag:1];
+    [self addMenuVoiceWithText:@"Options" y:200 tag:2];
+    [self addMenuVoiceWithText:@"Exit" y:145 tag:3];
+    
+    [_menuNode reloadMenu];
 }
 
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    int c = 0;
-    c++;
+    [_menuNode touchesBegan:touches withEvent:event];
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_menuNode touchesMoved:touches withEvent:event];
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_menuNode touchesEnded:touches withEvent:event];
+}
+
+-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_menuNode touchesCancelled:touches withEvent:event];
 }
 
 - (void)pressesBegan:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;

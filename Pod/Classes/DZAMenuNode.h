@@ -9,6 +9,8 @@
 #import <SpriteKit/SpriteKit.h>
 #import "DZAMenuVoiceNode.h"
 
+#define THREESHOLD 10.0f
+
 @interface DZAMenuNode : SKNode <AGSpriteButtonDelegate>
 
 @property (readwrite, nonatomic) DZAMenuAxis allowedAxis;
