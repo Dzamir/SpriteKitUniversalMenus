@@ -56,9 +56,17 @@
     _menuNode.position = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
     [self addChild:_menuNode];
     
-    [self addMenuVoiceWithText:@"Play" y:240];
-    [self addMenuVoiceWithText:@"Options" y:120];
-    [self addMenuVoiceWithText:@"Exit" y:-120];
+    [[self addMenuVoiceWithText:@"Play" y:120] performBlock:^
+    {
+        int c = 0;
+        c++;
+    } onEvent:AGButtonControlEventTouchUpInside];
+    [[self addMenuVoiceWithText:@"Options" y:0] performBlock:^{
+        
+    } onEvent:AGButtonControlEventTouchUpInside];
+    [[self addMenuVoiceWithText:@"Exit" y:-120] performBlock:^{
+        
+    } onEvent:AGButtonControlEventTouchUpInside];;
     
     [_menuNode reloadMenu];
 }

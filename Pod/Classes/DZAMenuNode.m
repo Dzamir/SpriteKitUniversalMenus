@@ -136,7 +136,7 @@
     NSArray * menuVoices = [self menuVoices];
     for (DZAMenuVoiceNode * menuNode in menuVoices)
     {
-        if ( (menuNode.tag < _currentMenuVoice.tag) && (menuNode.tag > previousMenuVoice.tag) )
+        if (menuNode.tag < _currentMenuVoice.tag)
         {
             if (previousMenuVoice == nil)
             {
@@ -232,9 +232,8 @@
 {
     if (_panGestureRecognizer.state == UIGestureRecognizerStateBegan)
     {
-        initialTranslation = CGPointMake(0, 0);
         CGPoint point = [_panGestureRecognizer locationInView:self.scene.view];
-        NSLog(@"position %@", NSStringFromCGPoint(point));
+        initialTranslation = point;
         [self focusMenuVoice:_currentMenuVoice];
     } else if (_panGestureRecognizer.state == UIGestureRecognizerStateChanged)
     {
@@ -280,7 +279,6 @@
                 [self moveSelection:DZAMenuDirectionUp];
             }
         }
-        NSLog(@"position %@", NSStringFromCGPoint(point));
         SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + translationPoint.x, _currentMenuVoice.originalPosition.y - translationPoint.y) duration:0.1];
         [_currentMenuVoice runAction:moveAction];
     } else
