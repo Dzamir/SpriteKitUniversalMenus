@@ -76,10 +76,19 @@
     [_menuNode scrollWheel:theEvent];
 }
 
--(void) touchesBeganWithEvent:(NSEvent *)event
+//-(void) touchesBeganWithEvent:(NSEvent *)event
+//{
+//    int c = 0;
+//    c++;
+//}
+- (void)keyDown:(NSEvent *)theEvent;
 {
-    int c = 0;
-    c++;
+    [_menuNode keyDown:theEvent];
+}
+
+- (void)keyUp:(NSEvent *)theEvent;
+{
+    [_menuNode keyUp:theEvent];
 }
 /*
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

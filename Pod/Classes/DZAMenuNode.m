@@ -238,6 +238,50 @@
 
 #if !TARGET_OS_IPHONE
 
+- (void)keyDown:(NSEvent *)theEvent;
+{
+    if ([theEvent modifierFlags] & NSNumericPadKeyMask)
+    { // arrow keys have this mask
+        NSString *theArrow = [theEvent charactersIgnoringModifiers];
+        unichar keyChar = 0;
+        if ( [theArrow length] == 0
+            )
+            return;            // reject dead keys
+        if ( [theArrow length] == 1 )
+        {
+            keyChar = [theArrow characterAtIndex:0];
+            if ( keyChar == NSLeftArrowFunctionKey )
+            {
+                [self moveSelection:DZAMenuDirectionLeft];
+                return;
+            }
+            if ( keyChar == NSRightArrowFunctionKey )
+            {
+                [self moveSelection:DZAMenuDirectionRight];
+                return;
+            }
+            if ( keyChar == NSUpArrowFunctionKey )
+            {
+                [self moveSelection:DZAMenuDirectionUp];
+                return;
+            }
+            if ( keyChar == NSDownArrowFunctionKey )
+            {
+                [self moveSelection:DZAMenuDirectionDown];
+                return;
+            }
+            [super keyDown:theEvent];
+        }
+    }
+    [super keyDown:theEvent];
+}
+
+- (void)keyUp:(NSEvent *)theEvent;
+{
+    int c = 0;
+    c++;
+}
+
 -(void) scrollWheel:(NSEvent *) event
 {
     if ( (event.phase == NSEventPhaseBegan) || (event.phase == NSEventPhaseChanged) )
