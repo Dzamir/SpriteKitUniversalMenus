@@ -34,7 +34,7 @@
     DZAMenuVoiceNode * menuVoice = [[DZAMenuVoiceNode alloc] initWithImageNamed:@"button.png"];
     [menuVoice setLabelWithText:text andFont:[DZAFont boldSystemFontOfSize:25] withColor:[DZAColor blackColor]];
 #else
-    DZAMenuVoiceNode * menuVoice = [[DZAMenuVoiceNode alloc] initWithColor:[DZAColor redColor] size:CGSizeMake(200
+    DZAMenuVoiceNode * menuVoice = [[DZAMenuVoiceNode alloc] initWithImageNamed:@"button"];
     [menuVoice setLabelWithText:text andFont:[DZAFont boldSystemFontOfSize:15] withColor:[DZAColor whiteColor]];
 #endif
     menuVoice.position = CGPointMake(0, y);

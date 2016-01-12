@@ -13,10 +13,18 @@
     #define DZAFont UIFont
     #define DZATouch UITouch
     #define DZAColor UIColor
+    #define DZATapGestureRecognizer UITapGestureRecognizer
+    #define DZAPanGestureRecognizer UIPanGestureRecognizer
+    #define DZAGestureRecognizerStateBegan UIGestureRecognizerStateBegan
+    #define DZAGestureRecognizerStateChanged UIGestureRecognizerStateChanged
 #else
     #define DZAFont NSFont
     #define DZATouch NSTouch
     #define DZAColor NSColor
+    #define DZATapGestureRecognizer NSClickGestureRecognizer
+    #define DZAPanGestureRecognizer NSPanGestureRecognizer
+    #define DZAGestureRecognizerStateBegan NSGestureRecognizerStateBegan
+    #define DZAGestureRecognizerStateChanged NSGestureRecognizerStateChanged
 #endif
 
 #endif /* Bridges_h */

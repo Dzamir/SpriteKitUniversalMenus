@@ -16,7 +16,7 @@
 
     SKView * spriteKitView = (SKView *) self.view;
     
-    DZASpriteKitMenuScene * menuScene = [[DZASpriteKitMenuScene alloc] initWithSize:self.view.bounds.size];
+    DZASpriteKitMenuScene * menuScene = [[DZASpriteKitMenuScene alloc] initWithSize:CGSizeMake(960, 540)];
     [spriteKitView presentScene:menuScene];
 }
 

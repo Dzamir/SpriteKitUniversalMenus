@@ -10,11 +10,9 @@
 
 @interface DZAMenuNode()
 {
-#if TARGET_OS_TV
     CGPoint initialTranslation;
-#endif
-    UITapGestureRecognizer * tapGestureRecognizer;
-    UIPanGestureRecognizer * panGestureRecognizer;
+    DZATapGestureRecognizer * tapGestureRecognizer;
+    DZAPanGestureRecognizer * panGestureRecognizer;
 }
 @end
 
@@ -29,21 +27,18 @@
     return self;
 }
 
--(void) tapGestureRecognized:(UITapGestureRecognizer *) tapGestureRecognizer
-{
-    [self pressSelection];
-}
+
 
 -(void) reloadMenu;
 {
     if (!tapGestureRecognizer)
     {
-        tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureRecognized:)];
+        tapGestureRecognizer = [[DZATapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureRecognized:)];
         [self.scene.view addGestureRecognizer:tapGestureRecognizer];
     }
     if (!panGestureRecognizer)
     {
-        panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)];
+        panGestureRecognizer = [[DZAPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)];
         [self.scene.view addGestureRecognizer:panGestureRecognizer];
     }
     _currentMenuVoice = nil;
@@ -188,8 +183,6 @@
 
 #pragma mark tvOS touch handling
 
-#if TARGET_OS_TV
-
 -(void) focusMenuVoice:(DZAMenuVoiceNode *) menuVoiceNode
 {
     SKAction * scaleAction = [SKAction scaleTo:1.2 duration:0.05];
@@ -228,14 +221,19 @@
     }
 }
 
--(void) panGestureRecognized:(UIPanGestureRecognizer *) _panGestureRecognizer
+-(void) tapGestureRecognized:(DZATapGestureRecognizer *) tapGestureRecognizer
 {
-    if (_panGestureRecognizer.state == UIGestureRecognizerStateBegan)
+    [self pressSelection];
+}
+
+-(void) panGestureRecognized:(DZAPanGestureRecognizer *) _panGestureRecognizer
+{
+    if (_panGestureRecognizer.state == DZAGestureRecognizerStateBegan)
     {
         CGPoint point = [_panGestureRecognizer locationInView:self.scene.view];
         initialTranslation = point;
         [self focusMenuVoice:_currentMenuVoice];
-    } else if (_panGestureRecognizer.state == UIGestureRecognizerStateChanged)
+    } else if (_panGestureRecognizer.state == DZAGestureRecognizerStateChanged)
     {
         CGPoint point = [_panGestureRecognizer locationInView:self.scene.view];
         CGPoint translationPoint = CGPointMake( (point.x - initialTranslation.x) / 30.0f, (point.y - initialTranslation.y) / 30.0f);
@@ -369,7 +367,6 @@
 //    currentTouch = nil;
 }
 
-#endif
 
 #pragma mark AGSpriteButtonDelegate
 
