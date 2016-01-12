@@ -13,6 +13,8 @@
     CGPoint initialTranslation;
     DZATapGestureRecognizer * tapGestureRecognizer;
     DZAPanGestureRecognizer * panGestureRecognizer;
+    
+    CGPoint currentScroll;
 }
 @end
 
@@ -77,13 +79,9 @@
 {
     if (currentMenuVoice != _currentMenuVoice)
     {
-#if TARGET_OS_TV
         [self defocusMenuVoice:_currentMenuVoice];
-#endif
         _currentMenuVoice = currentMenuVoice;
-#if TARGET_OS_TV
         [self focusMenuVoice:_currentMenuVoice];
-#endif
     }
 }
 
@@ -185,17 +183,29 @@
 
 -(void) focusMenuVoice:(DZAMenuVoiceNode *) menuVoiceNode
 {
+#if TARGET_OS_TV
     SKAction * scaleAction = [SKAction scaleTo:1.2 duration:0.05];
     [menuVoiceNode runAction:scaleAction];
     menuVoiceNode.zPosition = 100000;
+#else
+    SKAction * scaleAction = [SKAction scaleTo:1.08 duration:0.05];
+    [menuVoiceNode runAction:scaleAction];
+    menuVoiceNode.zPosition = 100000;
+#endif
     NSLog(@"Focus %i", menuVoiceNode.tag);
 }
 
 -(void) defocusMenuVoice:(DZAMenuVoiceNode *) menuVoiceNode
 {
+#if TARGET_OS_TV
     SKAction * scaleAction = [SKAction scaleTo:1.0 duration:0.3];
     [menuVoiceNode runAction:scaleAction];
     menuVoiceNode.zPosition = menuVoiceNode.tag;
+#else
+    SKAction * scaleAction = [SKAction scaleTo:1.0 duration:0.3];
+    [menuVoiceNode runAction:scaleAction];
+    menuVoiceNode.zPosition = menuVoiceNode.tag;
+#endif
     NSLog(@"Defocus %i", menuVoiceNode.tag);
 }
 
@@ -225,6 +235,58 @@
 {
     [self pressSelection];
 }
+
+#if !TARGET_OS_IPHONE
+
+-(void) scrollWheel:(NSEvent *) event
+{
+    currentScroll = CGPointMake(currentScroll.x + event.deltaX, currentScroll.y - event.deltaY);
+    CGFloat horizontalThreeshold = [self horizontalThreeshold];
+    CGFloat verticalThreeshold = [self verticalThreeshold];
+    if (currentScroll.x > horizontalThreeshold)
+    {
+        currentScroll.x = horizontalThreeshold;
+        if (_allowedAxis == DZAMenuAxisHorizontal)
+        {
+            currentScroll = CGPointMake(0, 0);
+            [self cancelTouch];
+            [self moveSelection:DZAMenuDirectionRight];
+        }
+    } else if (currentScroll.x < -horizontalThreeshold)
+    {
+        currentScroll.x = -horizontalThreeshold;
+        if (_allowedAxis == DZAMenuAxisHorizontal)
+        {
+            currentScroll = CGPointMake(0, 0);
+            [self cancelTouch];
+            [self moveSelection:DZAMenuDirectionLeft];
+        }
+    }
+    if (currentScroll.y > verticalThreeshold)
+    {
+        currentScroll.y = verticalThreeshold;
+        if (_allowedAxis == DZAMenuAxisVertical)
+        {
+            currentScroll = CGPointMake(0, 0);
+            [self cancelTouch];
+            [self moveSelection:DZAMenuDirectionDown];
+        }
+    } else if (currentScroll.y < -verticalThreeshold)
+    {
+        currentScroll.y = -verticalThreeshold;
+        if (_allowedAxis == DZAMenuAxisVertical)
+        {
+            currentScroll = CGPointMake(0, 0);
+            [self cancelTouch];
+            [self moveSelection:DZAMenuDirectionUp];
+        }
+    }
+    SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + currentScroll.x, _currentMenuVoice.originalPosition.y - currentScroll.y) duration:0.1];
+    [_currentMenuVoice runAction:moveAction];
+
+}
+
+#endif
 
 -(void) panGestureRecognized:(DZAPanGestureRecognizer *) _panGestureRecognizer
 {

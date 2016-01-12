@@ -71,6 +71,16 @@
     [_menuNode reloadMenu];
 }
 
+- (void)scrollWheel:(NSEvent *)theEvent
+{
+    [_menuNode scrollWheel:theEvent];
+}
+
+-(void) touchesBeganWithEvent:(NSEvent *)event
+{
+    int c = 0;
+    c++;
+}
 /*
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {

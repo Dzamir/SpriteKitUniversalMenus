@@ -9,6 +9,13 @@
 #import "ViewController.h"
 #import "DZASpriteKitMenuScene.h"
 
+@interface ViewController()
+{
+    DZASpriteKitMenuScene * menuScene;
+}
+
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -16,7 +23,7 @@
 
     SKView * spriteKitView = (SKView *) self.view;
     
-    DZASpriteKitMenuScene * menuScene = [[DZASpriteKitMenuScene alloc] initWithSize:CGSizeMake(960, 540)];
+    menuScene = [[DZASpriteKitMenuScene alloc] initWithSize:CGSizeMake(960, 540)];
     [spriteKitView presentScene:menuScene];
 }
 
@@ -25,5 +32,11 @@
 
     // Update the view, if already loaded.
 }
+
+- (void)scrollWheel:(NSEvent *)theEvent
+{
+    [menuScene scrollWheel:theEvent];
+}
+
 
 @end
