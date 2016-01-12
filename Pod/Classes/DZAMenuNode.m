@@ -240,49 +240,56 @@
 
 -(void) scrollWheel:(NSEvent *) event
 {
-    currentScroll = CGPointMake(currentScroll.x + event.deltaX, currentScroll.y - event.deltaY);
-    CGFloat horizontalThreeshold = [self horizontalThreeshold];
-    CGFloat verticalThreeshold = [self verticalThreeshold];
-    if (currentScroll.x > horizontalThreeshold)
+    if ( (event.phase == NSEventPhaseBegan) || (event.phase == NSEventPhaseChanged) )
     {
-        currentScroll.x = horizontalThreeshold;
-        if (_allowedAxis == DZAMenuAxisHorizontal)
+        currentScroll = CGPointMake(currentScroll.x - event.deltaX, currentScroll.y - event.deltaY);
+        CGFloat horizontalThreeshold = [self horizontalThreeshold];
+        CGFloat verticalThreeshold = [self verticalThreeshold];
+        if (currentScroll.x > horizontalThreeshold)
         {
-            currentScroll = CGPointMake(0, 0);
-            [self cancelTouch];
-            [self moveSelection:DZAMenuDirectionRight];
+            currentScroll.x = horizontalThreeshold;
+            if (_allowedAxis == DZAMenuAxisHorizontal)
+            {
+                currentScroll = CGPointMake(0, 0);
+                [self cancelTouch];
+                [self moveSelection:DZAMenuDirectionRight];
+            }
+        } else if (currentScroll.x < -horizontalThreeshold)
+        {
+            currentScroll.x = -horizontalThreeshold;
+            if (_allowedAxis == DZAMenuAxisHorizontal)
+            {
+                currentScroll = CGPointMake(0, 0);
+                [self cancelTouch];
+                [self moveSelection:DZAMenuDirectionLeft];
+            }
         }
-    } else if (currentScroll.x < -horizontalThreeshold)
+        if (currentScroll.y > verticalThreeshold)
+        {
+            currentScroll.y = verticalThreeshold;
+            if (_allowedAxis == DZAMenuAxisVertical)
+            {
+                currentScroll = CGPointMake(0, 0);
+                [self cancelTouch];
+                [self moveSelection:DZAMenuDirectionDown];
+            }
+        } else if (currentScroll.y < -verticalThreeshold)
+        {
+            currentScroll.y = -verticalThreeshold;
+            if (_allowedAxis == DZAMenuAxisVertical)
+            {
+                currentScroll = CGPointMake(0, 0);
+                [self cancelTouch];
+                [self moveSelection:DZAMenuDirectionUp];
+            }
+        }
+        SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + currentScroll.x, _currentMenuVoice.originalPosition.y - currentScroll.y) duration:0.1];
+        [_currentMenuVoice runAction:moveAction];
+    } else if ( (event.phase == NSEventPhaseEnded) || (event.phase == NSEventPhaseCancelled) )
     {
-        currentScroll.x = -horizontalThreeshold;
-        if (_allowedAxis == DZAMenuAxisHorizontal)
-        {
-            currentScroll = CGPointMake(0, 0);
-            [self cancelTouch];
-            [self moveSelection:DZAMenuDirectionLeft];
-        }
+        currentScroll = CGPointMake(0, 0);
+        [self cancelTouch];
     }
-    if (currentScroll.y > verticalThreeshold)
-    {
-        currentScroll.y = verticalThreeshold;
-        if (_allowedAxis == DZAMenuAxisVertical)
-        {
-            currentScroll = CGPointMake(0, 0);
-            [self cancelTouch];
-            [self moveSelection:DZAMenuDirectionDown];
-        }
-    } else if (currentScroll.y < -verticalThreeshold)
-    {
-        currentScroll.y = -verticalThreeshold;
-        if (_allowedAxis == DZAMenuAxisVertical)
-        {
-            currentScroll = CGPointMake(0, 0);
-            [self cancelTouch];
-            [self moveSelection:DZAMenuDirectionUp];
-        }
-    }
-    SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + currentScroll.x, _currentMenuVoice.originalPosition.y - currentScroll.y) duration:0.1];
-    [_currentMenuVoice runAction:moveAction];
 
 }
 
