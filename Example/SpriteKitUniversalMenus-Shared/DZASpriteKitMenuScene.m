@@ -71,16 +71,13 @@
     [_menuNode reloadMenu];
 }
 
+#if !TARGET_OS_IPHONE
+
 - (void)scrollWheel:(NSEvent *)theEvent
 {
     [_menuNode scrollWheel:theEvent];
 }
 
-//-(void) touchesBeganWithEvent:(NSEvent *)event
-//{
-//    int c = 0;
-//    c++;
-//}
 - (void)keyDown:(NSEvent *)theEvent;
 {
     [_menuNode keyDown:theEvent];
@@ -90,48 +87,7 @@
 {
     [_menuNode keyUp:theEvent];
 }
-/*
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    NSLog(@"touchesBegan");
-    [_menuNode touchesBegan:touches withEvent:event];
-}
 
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    NSLog(@"touchesMoved");
-    [_menuNode touchesMoved:touches withEvent:event];
-}
-
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [_menuNode touchesEnded:touches withEvent:event];
-}
-
--(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [_menuNode touchesCancelled:touches withEvent:event];
-}
-
-- (void)pressesBegan:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    //    [self.view pressesBegan:presses withEvent:event];
-    NSLog(@"SKView intercepted Remote Click");
-}
-
-- (void)pressesChanged:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    
-}
-
-- (void)pressesEnded:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    
-}
-
-- (void)pressesCancelled:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    
-}*/
+#endif
 
 @end
