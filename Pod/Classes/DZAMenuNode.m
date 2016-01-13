@@ -240,7 +240,13 @@
 
 - (void)keyDown:(NSEvent *)theEvent;
 {
-    if ([theEvent modifierFlags] & NSNumericPadKeyMask)
+    NSString *eventChars = [theEvent charactersIgnoringModifiers];
+    unichar keyChar = [eventChars characterAtIndex:0];
+    
+    if (( keyChar == NSEnterCharacter ) || ( keyChar == NSCarriageReturnCharacter ))
+    {
+        [self pressSelection];
+    } else if ([theEvent modifierFlags] & NSNumericPadKeyMask)
     { // arrow keys have this mask
         NSString *theArrow = [theEvent charactersIgnoringModifiers];
         unichar keyChar = 0;
@@ -490,13 +496,11 @@
 
 -(void) pressSelection;
 {
-#if TARGET_OS_TV
     [_currentMenuVoice forceTouchUpInside];
     if (_selectSoundName)
     {
         [self runAction:[SKAction playSoundFileNamed:_openSoundName waitForCompletion:NO]];
     }
-#endif
 }
 
 -(void) setupGameController:(GCController *) controller;
