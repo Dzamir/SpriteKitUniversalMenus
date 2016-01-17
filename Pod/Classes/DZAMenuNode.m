@@ -229,9 +229,25 @@
     }
 }
 
--(void) tapGestureRecognized:(DZATapGestureRecognizer *) tapGestureRecognizer
+-(void) tapGestureRecognized:(DZATapGestureRecognizer *) _tapGestureRecognizer
 {
+#if TARGET_OS_IPHONE
     [self pressSelection];
+#else
+    CGPoint touchLocationInView = [_tapGestureRecognizer locationInView:_tapGestureRecognizer.view];
+    CGPoint touchLocationInScene = [self.scene convertPointFromView:touchLocationInView];
+    CGPoint touchLocationInNode = [self.scene convertPoint:touchLocationInScene toNode:self];
+
+    SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocationInNode];
+    if ([touchedNode isKindOfClass:[DZAMenuVoiceNode class]])
+    {
+        self.currentMenuVoice = (DZAMenuVoiceNode *)touchedNode;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(),^
+        {
+           [self pressSelection];
+        });
+    }
+#endif
 }
 
 #if !TARGET_OS_IPHONE
@@ -419,7 +435,12 @@
 
 -(void) pressSelection;
 {
-    [_currentMenuVoice forceTouchUpInside];
+    [self pressMenuVoice:_currentMenuVoice];
+}
+
+-(void) pressMenuVoice:(DZAMenuVoiceNode *) menuVoiceNode
+{
+    [menuVoiceNode forceTouchUpInside];
     if (_selectSoundName)
     {
         [self runAction:[SKAction playSoundFileNamed:_openSoundName waitForCompletion:NO]];
