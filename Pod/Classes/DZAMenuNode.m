@@ -7,6 +7,7 @@
 //
 
 #import "DZAMenuNode.h"
+#import "DZAControlInputDirection.h"
 
 @interface DZAMenuNode()
 {
@@ -452,7 +453,7 @@
     __weak DZAMenuNode * weakSelf = self;
     GCControllerButtonValueChangedHandler buttonHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
     {
-        NSLog(@"BOTTONE");
+        [weakSelf pressSelection];
     };
     GCControllerButtonValueChangedHandler leftHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
     {
@@ -462,9 +463,26 @@
     {
         [weakSelf moveSelection:DZAMenuDirectionRight];
     };
-    GCControllerDirectionPadValueChangedHandler handler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
+    GCControllerDirectionPadValueChangedHandler directionHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
     {
-        
+        DZAControlInputDirection * inputDirection = [[DZAControlInputDirection alloc] initWithVector:(vector_float2){xValue, yValue}];
+        switch (inputDirection.controlInputDirectionEnum)
+        {
+            case DZAControlInputDirectionUp:
+                [weakSelf moveSelection:DZAMenuDirectionUp];
+                break;
+            case DZAControlInputDirectionRight:
+                [weakSelf moveSelection:DZAMenuDirectionRight];
+                break;
+            case DZAControlInputDirectionDown:
+                [weakSelf moveSelection:DZAMenuDirectionDown];
+                break;
+            case DZAControlInputDirectionLeft:
+                [weakSelf moveSelection:DZAMenuDirectionLeft];
+                break;
+            default:
+                break;
+        }
     };
 #if TARGET_OS_TV
     if (controller.microGamepad)
@@ -476,12 +494,14 @@
     if (controller.gamepad)
     {
         controller.gamepad.buttonA.pressedChangedHandler = buttonHandler;
+        controller.gamepad.dpad.valueChangedHandler = directionHandler;
         controller.gamepad.leftShoulder.pressedChangedHandler = leftHandler;
         controller.gamepad.rightShoulder.pressedChangedHandler = rightHandler;
     }
     if (controller.extendedGamepad)
     {
         controller.extendedGamepad.buttonA.pressedChangedHandler = buttonHandler;
+        controller.extendedGamepad.dpad.valueChangedHandler = directionHandler;
         controller.extendedGamepad.leftTrigger.pressedChangedHandler = leftHandler;
         controller.extendedGamepad.rightTrigger.pressedChangedHandler = rightHandler;
     }
