@@ -435,11 +435,11 @@
     };
     GCControllerButtonValueChangedHandler leftHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
     {
-        [self moveSelection:DZAMenuDirectionLeft];
+        [weakSelf moveSelection:DZAMenuDirectionLeft];
     };
     GCControllerButtonValueChangedHandler rightHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
     {
-        [self moveSelection:DZAMenuDirectionRight];
+        [weakSelf moveSelection:DZAMenuDirectionRight];
     };
     GCControllerDirectionPadValueChangedHandler handler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
     {
