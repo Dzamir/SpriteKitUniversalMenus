@@ -502,6 +502,8 @@
     {
         controller.extendedGamepad.buttonA.pressedChangedHandler = buttonHandler;
         controller.extendedGamepad.dpad.valueChangedHandler = directionHandler;
+        controller.extendedGamepad.leftThumbstick.valueChangedHandler = directionHandler;
+        controller.extendedGamepad.rightThumbstick.valueChangedHandler = directionHandler;
         controller.extendedGamepad.leftTrigger.pressedChangedHandler = leftHandler;
         controller.extendedGamepad.rightTrigger.pressedChangedHandler = rightHandler;
     }

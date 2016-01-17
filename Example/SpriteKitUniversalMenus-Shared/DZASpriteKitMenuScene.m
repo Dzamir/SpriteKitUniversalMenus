@@ -69,6 +69,14 @@
     } onEvent:AGButtonControlEventTouchUpInside];;
     
     [_menuNode reloadMenu];
+    
+    for (GCController * pairedController in GCController.controllers)
+    {
+        [_menuNode setupGameController:pairedController];
+    }
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleControllerDidConnectNotification:) name:GCControllerDidConnectNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleControllerDidDisconnectNotification:) name:GCControllerDidDisconnectNotification object:nil];
+
 }
 
 #if !TARGET_OS_IPHONE
@@ -89,5 +97,16 @@
 }
 
 #endif
+
+-(void) handleControllerDidConnectNotification:(NSNotification *) notification
+{
+    GCController * connectedGameController = (GCController *) notification.object;
+    [_menuNode setupGameController:connectedGameController];
+}
+
+-(void) handleControllerDidDisconnectNotification:(NSNotification *) notification
+{
+    GCController * disconnectedGameController = (GCController *) notification.object;
+}
 
 @end

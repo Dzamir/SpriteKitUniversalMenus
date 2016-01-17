@@ -7,6 +7,7 @@
 //
 
 @import SpriteKit;
+@import GameController;
 
 @interface DZASpriteKitMenuScene : SKScene
 
