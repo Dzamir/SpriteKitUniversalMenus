@@ -18,6 +18,7 @@
     #define DZAGestureRecognizerStateBegan UIGestureRecognizerStateBegan
     #define DZAGestureRecognizerStateChanged UIGestureRecognizerStateChanged
 #else
+    #define UIFont NSFont
     #define DZAFont NSFont
     #define DZATouch NSTouch
     #define DZAColor NSColor

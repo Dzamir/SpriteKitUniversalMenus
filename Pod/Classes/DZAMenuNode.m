@@ -427,7 +427,7 @@
 
 #pragma mark AGSpriteButtonDelegate
 
--(void) spriteButton:(AGSpriteButton *) spriteButton didMoveToDirection:(DZAMenuDirection) direction;
+-(void) spriteButton:(DZAMenuVoiceNode *) spriteButton didMoveToDirection:(DZAMenuDirection) direction;
 {
     [self moveSelection:direction];
 }
