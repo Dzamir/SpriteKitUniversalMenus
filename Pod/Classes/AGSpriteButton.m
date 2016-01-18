@@ -313,56 +313,6 @@
 
 #endif
 
-/*
-#if TARGET_OS_TV
-
-- (void)pressesBegan:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    NSLog(@"BUTTON intercepted Remote Click");
-    if (self.exclusiveTouch)
-    {
-        [self controlEventOccured:AGButtonControlEventTouchDown];
-        [self transformForTouchDown];
-    }
-}
-
-- (void)pressesChanged:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-//    if (self.exclusiveTouch)
-//    {
-//        CGPoint touchPoint = [event locationInNode:self];
-//        float lenX = self.size.width / 2;
-//        float lenY = self.size.height / 2;
-//        
-//        if ((touchPoint.x > lenX + 10)|| (touchPoint.x < (-lenX - 10)) || (touchPoint.y > lenY + 10) || (touchPoint.y < (-lenY - 10)))
-//        {
-//            [self pressesEnded:presses withEvent:event];
-//        }
-//    }
-}
-
-- (void)pressesEnded:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    if (self.exclusiveTouch)
-    {
-        //touchupinside
-        [self controlEventOccured:AGButtonControlEventTouchUp];
-        [self controlEventOccured:AGButtonControlEventTouchUpInside];
-        
-        [self transformForTouchUp];
-    }
-}
-
-- (void)pressesCancelled:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event;
-{
-    if (self.exclusiveTouch)
-    {
-        [self transformForTouchUp];
-    }
-}
-
-#endif*/
-
 #pragma mark - BUTTON TRANSFORM ON SELECTION
 
 -(void)transformForTouchDown
