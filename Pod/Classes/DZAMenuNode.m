@@ -49,8 +49,6 @@
         if ([node isKindOfClass:[DZAMenuVoiceNode class]])
         {
             DZAMenuVoiceNode * menuVoiceNode = (DZAMenuVoiceNode *) node;
-            menuVoiceNode.allowedAxis = _allowedAxis;
-            menuVoiceNode.delegate = self;
             if (_allowedAxis == DZAMenuAxisHorizontal)
             {
                 menuVoiceNode.tag = menuVoiceNode.position.x;

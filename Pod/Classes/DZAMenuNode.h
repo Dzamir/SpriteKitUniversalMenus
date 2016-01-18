@@ -12,7 +12,7 @@
 
 #define THREESHOLD 10.0f
 
-@interface DZAMenuNode : SKNode <AGSpriteButtonDelegate>
+@interface DZAMenuNode : SKNode
 
 @property (readwrite, nonatomic) DZAMenuAxis allowedAxis;
 

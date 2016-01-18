@@ -20,16 +20,7 @@ typedef NS_OPTIONS(NSInteger, AGButtonControlEvent)
 
 @class AGSpriteButton;
 
-@protocol AGSpriteButtonDelegate <NSObject>
-
--(void) spriteButton:(AGSpriteButton *) spriteButton didMoveToDirection:(DZAMenuDirection) direction;
-
-@end
-
 @interface AGSpriteButton : SKSpriteNode
-
-@property (weak, nonatomic) id<AGSpriteButtonDelegate> delegate;
-@property (readwrite, nonatomic) DZAMenuAxis allowedAxis;
 
 @property (setter = setExclusiveTouch:, getter = isExclusiveTouch) BOOL exclusiveTouch;
 
