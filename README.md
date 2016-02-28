@@ -3,7 +3,7 @@ SpriteKit menus that works on iOS (tap and gamecontrollers), tvOS (focus engine 
 
 ## Description
 
-This project aims to help game developers that want to build a cross platform iOS/OS X game by using SpriteKit. Instead of creating a different menu logic for each platform (mouse and keyboard for OS X, touch for iOS and remot for tvOS), you can just create a menu structure with this library and it will automatically handle focus, taps, clicks or selection. 
+This project aims to help game developers that want to build a cross platform iOS/OS X game by using SpriteKit. Instead of creating a different menu logic for each platform (mouse and keyboard for OS X, touch for iOS and remote for tvOS), you can just create a menu structure with this library and it will automatically handle focus, taps, clicks or selection (also works with game controllers!) 
 
 ## Usage
 

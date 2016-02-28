@@ -71,7 +71,6 @@
     }
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleControllerDidConnectNotification:) name:GCControllerDidConnectNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleControllerDidDisconnectNotification:) name:GCControllerDidDisconnectNotification object:nil];
-
 }
 
 #if !TARGET_OS_IPHONE
