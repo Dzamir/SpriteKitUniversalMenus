@@ -264,7 +264,9 @@
         NSString * arrow = [event charactersIgnoringModifiers];
         unichar keyChar = 0;
         if ( [arrow length] == 0)
+        {
             return;            // reject dead keys
+        }
         if ( [arrow length] == 1 )
         {
             keyChar = [arrow characterAtIndex:0];
