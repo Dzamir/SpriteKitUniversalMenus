@@ -39,11 +39,6 @@
 #endif
     menuVoice.position = CGPointMake(0, y);
     [_menuNode addChild:menuVoice];
-    [menuVoice performBlock:^
-    {
-        int c = 0;
-        c++;
-    } onEvent:AGButtonControlEventTouchUpInside];
     return menuVoice;
 }
 
