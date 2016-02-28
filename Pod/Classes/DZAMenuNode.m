@@ -251,24 +251,23 @@
 
 #if !TARGET_OS_IPHONE
 
-- (void)keyDown:(NSEvent *)theEvent;
+- (void)keyDown:(NSEvent *) event;
 {
-    NSString *eventChars = [theEvent charactersIgnoringModifiers];
+    NSString *eventChars = [event charactersIgnoringModifiers];
     unichar keyChar = [eventChars characterAtIndex:0];
-    
     if (( keyChar == NSEnterCharacter ) || ( keyChar == NSCarriageReturnCharacter ))
     {
         [self pressSelection];
-    } else if ([theEvent modifierFlags] & NSNumericPadKeyMask)
-    { // arrow keys have this mask
-        NSString *theArrow = [theEvent charactersIgnoringModifiers];
+    } else if ([event modifierFlags] & NSNumericPadKeyMask)
+    {
+        // arrow keys have this mask
+        NSString * arrow = [event charactersIgnoringModifiers];
         unichar keyChar = 0;
-        if ( [theArrow length] == 0
-            )
+        if ( [arrow length] == 0)
             return;            // reject dead keys
-        if ( [theArrow length] == 1 )
+        if ( [arrow length] == 1 )
         {
-            keyChar = [theArrow characterAtIndex:0];
+            keyChar = [arrow characterAtIndex:0];
             if ( keyChar == NSLeftArrowFunctionKey )
             {
                 [self moveSelection:DZAMenuDirectionLeft];
@@ -289,13 +288,18 @@
                 [self moveSelection:DZAMenuDirectionDown];
                 return;
             }
-            [super keyDown:theEvent];
+            [super keyDown:event];
         }
+    } else if ([event keyCode] == 53)
+    {
+        [self.delegate menuNodeDidPressBack:self];
+    } else
+    {
+        [super keyDown:event];
     }
-    [super keyDown:theEvent];
 }
 
-- (void)keyUp:(NSEvent *)theEvent;
+- (void)keyUp:(NSEvent *)event;
 {
     int c = 0;
     c++;

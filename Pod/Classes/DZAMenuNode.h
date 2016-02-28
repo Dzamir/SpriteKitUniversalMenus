@@ -12,9 +12,21 @@
 
 #define THREESHOLD 10.0f
 
+@class DZAMenuNode;
+
+@protocol DZAMenuNodeDelegate <NSObject>
+
+// for tvOS: menu button pressed
+// for macOS: esc button pressed
+// for iOS you will need to add a button into your scene to map the back action
+-(void) menuNodeDidPressBack:(DZAMenuNode *) menuNode;
+
+@end
+
 @interface DZAMenuNode : SKNode
 
 @property (readwrite, nonatomic) DZAMenuAxis allowedAxis;
+@property (weak, nonatomic) id<DZAMenuNodeDelegate> delegate;
 
 //@property (strong, nonatomic) NSMutableArray * menuVoices;
 @property (strong, nonatomic) DZAMenuVoiceNode * currentMenuVoice;
