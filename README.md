@@ -1,11 +1,6 @@
 # SpriteKitUniversalMenus
 SpriteKit menus that works on iOS (tap and gamecontrollers), tvOS (focus engine and gamecontrollers) and MacOS (click, keyboard and gamecontrollers)
 
-[![CI Status](http://img.shields.io/travis/Davide Di Stefano/SpriteKitUniversalMenus.svg?style=flat)](https://travis-ci.org/Davide Di Stefano/SpriteKitUniversalMenus)
-[![Version](https://img.shields.io/cocoapods/v/SpriteKitUniversalMenus.svg?style=flat)](http://cocoapods.org/pods/SpriteKitUniversalMenus)
-[![License](https://img.shields.io/cocoapods/l/SpriteKitUniversalMenus.svg?style=flat)](http://cocoapods.org/pods/SpriteKitUniversalMenus)
-[![Platform](https://img.shields.io/cocoapods/p/SpriteKitUniversalMenus.svg?style=flat)](http://cocoapods.org/pods/SpriteKitUniversalMenus)
-
 ## Description
 
 This project aims to help game developers that want to build a cross platform iOS/OS X game by using SpriteKit. Instead of creating a different menu logic for each platform (mouse and keyboard for OS X, touch for iOS and remot for tvOS), you can just create a menu structure with this library and it will automatically handle focus, taps, clicks or selection. 
