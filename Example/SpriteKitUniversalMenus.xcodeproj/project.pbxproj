@@ -444,12 +444,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-iOS" */;
 			buildPhases = (
-				45D42CAC8E08D04A0D052F80 /* Check Pods Manifest.lock */,
+				45D42CAC8E08D04A0D052F80 /* 📦 Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				1F6AAEC172AE394A748E19A2 /* Embed Pods Frameworks */,
-				693E2CE5E9D47E3F921370F3 /* Copy Pods Resources */,
+				1F6AAEC172AE394A748E19A2 /* 📦 Embed Pods Frameworks */,
+				693E2CE5E9D47E3F921370F3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -464,12 +464,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus_Tests-iOS" */;
 			buildPhases = (
-				D3072583F51D9BB514922384 /* Check Pods Manifest.lock */,
+				D3072583F51D9BB514922384 /* 📦 Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				41AA5AFD3E1CD77A058D9512 /* Embed Pods Frameworks */,
-				8A384E3F7059DB2AAB5A4925 /* Copy Pods Resources */,
+				41AA5AFD3E1CD77A058D9512 /* 📦 Embed Pods Frameworks */,
+				8A384E3F7059DB2AAB5A4925 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -485,12 +485,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D3442D61C405B8700EA28BF /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-Mac" */;
 			buildPhases = (
-				BDBB5682013C756AC60BB707 /* Check Pods Manifest.lock */,
+				BDBB5682013C756AC60BB707 /* 📦 Check Pods Manifest.lock */,
 				8D3442B61C405B8700EA28BF /* Sources */,
 				8D3442B71C405B8700EA28BF /* Frameworks */,
 				8D3442B81C405B8700EA28BF /* Resources */,
-				8E5F3B2EB72A0667B0B94236 /* Embed Pods Frameworks */,
-				C35BC55404884A4FCD021FA6 /* Copy Pods Resources */,
+				8E5F3B2EB72A0667B0B94236 /* 📦 Embed Pods Frameworks */,
+				C35BC55404884A4FCD021FA6 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -505,11 +505,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D3442D91C405B8700EA28BF /* Build configuration list for PBXNativeTarget "SpriteKiUniversalMenus-MacUITests" */;
 			buildPhases = (
-				DC4E8B1870E29DFEDBF9B48C /* Check Pods Manifest.lock */,
+				DC4E8B1870E29DFEDBF9B48C /* 📦 Check Pods Manifest.lock */,
 				8D3442CB1C405B8700EA28BF /* Sources */,
 				8D3442CC1C405B8700EA28BF /* Frameworks */,
 				8D3442CD1C405B8700EA28BF /* Resources */,
-				030C78D91F1F18F8EBE033DC /* Copy Pods Resources */,
+				030C78D91F1F18F8EBE033DC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -525,12 +525,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D34430C1C40EC8400EA28BF /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-tvOS" */;
 			buildPhases = (
-				5EA69C04A7D2F55935156DD7 /* Check Pods Manifest.lock */,
+				5EA69C04A7D2F55935156DD7 /* 📦 Check Pods Manifest.lock */,
 				8D3442E11C40EC8300EA28BF /* Sources */,
 				8D3442E21C40EC8300EA28BF /* Frameworks */,
 				8D3442E31C40EC8300EA28BF /* Resources */,
-				4EC9F4CF495C635F2CCF5171 /* Embed Pods Frameworks */,
-				62EA6262BAD4E26EE01E2F9A /* Copy Pods Resources */,
+				4EC9F4CF495C635F2CCF5171 /* 📦 Embed Pods Frameworks */,
+				62EA6262BAD4E26EE01E2F9A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -545,11 +545,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D34430D1C40EC8400EA28BF /* Build configuration list for PBXNativeTarget "SpriteKitUniversalMenus-tvOSUITests" */;
 			buildPhases = (
-				1AB661E2E98BC2A822C604BE /* Check Pods Manifest.lock */,
+				1AB661E2E98BC2A822C604BE /* 📦 Check Pods Manifest.lock */,
 				8D3442FD1C40EC8300EA28BF /* Sources */,
 				8D3442FE1C40EC8300EA28BF /* Frameworks */,
 				8D3442FF1C40EC8300EA28BF /* Resources */,
-				3BB3FCF18BE33AE347D480FD /* Copy Pods Resources */,
+				3BB3FCF18BE33AE347D480FD /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -684,14 +684,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		030C78D91F1F18F8EBE033DC /* Copy Pods Resources */ = {
+		030C78D91F1F18F8EBE033DC /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -699,14 +699,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKiUniversalMenus-MacUITests/Pods-SpriteKiUniversalMenus-MacUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1AB661E2E98BC2A822C604BE /* Check Pods Manifest.lock */ = {
+		1AB661E2E98BC2A822C604BE /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -714,14 +714,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		1F6AAEC172AE394A748E19A2 /* Embed Pods Frameworks */ = {
+		1F6AAEC172AE394A748E19A2 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,14 +729,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-iOS/Pods-SpriteKitUniversalMenus-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3BB3FCF18BE33AE347D480FD /* Copy Pods Resources */ = {
+		3BB3FCF18BE33AE347D480FD /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,14 +744,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOSUITests/Pods-SpriteKitUniversalMenus-tvOSUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		41AA5AFD3E1CD77A058D9512 /* Embed Pods Frameworks */ = {
+		41AA5AFD3E1CD77A058D9512 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -759,14 +759,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests-iOS/Pods-SpriteKitUniversalMenus_Tests-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		45D42CAC8E08D04A0D052F80 /* Check Pods Manifest.lock */ = {
+		45D42CAC8E08D04A0D052F80 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -774,14 +774,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4EC9F4CF495C635F2CCF5171 /* Embed Pods Frameworks */ = {
+		4EC9F4CF495C635F2CCF5171 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -789,14 +789,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOS/Pods-SpriteKitUniversalMenus-tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5EA69C04A7D2F55935156DD7 /* Check Pods Manifest.lock */ = {
+		5EA69C04A7D2F55935156DD7 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -804,14 +804,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		62EA6262BAD4E26EE01E2F9A /* Copy Pods Resources */ = {
+		62EA6262BAD4E26EE01E2F9A /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -819,14 +819,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-tvOS/Pods-SpriteKitUniversalMenus-tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		693E2CE5E9D47E3F921370F3 /* Copy Pods Resources */ = {
+		693E2CE5E9D47E3F921370F3 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -834,14 +834,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-iOS/Pods-SpriteKitUniversalMenus-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8A384E3F7059DB2AAB5A4925 /* Copy Pods Resources */ = {
+		8A384E3F7059DB2AAB5A4925 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -849,14 +849,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus_Tests-iOS/Pods-SpriteKitUniversalMenus_Tests-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8E5F3B2EB72A0667B0B94236 /* Embed Pods Frameworks */ = {
+		8E5F3B2EB72A0667B0B94236 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -864,14 +864,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-Mac/Pods-SpriteKitUniversalMenus-Mac-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BDBB5682013C756AC60BB707 /* Check Pods Manifest.lock */ = {
+		BDBB5682013C756AC60BB707 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -879,14 +879,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C35BC55404884A4FCD021FA6 /* Copy Pods Resources */ = {
+		C35BC55404884A4FCD021FA6 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -894,14 +894,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpriteKitUniversalMenus-Mac/Pods-SpriteKitUniversalMenus-Mac-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3072583F51D9BB514922384 /* Check Pods Manifest.lock */ = {
+		D3072583F51D9BB514922384 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -909,14 +909,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DC4E8B1870E29DFEDBF9B48C /* Check Pods Manifest.lock */ = {
+		DC4E8B1870E29DFEDBF9B48C /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

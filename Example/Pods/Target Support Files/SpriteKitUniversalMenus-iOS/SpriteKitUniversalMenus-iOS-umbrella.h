@@ -1,10 +1,5 @@
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 
-#import "Bridges.h"
-#import "Directions.h"
-#import "DZAControlInputDirection.h"
-#import "DZAMenuNode.h"
-#import "DZAMenuVoiceNode.h"
 #import "Bridges.h"
 #import "Directions.h"
 #import "DZAControlInputDirection.h"
