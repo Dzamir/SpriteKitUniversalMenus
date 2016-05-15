@@ -25,7 +25,7 @@
 {
     if (self = [super init])
     {
-
+        _enabled = YES;
     }
     return self;
 }
@@ -230,21 +230,24 @@
 
 -(void) tapGestureRecognized:(DZATapGestureRecognizer *) _tapGestureRecognizer
 {
-#if TARGET_OS_IPHONE
-    [self pressSelection];
-#else
-    CGPoint touchLocationInView = [_tapGestureRecognizer locationInView:_tapGestureRecognizer.view];
-    CGPoint touchLocationInScene = [self.scene convertPointFromView:touchLocationInView];
-    CGPoint touchLocationInNode = [self.scene convertPoint:touchLocationInScene toNode:self];
-
-    SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocationInNode];
-    if ([touchedNode isKindOfClass:[DZAMenuVoiceNode class]])
+    if (_enabled)
     {
-        self.currentMenuVoice = (DZAMenuVoiceNode *)touchedNode;
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(),^
+#if TARGET_OS_IPHONE
+        [self pressSelection];
+#else
+        CGPoint touchLocationInView = [_tapGestureRecognizer locationInView:_tapGestureRecognizer.view];
+        CGPoint touchLocationInScene = [self.scene convertPointFromView:touchLocationInView];
+        CGPoint touchLocationInNode = [self.scene convertPoint:touchLocationInScene toNode:self];
+
+        SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocationInNode];
+        if ([touchedNode isKindOfClass:[DZAMenuVoiceNode class]])
         {
-           [self pressSelection];
-        });
+            self.currentMenuVoice = (DZAMenuVoiceNode *)touchedNode;
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(),^
+            {
+               [self pressSelection];
+            });
+        }
     }
 #endif
 }
@@ -253,174 +256,185 @@
 
 - (void)keyDown:(NSEvent *) event;
 {
-    NSString *eventChars = [event charactersIgnoringModifiers];
-    unichar keyChar = [eventChars characterAtIndex:0];
-    if (( keyChar == NSEnterCharacter ) || ( keyChar == NSCarriageReturnCharacter ))
+    if (_enabled)
     {
-        [self pressSelection];
-    } else if ([event modifierFlags] & NSNumericPadKeyMask)
-    {
-        // arrow keys have this mask
-        NSString * arrow = [event charactersIgnoringModifiers];
-        unichar keyChar = 0;
-        if ( [arrow length] == 0)
+        NSString *eventChars = [event charactersIgnoringModifiers];
+        unichar keyChar = [eventChars characterAtIndex:0];
+        if (( keyChar == NSEnterCharacter ) || ( keyChar == NSCarriageReturnCharacter ))
         {
-            return;            // reject dead keys
-        }
-        if ( [arrow length] == 1 )
+            [self pressSelection];
+        } else if ([event modifierFlags] & NSNumericPadKeyMask)
         {
-            keyChar = [arrow characterAtIndex:0];
-            if ( keyChar == NSLeftArrowFunctionKey )
+            // arrow keys have this mask
+            NSString * arrow = [event charactersIgnoringModifiers];
+            unichar keyChar = 0;
+            if ( [arrow length] == 0)
             {
-                [self moveSelection:DZAMenuDirectionLeft];
-                return;
+                return;            // reject dead keys
             }
-            if ( keyChar == NSRightArrowFunctionKey )
+            if ( [arrow length] == 1 )
             {
-                [self moveSelection:DZAMenuDirectionRight];
-                return;
+                keyChar = [arrow characterAtIndex:0];
+                if ( keyChar == NSLeftArrowFunctionKey )
+                {
+                    [self moveSelection:DZAMenuDirectionLeft];
+                    return;
+                }
+                if ( keyChar == NSRightArrowFunctionKey )
+                {
+                    [self moveSelection:DZAMenuDirectionRight];
+                    return;
+                }
+                if ( keyChar == NSUpArrowFunctionKey )
+                {
+                    [self moveSelection:DZAMenuDirectionUp];
+                    return;
+                }
+                if ( keyChar == NSDownArrowFunctionKey )
+                {
+                    [self moveSelection:DZAMenuDirectionDown];
+                    return;
+                }
+                [super keyDown:event];
             }
-            if ( keyChar == NSUpArrowFunctionKey )
-            {
-                [self moveSelection:DZAMenuDirectionUp];
-                return;
-            }
-            if ( keyChar == NSDownArrowFunctionKey )
-            {
-                [self moveSelection:DZAMenuDirectionDown];
-                return;
-            }
+        } else if ([event keyCode] == 53)
+        {
+            [self.delegate menuNodeDidPressBack:self];
+        } else
+        {
             [super keyDown:event];
         }
-    } else if ([event keyCode] == 53)
-    {
-        [self.delegate menuNodeDidPressBack:self];
-    } else
-    {
-        [super keyDown:event];
     }
 }
 
 - (void)keyUp:(NSEvent *)event;
 {
-    int c = 0;
-    c++;
+    if (_enabled)
+    {
+        int c = 0;
+        c++;
+    }
 }
 
 -(void) scrollWheel:(NSEvent *) event
 {
-    if ( (event.phase == NSEventPhaseBegan) || (event.phase == NSEventPhaseChanged) )
+    if (_enabled)
     {
-        currentScroll = CGPointMake(currentScroll.x - event.deltaX, currentScroll.y - event.deltaY);
-        CGFloat horizontalThreeshold = [self horizontalThreeshold];
-        CGFloat verticalThreeshold = [self verticalThreeshold];
-        if (currentScroll.x > horizontalThreeshold)
+        if ( (event.phase == NSEventPhaseBegan) || (event.phase == NSEventPhaseChanged) )
         {
-            currentScroll.x = horizontalThreeshold;
-            if (_allowedAxis == DZAMenuAxisHorizontal)
+            currentScroll = CGPointMake(currentScroll.x - event.deltaX, currentScroll.y - event.deltaY);
+            CGFloat horizontalThreeshold = [self horizontalThreeshold];
+            CGFloat verticalThreeshold = [self verticalThreeshold];
+            if (currentScroll.x > horizontalThreeshold)
             {
-                currentScroll = CGPointMake(0, 0);
-                [self cancelTouch];
-                [self moveSelection:DZAMenuDirectionRight];
+                currentScroll.x = horizontalThreeshold;
+                if (_allowedAxis == DZAMenuAxisHorizontal)
+                {
+                    currentScroll = CGPointMake(0, 0);
+                    [self cancelTouch];
+                    [self moveSelection:DZAMenuDirectionRight];
+                }
+            } else if (currentScroll.x < -horizontalThreeshold)
+            {
+                currentScroll.x = -horizontalThreeshold;
+                if (_allowedAxis == DZAMenuAxisHorizontal)
+                {
+                    currentScroll = CGPointMake(0, 0);
+                    [self cancelTouch];
+                    [self moveSelection:DZAMenuDirectionLeft];
+                }
             }
-        } else if (currentScroll.x < -horizontalThreeshold)
+            if (currentScroll.y > verticalThreeshold)
+            {
+                currentScroll.y = verticalThreeshold;
+                if (_allowedAxis == DZAMenuAxisVertical)
+                {
+                    currentScroll = CGPointMake(0, 0);
+                    [self cancelTouch];
+                    [self moveSelection:DZAMenuDirectionDown];
+                }
+            } else if (currentScroll.y < -verticalThreeshold)
+            {
+                currentScroll.y = -verticalThreeshold;
+                if (_allowedAxis == DZAMenuAxisVertical)
+                {
+                    currentScroll = CGPointMake(0, 0);
+                    [self cancelTouch];
+                    [self moveSelection:DZAMenuDirectionUp];
+                }
+            }
+            SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + currentScroll.x, _currentMenuVoice.originalPosition.y - currentScroll.y) duration:0.1];
+            [_currentMenuVoice runAction:moveAction];
+        } else if ( (event.phase == NSEventPhaseEnded) || (event.phase == NSEventPhaseCancelled) )
         {
-            currentScroll.x = -horizontalThreeshold;
-            if (_allowedAxis == DZAMenuAxisHorizontal)
-            {
-                currentScroll = CGPointMake(0, 0);
-                [self cancelTouch];
-                [self moveSelection:DZAMenuDirectionLeft];
-            }
+            currentScroll = CGPointMake(0, 0);
+            [self cancelTouch];
         }
-        if (currentScroll.y > verticalThreeshold)
-        {
-            currentScroll.y = verticalThreeshold;
-            if (_allowedAxis == DZAMenuAxisVertical)
-            {
-                currentScroll = CGPointMake(0, 0);
-                [self cancelTouch];
-                [self moveSelection:DZAMenuDirectionDown];
-            }
-        } else if (currentScroll.y < -verticalThreeshold)
-        {
-            currentScroll.y = -verticalThreeshold;
-            if (_allowedAxis == DZAMenuAxisVertical)
-            {
-                currentScroll = CGPointMake(0, 0);
-                [self cancelTouch];
-                [self moveSelection:DZAMenuDirectionUp];
-            }
-        }
-        SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + currentScroll.x, _currentMenuVoice.originalPosition.y - currentScroll.y) duration:0.1];
-        [_currentMenuVoice runAction:moveAction];
-    } else if ( (event.phase == NSEventPhaseEnded) || (event.phase == NSEventPhaseCancelled) )
-    {
-        currentScroll = CGPointMake(0, 0);
-        [self cancelTouch];
     }
-
 }
 
 #endif
 
 -(void) panGestureRecognized:(DZAPanGestureRecognizer *) _panGestureRecognizer
 {
-    if (_panGestureRecognizer.state == DZAGestureRecognizerStateBegan)
+    if (_enabled)
     {
-        CGPoint point = [_panGestureRecognizer locationInView:self.scene.view];
-        initialTranslation = point;
-        [self focusMenuVoice:_currentMenuVoice];
-    } else if (_panGestureRecognizer.state == DZAGestureRecognizerStateChanged)
-    {
-        CGPoint point = [_panGestureRecognizer locationInView:self.scene.view];
-        CGPoint translationPoint = CGPointMake( (point.x - initialTranslation.x) / 30.0f, (point.y - initialTranslation.y) / 30.0f);
-        CGFloat horizontalThreeshold = [self horizontalThreeshold];
-        CGFloat verticalThreeshold = [self verticalThreeshold];
-        if (translationPoint.x > horizontalThreeshold)
+        if (_panGestureRecognizer.state == DZAGestureRecognizerStateBegan)
         {
-            translationPoint.x = horizontalThreeshold;
-            if (_allowedAxis == DZAMenuAxisHorizontal)
-            {
-                initialTranslation = point;
-                [self cancelTouch];
-                [self moveSelection:DZAMenuDirectionRight];
-            }
-        } else if (translationPoint.x < -horizontalThreeshold)
+            CGPoint point = [_panGestureRecognizer locationInView:self.scene.view];
+            initialTranslation = point;
+            [self focusMenuVoice:_currentMenuVoice];
+        } else if (_panGestureRecognizer.state == DZAGestureRecognizerStateChanged)
         {
-            translationPoint.x = -horizontalThreeshold;
-            if (_allowedAxis == DZAMenuAxisHorizontal)
+            CGPoint point = [_panGestureRecognizer locationInView:self.scene.view];
+            CGPoint translationPoint = CGPointMake( (point.x - initialTranslation.x) / 30.0f, (point.y - initialTranslation.y) / 30.0f);
+            CGFloat horizontalThreeshold = [self horizontalThreeshold];
+            CGFloat verticalThreeshold = [self verticalThreeshold];
+            if (translationPoint.x > horizontalThreeshold)
             {
-                initialTranslation = point;
-                [self cancelTouch];
-                [self moveSelection:DZAMenuDirectionLeft];
+                translationPoint.x = horizontalThreeshold;
+                if (_allowedAxis == DZAMenuAxisHorizontal)
+                {
+                    initialTranslation = point;
+                    [self cancelTouch];
+                    [self moveSelection:DZAMenuDirectionRight];
+                }
+            } else if (translationPoint.x < -horizontalThreeshold)
+            {
+                translationPoint.x = -horizontalThreeshold;
+                if (_allowedAxis == DZAMenuAxisHorizontal)
+                {
+                    initialTranslation = point;
+                    [self cancelTouch];
+                    [self moveSelection:DZAMenuDirectionLeft];
+                }
             }
+            if (translationPoint.y > verticalThreeshold)
+            {
+                translationPoint.y = verticalThreeshold;
+                if (_allowedAxis == DZAMenuAxisVertical)
+                {
+                    initialTranslation = point;
+                    [self cancelTouch];
+                    [self moveSelection:DZAMenuDirectionDown];
+                }
+            } else if (translationPoint.y < -verticalThreeshold)
+            {
+                translationPoint.y = -verticalThreeshold;
+                if (_allowedAxis == DZAMenuAxisVertical)
+                {
+                    initialTranslation = point;
+                    [self cancelTouch];
+                    [self moveSelection:DZAMenuDirectionUp];
+                }
+            }
+            SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + translationPoint.x, _currentMenuVoice.originalPosition.y - translationPoint.y) duration:0.1];
+            [_currentMenuVoice runAction:moveAction];
+        } else
+        {
+            initialTranslation = CGPointMake(0, 0);
+            [self cancelTouch];
         }
-        if (translationPoint.y > verticalThreeshold)
-        {
-            translationPoint.y = verticalThreeshold;
-            if (_allowedAxis == DZAMenuAxisVertical)
-            {
-                initialTranslation = point;
-                [self cancelTouch];
-                [self moveSelection:DZAMenuDirectionDown];
-            }
-        } else if (translationPoint.y < -verticalThreeshold)
-        {
-            translationPoint.y = -verticalThreeshold;
-            if (_allowedAxis == DZAMenuAxisVertical)
-            {
-                initialTranslation = point;
-                [self cancelTouch];
-                [self moveSelection:DZAMenuDirectionUp];
-            }
-        }
-        SKAction * moveAction = [SKAction moveTo:CGPointMake(_currentMenuVoice.originalPosition.x + translationPoint.x, _currentMenuVoice.originalPosition.y - translationPoint.y) duration:0.1];
-        [_currentMenuVoice runAction:moveAction];
-    } else
-    {
-        initialTranslation = CGPointMake(0, 0);
-        [self cancelTouch];
     }
 }
 
@@ -435,7 +449,10 @@
 
 -(void) spriteButton:(DZAMenuVoiceNode *) spriteButton didMoveToDirection:(DZAMenuDirection) direction;
 {
-    [self moveSelection:direction];
+    if (_enabled)
+    {
+        [self moveSelection:direction];
+    }
 }
 
 -(void) pressSelection;
@@ -457,35 +474,47 @@
     __weak DZAMenuNode * weakSelf = self;
     GCControllerButtonValueChangedHandler buttonHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
     {
-        [weakSelf pressSelection];
+        if (weakSelf.enabled)
+        {
+            [weakSelf pressSelection];
+        }
     };
     GCControllerButtonValueChangedHandler leftHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
     {
-        [weakSelf moveSelection:DZAMenuDirectionLeft];
+        if (weakSelf.enabled)
+        {
+            [weakSelf moveSelection:DZAMenuDirectionLeft];
+        }
     };
     GCControllerButtonValueChangedHandler rightHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
     {
-        [weakSelf moveSelection:DZAMenuDirectionRight];
+        if (weakSelf.enabled)
+        {
+            [weakSelf moveSelection:DZAMenuDirectionRight];
+        }
     };
     GCControllerDirectionPadValueChangedHandler directionHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
     {
-        DZAControlInputDirection * inputDirection = [[DZAControlInputDirection alloc] initWithVector:(vector_float2){xValue, yValue}];
-        switch (inputDirection.controlInputDirectionEnum)
+        if (weakSelf.enabled)
         {
-            case DZAControlInputDirectionUp:
-                [weakSelf moveSelection:DZAMenuDirectionUp];
-                break;
-            case DZAControlInputDirectionRight:
-                [weakSelf moveSelection:DZAMenuDirectionRight];
-                break;
-            case DZAControlInputDirectionDown:
-                [weakSelf moveSelection:DZAMenuDirectionDown];
-                break;
-            case DZAControlInputDirectionLeft:
-                [weakSelf moveSelection:DZAMenuDirectionLeft];
-                break;
-            default:
-                break;
+            DZAControlInputDirection * inputDirection = [[DZAControlInputDirection alloc] initWithVector:(vector_float2){xValue, yValue}];
+            switch (inputDirection.controlInputDirectionEnum)
+            {
+                case DZAControlInputDirectionUp:
+                    [weakSelf moveSelection:DZAMenuDirectionUp];
+                    break;
+                case DZAControlInputDirectionRight:
+                    [weakSelf moveSelection:DZAMenuDirectionRight];
+                    break;
+                case DZAControlInputDirectionDown:
+                    [weakSelf moveSelection:DZAMenuDirectionDown];
+                    break;
+                case DZAControlInputDirectionLeft:
+                    [weakSelf moveSelection:DZAMenuDirectionLeft];
+                    break;
+                default:
+                    break;
+            }
         }
     };
 #if TARGET_OS_TV

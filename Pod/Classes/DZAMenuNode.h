@@ -35,6 +35,9 @@
 // sound to use when a menu is opened on tvOS
 @property (strong, nonatomic) NSString * openSoundName;
 
+// set to NO to disable input processing for this menu
+@property (readwrite, nonatomic) BOOL enabled;
+
 // call this method after adding all the DZAMenuVoiceNode objects as child nodes
 -(void) reloadMenu;
 
