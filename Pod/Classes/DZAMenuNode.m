@@ -248,8 +248,8 @@
                [self pressSelection];
             });
         }
-    }
 #endif
+    }
 }
 
 #if !TARGET_OS_IPHONE
